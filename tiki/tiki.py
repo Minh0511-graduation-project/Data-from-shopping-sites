@@ -7,16 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
-# set headless, this will disable browser's UI
-# comment this and remove options in driver if you want to see how automation works
-options = webdriver.ChromeOptions()
-options.add_argument('--headless')
-options.add_argument('--disable-gpu')
-
-start = time.time()
-
 # Initialize the webdriver
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.maximize_window()
 # Navigate to the Tiki Vietnam website
 driver.get("https://tiki.vn/")
@@ -27,9 +19,6 @@ search_bar = WebDriverWait(driver, 5).until(
 )
 
 search_term = "tiki"
-
-end = time.time()
-print("Tiki Elapsed time since start until perform automation: ", end - start, "seconds")
 
 # Enter a search term
 search_bar.send_keys(search_term)
