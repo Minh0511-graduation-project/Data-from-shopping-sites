@@ -1,4 +1,5 @@
 import json
+import os
 import time
 
 from selenium import webdriver
@@ -28,15 +29,23 @@ class Result:
 
 results = []
 
-with open('../search_terms.txt', 'r') as f:
-    search_terms = f.read().splitlines()
+folder_path = "../vi-wordnet"
+
+search_terms = []
+
+for file_name in os.listdir(folder_path):
+    if file_name.endswith('.csv'):
+        with open(os.path.join(folder_path, file_name), 'r') as file:
+            lines = file.read().splitlines()
+            for line in lines:
+                search_terms.append(line.split(',')[0])
 
 
 for search_term in search_terms:
     search_bar.send_keys(Keys.CONTROL + "a")
     search_bar.send_keys(Keys.DELETE)
     search_bar.send_keys(search_term)
-    time.sleep(2)
+    time.sleep(1)
     suggestion_list = driver.find_element(By.XPATH,
                                           '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
     suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
@@ -51,7 +60,7 @@ def serialize_result(obj):
 
 
 with open("tiki.json", "w") as file:
-    json.dump(results, file, default=serialize_result, indent=4)
+    json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
 
 # Close the webdriver
 driver.quit()
