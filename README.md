@@ -24,13 +24,18 @@ __NOTE: These steps below are instructions for Linux environment
   
 - Run the .py files
   ```bash
-  python3 tiki/tiki.py
+  python3 app/tiki/tiki.py
   ```
   ```bash
-  python3 shopee/shopee.py
+  python3 app/shopee/shopee.py
   ```
   ```bash
-  python3 lazada/lazada.py
+  python3 app/lazada/lazada.py
+  ```
+  
+- Or just run the main file
+  ```bash
+  python3 main.py
   ```
   
 - The results from search suggestions scraping are stored inside the corresponding json files.
