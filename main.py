@@ -10,10 +10,10 @@ def print_log():
 
 if __name__ == '__main__':
     directory = 'vi-wordnet'
-    print_log()
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        executor.submit(scrape_lazada, 'https://www.lazada.vn/')
-        executor.submit(scrape_shopee, 'https://shopee.vn/')
-        executor.submit(scrape_tiki, 'https://tiki.vn/')
+    args = [(scrape_lazada, 'https://www.lazada.vn/'), (scrape_shopee, 'https://shopee.vn/'),
+            (scrape_tiki, 'https://tiki.vn/')]
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        futures = [executor.submit(f, arg) for f, arg in args]
 
-        concurrent.futures.wait([scrape_lazada, scrape_shopee, scrape_tiki])
+        # Wait for all futures to complete
+        results = [future.result() for future in concurrent.futures.as_completed(futures)]
