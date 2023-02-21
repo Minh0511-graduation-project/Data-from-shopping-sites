@@ -1,6 +1,6 @@
 import json
-import os
 import time
+import os
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,24 +8,20 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
+from model.auto_suggestions_results import Result
 
 
-def scrape_tiki_multiple(tiki_url, directory):
+def scrape_lazada_multiple(lazada_url, directory):
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
-    # Navigate to the Tiki Vietnam website
-    driver.get(tiki_url)
+    # Navigate to the Lazada Vietnam website
+    driver.get(lazada_url)
 
     # Wait for the search bar to be present and interactable
-    search_bar = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
+    search_bar = WebDriverWait(driver, 1).until(
+        EC.element_to_be_clickable((By.XPATH, '//input[@id="q"]'))
     )
-
-    class Result:
-        def __init__(self, keyword, suggestions):
-            self.keyword = keyword
-            self.suggestions = suggestions
 
     results = []
 
@@ -43,9 +39,9 @@ def scrape_tiki_multiple(tiki_url, directory):
         search_bar.send_keys(Keys.DELETE)
         search_bar.send_keys(search_term)
         time.sleep(1)
-        suggestion_list = driver.find_element(By.XPATH,
-                                              '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
-        suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
+        suggestion_list = driver.find_element(By.CLASS_NAME, 'suggest-list--3Tm8')
+        suggestion_keywords = [item.text for item in
+                               suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
         result = Result(search_term, suggestion_keywords)
         results.append(result)
 
@@ -54,7 +50,7 @@ def scrape_tiki_multiple(tiki_url, directory):
             return {"keyword": obj.keyword, "suggestions": obj.suggestions}
         raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")
 
-    with open("tiki/tiki.json", "w") as file:
+    with open("app/lazada/lazada.json", "w") as file:
         json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
 
     # Close the webdriver

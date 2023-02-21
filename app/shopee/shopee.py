@@ -35,7 +35,7 @@ def scrape_shopee(shopee_url):
     suggestion_keywords = [item.text for item in
                            suggestion_list.find_elements(By.CLASS_NAME, 'shopee-searchbar-hints__entry__product-name')]
 
-    with open("shopee/shopee.json", "w") as file:
+    with open("app/shopee/shopee.json", "w") as file:
         file.write(
             json.dumps({"search_term": search_term, "suggestions": suggestion_keywords}, indent=4, ensure_ascii=False))
 
