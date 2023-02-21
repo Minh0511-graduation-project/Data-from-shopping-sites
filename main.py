@@ -1,16 +1,19 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import concurrent.futures
+from lazada.lazada import scrape_lazada
+from shopee.shopee import scrape_shopee
+from tiki.tiki import scrape_tiki
 
 
-# Press the green button in the gutter to run the script.
+def print_log():
+    print('Start scraping')
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    directory = 'vi-wordnet'
+    print_log()
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        executor.submit(scrape_lazada, 'https://www.lazada.vn/')
+        executor.submit(scrape_shopee, 'https://shopee.vn/')
+        executor.submit(scrape_tiki, 'https://tiki.vn/')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+        concurrent.futures.wait([scrape_lazada, scrape_shopee, scrape_tiki])

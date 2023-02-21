@@ -7,32 +7,36 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
-# Initialize the webdriver
-driver = webdriver.Chrome(ChromeDriverManager().install())
-driver.maximize_window()
-# Navigate to the Tiki Vietnam website
-driver.get("https://tiki.vn/")
 
-# Wait for the search bar to be present and interactable
-search_bar = WebDriverWait(driver, 5).until(
-    EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
-)
+def scrape_tiki(tiki_url):
+    # Initialize the webdriver
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver.maximize_window()
+    # Navigate to the Tiki Vietnam website
+    driver.get(tiki_url)
 
-search_term = "tiki"
+    # Wait for the search bar to be present and interactable
+    search_bar = WebDriverWait(driver, 5).until(
+        EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
+    )
 
-# Enter a search term
-search_bar.send_keys(search_term)
-time.sleep(5)
+    search_term = "tiki"
 
-suggestion_list = driver.find_element(By.XPATH, '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
+    # Enter a search term
+    search_bar.send_keys(search_term)
+    time.sleep(5)
 
-suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
+    suggestion_list = driver.find_element(By.XPATH,
+                                          '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
 
-with open("tiki.json", "w") as file:
-    file.write(json.dumps({"search_term": search_term, "suggestions": suggestion_keywords}, indent=4))
+    suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
 
-# wait for 5 seconds before close the webdriver
-time.sleep(5)
+    with open("tiki/tiki.json", "w") as file:
+        file.write(
+            json.dumps({"search_term": search_term, "suggestions": suggestion_keywords}, indent=4, ensure_ascii=False))
 
-# Close the webdriver
-driver.quit()
+    # wait for 5 seconds before close the webdriver
+    time.sleep(5)
+
+    # Close the webdriver
+    driver.quit()
