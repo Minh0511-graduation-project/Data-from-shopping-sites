@@ -16,4 +16,4 @@ if __name__ == '__main__':
     #     results = [future.result() for future in concurrent.futures.as_completed(futures)]
 
     directory = 'mock_fast_dataset'
-    scrape_tiki_products('https://tiki.vn/', directory)
+    scrape_tiki_products('https://tiki.vn/')
