@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from model.auto_suggestions_results import Result
+from selenium.common.exceptions import NoSuchElementException
 
 
 def scrape_lazada_multiple(lazada_url, directory):
@@ -39,11 +40,15 @@ def scrape_lazada_multiple(lazada_url, directory):
         search_bar.send_keys(Keys.DELETE)
         search_bar.send_keys(search_term)
         time.sleep(1)
-        suggestion_list = driver.find_element(By.CLASS_NAME, 'suggest-list--3Tm8')
-        suggestion_keywords = [item.text for item in
-                               suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
-        result = Result(search_term, suggestion_keywords)
-        results.append(result)
+        try:
+            suggestion_list = driver.find_element(By.CLASS_NAME, 'suggest-list--3Tm8')
+
+            suggestion_keywords = [item.text for item in
+                                   suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
+            result = Result(search_term, suggestion_keywords)
+            results.append(result)
+        except NoSuchElementException:
+            pass
 
     def serialize_result(obj):
         if isinstance(obj, Result):
