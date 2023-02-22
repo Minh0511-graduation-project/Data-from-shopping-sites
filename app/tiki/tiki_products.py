@@ -12,8 +12,11 @@ from model.product_details import ProductDetails, serialize_result
 
 
 def scrape_tiki_products(tiki_url):
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
+    options.add_argument('--disable-gpu')
     # Initialize the webdriver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
     driver.maximize_window()
     # Navigate to the Tiki Vietnam website
     driver.get(tiki_url)
