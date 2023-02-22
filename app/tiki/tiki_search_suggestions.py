@@ -8,8 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
-from model.auto_suggestions_results import Result
-from model.product_details import serialize_result
+from model.auto_suggestions_results import Result, serialize_result
 
 
 def scrape_tiki_search_suggestions(tiki_url, directory):

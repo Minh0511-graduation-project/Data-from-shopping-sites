@@ -19,7 +19,7 @@ if __name__ == '__main__':
     #     # Wait for all futures to complete
     #     results = [future.result() for future in concurrent.futures.as_completed(futures)]
 
-    directory = 'mock_fast_dataset'
-    scrape_tiki_search_suggestions('https://tiki.vn/', directory)
-    scrape_tiki_products('https://tiki.vn/')
+    # directory = 'mock_fast_dataset'
+    # scrape_tiki_search_suggestions('https://tiki.vn/', directory)
+    # scrape_tiki_products('https://tiki.vn/')
     tiki_to_mongo(db_url)
