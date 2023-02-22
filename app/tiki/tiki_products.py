@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
-from model.product_details import ProductDetails
+from model.product_details import ProductDetails, serialize_result
 from selenium.webdriver.common.keys import Keys
 
 
@@ -24,7 +24,7 @@ def scrape_tiki_products(tiki_url):
         EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
     )
 
-    with open('app/tiki/tiki.json') as f:
+    with open('app/tiki/tiki_search_suggestions.json') as f:
         data = json.load(f)
 
     # get all the suggestions and store it in an array
@@ -41,10 +41,10 @@ def scrape_tiki_products(tiki_url):
         search_bar.send_keys(Keys.DELETE)
         search_bar.send_keys(suggestion)
         search_bar.send_keys(Keys.ENTER)
-        time.sleep(3)
+        time.sleep(5)
         best_seller = driver.find_element(By.XPATH, '//a[contains(text(),"Bán chạy")]')
         best_seller.click()
-        time.sleep(3)
+        time.sleep(5)
 
         product_list = driver.find_element(By.XPATH, '//div[@class="ProductList__Wrapper-sc-1dl80l2-0 iPafhE"]')
         # map the product name with the product price, as a dictionary
@@ -70,8 +70,3 @@ def scrape_tiki_products(tiki_url):
     # Close the webdriver
     driver.quit()
 
-
-def serialize_result(obj):
-    if isinstance(obj, ProductDetails):
-        return {"name": obj.name, "price": obj.price}
-    raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")

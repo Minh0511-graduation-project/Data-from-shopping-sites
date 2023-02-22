@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 
-def scrape_shopee(shopee_url):
+def scrape_shopee_single(shopee_url):
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -35,7 +35,7 @@ def scrape_shopee(shopee_url):
     suggestion_keywords = [item.text for item in
                            suggestion_list.find_elements(By.CLASS_NAME, 'shopee-searchbar-hints__entry__product-name')]
 
-    with open("app/shopee/shopee.json", "w") as file:
+    with open("app/shopee/shopee_search_suggestions.json", "w") as file:
         file.write(
             json.dumps({"search_term": search_term, "suggestions": suggestion_keywords}, indent=4, ensure_ascii=False))
 

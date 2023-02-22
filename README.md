@@ -24,13 +24,13 @@ __NOTE: These steps below are instructions for Linux environment
   
 - Run the .py files
   ```bash
-  python3 app/tiki/tiki.py
+  python3 app/tiki/tiki_single.py
   ```
   ```bash
-  python3 app/shopee/shopee.py
+  python3 app/shopee/shopee_single.py
   ```
   ```bash
-  python3 app/lazada/lazada.py
+  python3 app/lazada/lazada_single.py
   ```
   
 - Or just run the main file

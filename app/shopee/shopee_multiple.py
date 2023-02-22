@@ -8,10 +8,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
-from model.auto_suggestions_results import Result
+from model.auto_suggestions_results import Result, serialize_result
 
 
-def scrape_shopee_multiple(shopee_url, directory):
+def scrape_shopee_search_suggestions(shopee_url, directory):
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -50,12 +50,7 @@ def scrape_shopee_multiple(shopee_url, directory):
         result = Result(search_term, suggestion_keywords)
         results.append(result)
 
-    def serialize_result(obj):
-        if isinstance(obj, Result):
-            return {"keyword": obj.keyword, "suggestions": obj.suggestions}
-        raise TypeError(f"Object of type '{obj.__class__.__name__}' is not JSON serializable")
-
-    with open("app/shopee/shopee.json", "w") as file:
+    with open("app/shopee/shopee_search_suggestions.json", "w") as file:
         json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
 
     # Close the webdriver
