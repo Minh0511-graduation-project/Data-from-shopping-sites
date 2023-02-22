@@ -12,11 +12,8 @@ from model.auto_suggestions_results import Result, serialize_result
 
 
 def scrape_tiki_search_suggestions(tiki_url, directory):
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-    options.add_argument('--disable-gpu')
     # Initialize the webdriver
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
     # Navigate to the Tiki Vietnam website
     driver.get(tiki_url)
