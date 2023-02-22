@@ -3,7 +3,7 @@ import os
 
 from app.lazada.lazada_search_suggestions import scrape_lazada_search_suggestions
 from app.tiki.tiki_search_suggestions import scrape_tiki_search_suggestions
-from app.shopee.shopee_multiple import scrape_shopee_search_suggestions
+from app.shopee.shopee_search_suggestions import scrape_shopee_search_suggestions
 from app.tiki.tiki_products import scrape_tiki_products
 from app.tiki.tiki_to_mongodb import tiki_to_mongo
 
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     #     # Wait for all futures to complete
     #     results = [future.result() for future in concurrent.futures.as_completed(futures)]
 
-    # directory = 'mock_fast_dataset'
-    # scrape_tiki_search_suggestions('https://tiki.vn/', directory)
-    # scrape_tiki_products('https://tiki.vn/')
+    directory = 'mock_fast_dataset'
+    scrape_tiki_search_suggestions('https://tiki.vn/', directory)
+    scrape_tiki_products('https://tiki.vn/')
     tiki_to_mongo(db_url)
