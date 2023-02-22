@@ -1,15 +1,14 @@
 import json
 import time
-import os
-import numpy as np
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
-from model.product_details import ProductDetails, serialize_result
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from webdriver_manager.chrome import ChromeDriverManager
+
+from model.product_details import ProductDetails, serialize_result
 
 
 def scrape_tiki_products(tiki_url):
