@@ -11,24 +11,19 @@ from webdriver_manager.chrome import ChromeDriverManager
 from model.product_details import ProductDetails, serialize_result
 
 
-def scrape_shopee_products(shopee_url):
+def scrape_lazada_products(lazada_url):
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
-    # Navigate to the shopee Vietnam website
-    driver.get(shopee_url)
-
-    # close popup
-    close_btn = driver.execute_script(
-        'return document.querySelector("#main shopee-banner-popup-stateful").shadowRoot.querySelector("div.home-popup__close-area div.shopee-popup__close-btn")')
-    close_btn.click()
+    # Navigate to the lazada Vietnam website
+    driver.get(lazada_url)
 
     # Wait for the search bar to be present and interactable
-    search_bar = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.CLASS_NAME, 'shopee-searchbar-input__input'))
+    search_bar = WebDriverWait(driver, 1).until(
+        EC.element_to_be_clickable((By.XPATH, '//input[@id="q"]'))
     )
 
-    with open('app/shopee/shopee_search_suggestions.json') as f:
+    with open('app/lazada/lazada_search_suggestions.json') as f:
         data = json.load(f)
 
     # get all the suggestions and store it in an array
@@ -46,30 +41,27 @@ def scrape_shopee_products(shopee_url):
         search_bar.send_keys(suggestion)
         search_bar.send_keys(Keys.ENTER)
         time.sleep(5)
-        best_seller = driver.find_element(By.XPATH, '//div[@class="shopee-sort-bar"]//div[3]')
-        best_seller.click()
-        time.sleep(5)
 
-        product_list = driver.find_element(By.XPATH, '//div[@class="row shopee-search-item-result__items"]')
+        product_list = driver.find_element(By.XPATH, '//div[@class="_17mcb"]')
         # map the product name with the product price, as a dictionary
         product_name_price = {}
         i = 0
-        for product in product_list.find_elements(By.CLASS_NAME, 'KMyn8J'):
+        for product in product_list.find_elements(By.CLASS_NAME, 'buTCk'):
             if i == 5:
                 break
-            product_name = product.find_element(By.CLASS_NAME, 'Cve6sh').text
-            product_price = product.find_element(By.CLASS_NAME, 'hpDKMN').text
+            product_name = product.find_element(By.CLASS_NAME, 'RfADt').text
+            product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
             product_name_price[product_name] = product_price
             result = ProductDetails(product_name, product_name_price[product_name])
             results.append(result)
             i += 1
 
         # re-find the search bar
-        search_bar = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, 'shopee-searchbar-input__input'))
+        search_bar = WebDriverWait(driver, 1).until(
+            EC.element_to_be_clickable((By.XPATH, '//input[@id="q"]'))
         )
 
-    with open("app/shopee/shopee_products.json", "w") as file:
+    with open("app/lazada/lazada_products.json", "w") as file:
         json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
     # Close the webdriver
     driver.quit()
