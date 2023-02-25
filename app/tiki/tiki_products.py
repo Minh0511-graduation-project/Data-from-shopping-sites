@@ -2,6 +2,7 @@ import json
 import time
 
 from selenium import webdriver
+from selenium.webdriver.common import by
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
@@ -48,14 +49,18 @@ def scrape_tiki_products(tiki_url):
         product_list = driver.find_element(By.XPATH, '//div[@class="ProductList__Wrapper-sc-1dl80l2-0 iPafhE"]')
         # map the product name with the product price, as a dictionary
         product_name_price = {}
+        product_name_image = {}
         i = 0
-        for product in product_list.find_elements(By.CLASS_NAME, 'info'):
+        for product in product_list.find_elements(By.CLASS_NAME, 'product-item'):
             if i == 5:
                 break
             product_name = product.find_element(By.CLASS_NAME, 'name').text
             product_price = product.find_element(By.CLASS_NAME, 'price-discount__price').text
+            product_image = product.find_element(By.CSS_SELECTOR,
+                                                 "img.WebpImg__StyledImg-sc-h3ozu8-0").get_attribute('src')
             product_name_price[product_name] = product_price
-            result = ProductDetails(product_name, product_name_price[product_name])
+            product_name_image[product_name] = product_image
+            result = ProductDetails(product_name, product_name_price[product_name], product_name_image[product_name])
             results.append(result)
             i += 1
 
@@ -68,4 +73,3 @@ def scrape_tiki_products(tiki_url):
         json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
     # Close the webdriver
     driver.quit()
-

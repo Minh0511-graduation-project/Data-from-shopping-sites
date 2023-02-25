@@ -47,9 +47,11 @@ def push_to_db(db_url):
 
 
 if __name__ == '__main__':
-    while True:
-        db_url = os.environ.get('MONGO_URL')
-        directory = 'vi-wordnet'
-        scrape_search_suggestions(directory)
-        scrape_products()
-        push_to_db(db_url)
+    # while True:
+    #     db_url = os.environ.get('MONGO_URL')
+    #     directory = 'vi-wordnet'
+    #     scrape_search_suggestions(directory)
+    #     scrape_products()
+    #     push_to_db(db_url)
+    scrape_tiki_products('https://tiki.vn/')
+    tiki_to_mongo(os.environ.get('MONGO_URL'))
