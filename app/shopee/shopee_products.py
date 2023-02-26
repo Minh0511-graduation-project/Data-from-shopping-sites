@@ -53,14 +53,18 @@ def scrape_shopee_products(shopee_url):
         product_list = driver.find_element(By.XPATH, '//div[@class="row shopee-search-item-result__items"]')
         # map the product name with the product price, as a dictionary
         product_name_price = {}
+        product_name_image = {}
         i = 0
-        for product in product_list.find_elements(By.CLASS_NAME, 'KMyn8J'):
+        for product in product_list.find_elements(By.CLASS_NAME, 'tWpFe2'):
             if i == 5:
                 break
             product_name = product.find_element(By.CLASS_NAME, 'Cve6sh').text
             product_price = product.find_element(By.CLASS_NAME, 'hpDKMN').text
+            product_image = product.find_element(By.CSS_SELECTOR,
+                                                 "img._7DTxhh").get_attribute('src')
             product_name_price[product_name] = product_price
-            result = ProductDetails(product_name, product_name_price[product_name])
+            product_name_image[product_name] = product_image
+            result = ProductDetails(product_name, product_name_price[product_name], product_name_image[product_name])
             results.append(result)
             i += 1
 
