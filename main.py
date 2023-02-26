@@ -53,5 +53,5 @@ if __name__ == '__main__':
     #     scrape_search_suggestions(directory)
     #     scrape_products()
     #     push_to_db(db_url)
-    scrape_shopee_products("https://shopee.vn/")
-    shopee_to_mongo(os.environ.get('MONGO_URL'))
+    scrape_lazada_products("https://www.lazada.vn/")
+    lazada_to_mongo(os.environ.get('MONGO_URL'))
