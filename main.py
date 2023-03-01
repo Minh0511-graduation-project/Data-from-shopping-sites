@@ -8,12 +8,12 @@ from app.shopee.shopee_search_suggestions import scrape_shopee_search_suggestion
 from app.tiki.tiki_products import scrape_tiki_products
 from app.tiki.tiki_to_mongodb import tiki_to_mongo
 from app.shopee.shopee_products import scrape_shopee_products
-from app.lazada.lazad_products import scrape_lazada_products
+from app.lazada.lazada_products import scrape_lazada_products
 from app.lazada.lazada_to_mongodb import lazada_to_mongo
 
 
 def scrape_search_suggestions(directory):
-    args_search_suggestions = [(scrape_lazada_search_suggestions('https://www.lazada.vn/', directory)),
+    args_search_suggestions = [(scrape_lazada_search_suggestions, ('https://www.lazada.vn/', directory)),
                                (scrape_shopee_search_suggestions, ('https://shopee.vn/', directory)),
                                (scrape_tiki_search_suggestions, ('https://tiki.vn/', directory))]
     with concurrent.futures.ProcessPoolExecutor() as executor:
@@ -49,7 +49,7 @@ def push_to_db(db_url):
 if __name__ == '__main__':
     while True:
         db_url = os.environ.get('MONGO_URL')
-        directory = 'vi-wordnet'
-        scrape_search_suggestions(directory)
-        scrape_products()
+        # directory = 'mock_fast_dataset'
+        # scrape_search_suggestions(directory)
+        # scrape_products()
         push_to_db(db_url)
