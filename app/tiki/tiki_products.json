@@ -1,227 +1,62 @@
 [
     {
+        "search_term": "airpod",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
         "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
         "price": "2.940.000 ₫"
     },
     {
+        "search_term": "airpod",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
         "name": "Apple AirPods Pro 2 - MQD83",
         "price": "5.990.000 ₫"
     },
     {
+        "search_term": "airpod",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
         "name": "Apple AirPods Pro - MLWK3",
         "price": "4.750.000 ₫"
     },
     {
+        "search_term": "airpod",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/79/3a/99fb3f8dd32c331e6535e5aae5d51f98.jpg",
         "name": "Apple AirPods 3 2022 sạc Lightning - MPNY3",
         "price": "4.290.000 ₫"
     },
     {
+        "search_term": "airpod",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/bf/d6/42/2de838dd07b08faaa81a8124d49fbaff.jpg",
         "name": "Bao Case Silicon Cho Tai Nghe Apple AirPods 1 / AirPods 2 - Hình Steward Xanh Tai To",
         "price": "69.000 ₫"
     },
     {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/ba/2b/99/b1b5e18efd0b6892dc3733ce4015d11d.jpg",
-        "name": "Đàn Ông Sao Hỏa Đàn Bà Sao Kim",
-        "price": "131.600 ₫"
-    },
-    {
+        "search_term": "atomic habits",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/c2/77/6d/b22a78f910ff68e5bcb7f42a2fce9ba2.png",
         "name": "Thay Đổi Tí Hon Hiệu Quả Bất Ngờ - Atomic Habits",
         "price": "160.650 ₫"
     },
     {
+        "search_term": "atomic habits",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/32/b3/085ee546b06b792e847edd88b02b8f15.jpg",
         "name": "Sách Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn/ Tặng kèm Bookmark)",
         "price": "186.650 ₫"
     },
     {
+        "search_term": "atomic habits",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/81/1a/78/169836cda4fd55d21c74ffc92a58ceee.jpg",
         "name": "Combo 2 cuốn: Atomic habits - Thay đổi tí hon Hiệu quả bất ngờ + Thay Đổi Câu Hỏi Thay Đổi Cuộc Đời ( Bộ Sách Phát Triển Bản Thân Hay Nhất/ Tặng Kèm Bookmark)",
         "price": "270.500 ₫"
     },
     {
+        "search_term": "atomic habits",
         "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/53/b0/6e/103253b00bc34abbc2226237f06f66e2.jpg",
         "name": "Thay Đổi Tí Hon Hiệu Quả Bất Ngờ - Atomic Habits",
         "price": "178.600 ₫"
     },
     {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/64/fa/fe/7eddac0c3cfeec855db4e1cf43b44a54.png",
-        "name": "Apple Watch SE 2022 GPS Sport Band",
-        "price": "6.890.400 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/b2/0d/a8/4bcc99a1b3ada8856b2aa122c03b17bc.jpg",
-        "name": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su) - Silver",
-        "price": "4.690.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/8e/ef/61/36369b95adb16bda0ffbf09a3d4b3091.png",
-        "name": "Apple Watch Series 8 GPS Sport Band",
-        "price": "9.791.100 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/e3/db/55/51ce2a1df989d42287a2b529875402b3.png",
-        "name": "Apple Watch Ultra GPS + Cellular 49mm Titanium Case",
-        "price": "19.590.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/83/7b/e3/76c7446282ade0045d69bae32f89733d.jpg",
-        "name": "Apple Watch Series 7 GPS Sport Band (Viền Nhôm, Dây Cao Su",
-        "price": "7.990.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/70/f5/23/79600aedae9ce3b2eda91d793237792c.jpg",
-        "name": "Áo khoác dù 2 mặt chống Nước LADOS - 2027 , Form đẹp, chống nắng, chống nước tốt",
-        "price": "206.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/75/25/14/e676b40df40686df8b6e83ce8834ecfe.jpg",
-        "name": "Áo khoác gió tráng bạc chống nước cao cấp ATUNER AT022, kiểu dáng unisex thời trang, phù hợp cho cả nam và nữ , vải 2 lớp chống nước, chống gió, nhiều màu - Hàng Chính Hãng",
-        "price": "175.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/5a/40/35/8b67230b81e6905459c77433bbd0df40.jpg",
-        "name": "Áo Khoác Gió Thể Thao Nam 5S (5 Màu), Chất Liệu Cao Cấp, Trượt Nước, Cản Gió, Thiết Kế Khỏe Khoắn (AKG22009",
-        "price": "359.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/ae/14/e6/bb19ea547b6473f2e091e523c72edd84.jpeg",
-        "name": "Áo Khoác Dù Nam Dokafashion Cao Cấp 2 Lớp Vải Dù Ấm Áp Cản Gió Đi Nắng, Chống Nước EZDS23",
-        "price": "145.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/62/25/d8/d74106aaf03214a79229a80f86d2eeec.jpg",
-        "name": "Áo khoác nam chống nắng gió thu đông Doka (DBLS102) chất liệu dù giữ ấm cao cấp màu đen , màu xanh đen , màu xanh rêu",
-        "price": "149.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
-        "name": "Apple AirPods Pro 2 - MQD83",
-        "price": "5.990.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
-        "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
-        "price": "2.940.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
-        "name": "Apple AirPods Pro - MLWK3",
-        "price": "4.750.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/15/89/58/2e3d45893cb9eb6ab1f9afbc7f591d6c.png",
-        "name": "Tai Nghe Truewireless Chống Ồn JBL Live Pro 2 TWS - Hàng Chính Hãng",
-        "price": "3.148.200 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/c1/92/60/cc8ab3d2f8b9d1725fefb4628fc13554.jpg",
-        "name": "Tai Nghe True Wireless OPPO Enco Air 2 Pro | Hiệu Ứng Âm Thanh Enco Live | Drivers Dynamic 12.4mm | Hàng Chính Hãng",
-        "price": "1.690.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/09/68/2c/0d49357a76cf9281b28b5e77a16c71ab.jpg",
-        "name": "Áo Thun Nam Khatoco A2MN378R2-VNMK004-2011-N",
-        "price": "99.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/54/0a/48/a12dae1024f5af51fd3b267de4b35c24.jpg",
-        "name": "[Mua 2 giảm 50%] Áo Thun Nam cổ tròn TSIMPLE áo phông trơn basic tay ngắn vải cotton co giãn, dày dặn , form chuẩn nhiều màu",
-        "price": "69.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/15/41/bb/57a30a38dd9fbd7c0c2dd00728844613.jpg",
-        "name": "Combo 2 áo ba lỗ nam, áo 3 lỗ nam, sợi cotton mềm mịn, thấm hút mồ hôi tốt, thoáng mát, mặc thoải mái JAMANO",
-        "price": "141.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/29/2c/24/5facf5f44cca27293ad8f13177785892.jpg",
-        "name": "Áo Polo Nam cổ bẻ TSIMPLE thun có cổ tay lỡ vải cá sấu cotton phong cách trẻ trung, chuẩn form, nhiều màu",
-        "price": "109.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/09/68/2c/801c688dfa8393c4644ea7e4229a357e.jpg",
-        "name": "Áo Thun Nam Khatoco A2MN378R2-VNMK004-2011-N",
-        "price": "99.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/bf/b7/03/0dadad23c1aad3292fe6d9d969498ae1.jpg",
-        "name": "Áo nỉ tay dài thời trang nữ New Balance Essentials Athletic Club Crew - AWT13510OPP (form châu á",
-        "price": "548.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/53/40/fd/58b931d4e4cf820995ac0c5c3ae7a017.jpg",
-        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Chất Thun Lạnh Chống Tia UV 2NF02",
-        "price": "372.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/5f/b9/68/be207bf38dd808ccd066d4c2532586a9.jpg",
-        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Chất Thun Lạnh Nhật Cao Cấp Chống Tia UV 2NF2",
-        "price": "379.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/d8/d8/51/ea3069aba2b78de25e29afc66f9ae615.jpg",
-        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Dáng Dài Chất Thun Lạnh Chống Tia UV Viền Thể Thao 2BC",
-        "price": "489.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/13/e6/88/a8cd0e5dc0796795d652961c20a1c859.jpg",
-        "name": "Áo khoác nữ cao cấp 100% Cotton 4 chiều thoáng mát, chống nắng tốt, thấm hút mồ hôi, chống tia UV bảo vệ cơ thể",
-        "price": "225.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/c8/35/72/6aa984bc03b3c346ba5bb1f077fe97b7.jpg",
-        "name": "Ấm Siêu Tốc Nagakawa NAG0308 (1.8 Lít) - Hàng Chính Hãng",
-        "price": "137.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/1c/c2/02/0f8d61c1467ef5c3588489fbc69ad313.jpg",
-        "name": "Ấm Siêu Tốc Inox SUNHOUSE HAPPY TIME HTD1055 (1.5L) - Hàng Chính Hãng",
-        "price": "120.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/c8/35/72/6aa984bc03b3c346ba5bb1f077fe97b7.jpg",
-        "name": "Ấm Siêu Tốc Nagakawa NAG0308 (1.8 Lít) - Hàng Chính Hãng",
-        "price": "137.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/03/19/dd7061d0638ce9a9e1e42a36e6ac6f48.jpg",
-        "name": "Ấm Đun Nước Siêu Tốc 1.8L Tiện Dụng - Bình INOX",
-        "price": "130.200 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/c3/f9/3e/1787f2db314dace97cc1d8e35ce38574.jpg",
-        "name": "Ấm siêu tốc thủy tinh đa năng Nagakawa NAG0316 - Hàng chính hãng",
-        "price": "719.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/e1/cf/5d/9254fea013f1bea675837040726059de.jpg",
-        "name": "Điện thoại Samsung Galaxy A13 (4GB/128GB) - Hàng chính hãng",
-        "price": "3.990.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/94/0d/ea/3aaaee95221be40d932ed082043550bb.jpg",
-        "name": "Điện thoại Samsung Galaxy A13 (4GB/128GB) - Hàng chính hãng",
-        "price": "3.990.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/4f/21/2e/5a829c8df918b17fce11597734fcd214.jpg",
-        "name": "Điện Thoại Samsung A13 4GB/128GB - Hàng Chính Hãng",
-        "price": "3.414.000 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/55/58/93/464220f985b6e63acbb8d5873b1df44d.jpg",
-        "name": "Điện thoại di động Samsung Galaxy A13 4GB/64GB - Hàng chính hãng",
-        "price": "3.126.200 ₫"
-    },
-    {
-        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/be/c9/d5/96e171045152744caed00a27e0b96298.jpg",
-        "name": "Điện thoại Samsung Galaxy A13 (4GB/128GB) - Hàng chính hãng",
-        "price": "3.369.000 ₫"
+        "search_term": "atomic habits",
+        "image_url": "https://salt.tikicdn.com/cache/280x280/ts/product/cf/e0/1b/328f0743878904f4f0df635e412e86e1.jpg",
+        "name": "Combo 2 cuốn: Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn + Thần Số Học: Thấu Hiểu Nhân Tâm/ Tặng kèm Bookmark)",
+        "price": "290.500 ₫"
     }
 ]

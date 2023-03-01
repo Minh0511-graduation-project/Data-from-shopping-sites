@@ -48,8 +48,9 @@ def scrape_tiki_products(tiki_url):
 
         product_list = driver.find_element(By.XPATH, '//div[@class="ProductList__Wrapper-sc-1dl80l2-0 iPafhE"]')
         # map the product name with the product price, as a dictionary
-        product_name_price = {}
-        product_name_image = {}
+        search_term_product_name = {}
+        search_term_product_name_price = {}
+        search_term_product_name_image = {}
         i = 0
         for product in product_list.find_elements(By.CLASS_NAME, 'product-item'):
             if i == 5:
@@ -58,9 +59,12 @@ def scrape_tiki_products(tiki_url):
             product_price = product.find_element(By.CLASS_NAME, 'price-discount__price').text
             product_image = product.find_element(By.CSS_SELECTOR,
                                                  "img.WebpImg__StyledImg-sc-h3ozu8-0").get_attribute('src')
-            product_name_price[product_name] = product_price
-            product_name_image[product_name] = product_image
-            result = ProductDetails(product_name, product_name_price[product_name], product_name_image[product_name])
+            search_term_product_name[suggestion] = product_name
+            search_term_product_name_price[product_name] = product_price
+            search_term_product_name_image[product_name] = product_image
+            result = ProductDetails(suggestion, search_term_product_name[suggestion],
+                                    search_term_product_name_price[product_name],
+                                    search_term_product_name_image[product_name])
             results.append(result)
             i += 1
 

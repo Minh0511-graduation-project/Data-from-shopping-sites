@@ -52,8 +52,9 @@ def scrape_shopee_products(shopee_url):
 
         product_list = driver.find_element(By.XPATH, '//div[@class="row shopee-search-item-result__items"]')
         # map the product name with the product price, as a dictionary
-        product_name_price = {}
-        product_name_image = {}
+        search_term_product_name = {}
+        search_term_product_name_price = {}
+        search_term_product_name_image = {}
         i = 0
         for product in product_list.find_elements(By.CLASS_NAME, 'tWpFe2'):
             if i == 5:
@@ -62,9 +63,12 @@ def scrape_shopee_products(shopee_url):
             product_price = product.find_element(By.CLASS_NAME, 'hpDKMN').text
             product_image = product.find_element(By.CSS_SELECTOR,
                                                  "img._7DTxhh").get_attribute('src')
-            product_name_price[product_name] = product_price
-            product_name_image[product_name] = product_image
-            result = ProductDetails(product_name, product_name_price[product_name], product_name_image[product_name])
+            search_term_product_name[suggestion] = product_name
+            search_term_product_name_price[product_name] = product_price
+            search_term_product_name_image[product_name] = product_image
+            result = ProductDetails(suggestion, search_term_product_name[suggestion],
+                                    search_term_product_name_price[product_name],
+                                    search_term_product_name_image[product_name])
             results.append(result)
             i += 1
 
@@ -77,4 +81,3 @@ def scrape_shopee_products(shopee_url):
         json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
     # Close the webdriver
     driver.quit()
-
