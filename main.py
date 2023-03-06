@@ -50,6 +50,7 @@ if __name__ == '__main__':
     while True:
         db_url = os.environ.get('MONGO_URL')
         directory = 'vi-wordnet'
-        scrape_search_suggestions(directory)
+        mockDirectory = 'mock_fast_dataset'
+        scrape_search_suggestions(mockDirectory)
         scrape_products()
         push_to_db(db_url)

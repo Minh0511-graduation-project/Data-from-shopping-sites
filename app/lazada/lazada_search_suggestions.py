@@ -35,6 +35,7 @@ def scrape_lazada_search_suggestions(lazada_url, directory):
                 for line in lines:
                     search_terms.append(line.split(',')[0])
 
+    site = "lazada"
     for search_term in search_terms:
         search_bar.send_keys(Keys.CONTROL + "a")
         search_bar.send_keys(Keys.DELETE)
@@ -45,7 +46,7 @@ def scrape_lazada_search_suggestions(lazada_url, directory):
 
             suggestion_keywords = [item.text for item in
                                    suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
-            result = Result(search_term, suggestion_keywords)
+            result = Result(site, search_term, suggestion_keywords)
             results.append(result)
         except NoSuchElementException:
             pass

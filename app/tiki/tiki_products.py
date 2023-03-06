@@ -36,6 +36,7 @@ def scrape_tiki_products(tiki_url):
     search_suggestions = [item for sublist in search_suggestions for item in sublist]
     results = []
 
+    site = 'tiki'
     for suggestion in search_suggestions:
         search_bar.send_keys(Keys.CONTROL + "a")
         search_bar.send_keys(Keys.DELETE)
@@ -62,7 +63,7 @@ def scrape_tiki_products(tiki_url):
             search_term_product_name[suggestion] = product_name
             search_term_product_name_price[product_name] = product_price
             search_term_product_name_image[product_name] = product_image
-            result = ProductDetails(suggestion, search_term_product_name[suggestion],
+            result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                     search_term_product_name_price[product_name],
                                     search_term_product_name_image[product_name])
             results.append(result)

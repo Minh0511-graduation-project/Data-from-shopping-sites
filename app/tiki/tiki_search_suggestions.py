@@ -33,7 +33,7 @@ def scrape_tiki_search_suggestions(tiki_url, directory):
                 lines = file.read().splitlines()
                 for line in lines:
                     search_terms.append(line.split(',')[0])
-
+    site = "tiki"
     for search_term in search_terms:
         search_bar.send_keys(Keys.CONTROL + "a")
         search_bar.send_keys(Keys.DELETE)
@@ -42,7 +42,7 @@ def scrape_tiki_search_suggestions(tiki_url, directory):
         suggestion_list = driver.find_element(By.XPATH,
                                               '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
         suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
-        result = Result(search_term, suggestion_keywords)
+        result = Result(site, search_term, suggestion_keywords)
         results.append(result)
 
     with open("app/tiki/tiki_search_suggestions.json", "w") as file:

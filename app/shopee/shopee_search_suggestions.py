@@ -38,6 +38,7 @@ def scrape_shopee_search_suggestions(shopee_url, directory):
                 for line in lines:
                     search_terms.append(line.split(',')[0])
 
+    site = "shopee"
     for search_term in search_terms:
         search_bar.send_keys(Keys.CONTROL + "a")
         search_bar.send_keys(Keys.DELETE)
@@ -47,7 +48,7 @@ def scrape_shopee_search_suggestions(shopee_url, directory):
                                               '//div[@id="shopee-searchbar-listbox"]')
         suggestion_keywords = [item.text for item in suggestion_list.find_elements(
             By.CLASS_NAME, 'shopee-searchbar-hints__entry__product-name')]
-        result = Result(search_term, suggestion_keywords)
+        result = Result(site, search_term, suggestion_keywords)
         results.append(result)
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
