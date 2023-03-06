@@ -30,7 +30,7 @@ def scrape_lazada_single(lazada_url):
 
     suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
 
-    with open("app/lazada/lazada_search_suggestions.json", "w") as file:
+    with open("app/lazada/lazada_single.json", "w") as file:
         file.write(
             json.dumps({"search_term": search_term, "suggestions": suggestion_keywords}, indent=4, ensure_ascii=False))
 

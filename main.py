@@ -10,6 +10,7 @@ from app.tiki.tiki_to_mongodb import tiki_to_mongo
 from app.shopee.shopee_products import scrape_shopee_products
 from app.lazada.lazada_products import scrape_lazada_products
 from app.lazada.lazada_to_mongodb import lazada_to_mongo
+from app.lazada.lazada_single import scrape_lazada_single
 
 
 def scrape_search_suggestions(directory):
@@ -47,10 +48,11 @@ def push_to_db(db_url):
 
 
 if __name__ == '__main__':
-    while True:
-        db_url = os.environ.get('MONGO_URL')
-        directory = 'vi-wordnet'
-        mockDirectory = 'mock_fast_dataset'
-        scrape_search_suggestions(mockDirectory)
-        scrape_products()
-        push_to_db(db_url)
+    # while True:
+    #     db_url = os.environ.get('MONGO_URL')
+    #     directory = 'vi-wordnet'
+    #     mockDirectory = 'mock_fast_dataset'
+    #     scrape_search_suggestions(mockDirectory)
+    #     scrape_products()
+    #     push_to_db(db_url)
+    scrape_lazada_single('https://www.lazada.vn/')
