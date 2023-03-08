@@ -33,5 +33,40 @@
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/83/7b/e3/76c7446282ade0045d69bae32f89733d.jpg",
         "name": "Apple Watch Series 7 GPS Sport Band (Viền Nhôm, Dây Cao Su",
         "price": "7.990.000 ₫"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "apple iphone",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0c/dd/e7/e6431984901119a1f8166cc4e579da93.png",
+        "name": "Apple iPhone 14 Pro Max",
+        "price": "27.990.000 ₫"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "apple iphone",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/aa/24/e0/d73c22287081d807af0de9cb48a79f3c.jpg",
+        "name": "Apple iPhone 11",
+        "price": "12.290.000 ₫"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "apple iphone",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/dd/2b/a6/fefd132c5ba9b5629c0119f57549e5d4.png",
+        "name": "Apple iPhone 13",
+        "price": "17.850.000 ₫"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "apple iphone",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ff/56/67/e3b9ff9622ed61e1ee11bf2297bcc2d8.png",
+        "name": "Apple iPhone 14 Pro",
+        "price": "27.990.000 ₫"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "apple iphone",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f0/90/4c/5e740aa7f83eb0879f8cb5d3745f6be1.png",
+        "name": "Apple iPhone 14 Plus",
+        "price": "22.990.000 ₫"
     }
 ]
