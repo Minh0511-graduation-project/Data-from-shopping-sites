@@ -48,11 +48,9 @@ def push_to_db(db_url):
 
 
 if __name__ == '__main__':
-    # while True:
-    #     db_url = os.environ.get('MONGO_URL')
-    #     directory = 'vi-wordnet'
-    #     mockDirectory = 'mock_fast_dataset'
-    #     scrape_search_suggestions(mockDirectory)
-    #     scrape_products()
-    #     push_to_db(db_url)
-    scrape_lazada_single('https://www.lazada.vn/')
+    while True:
+        db_url = os.environ.get('MONGO_URL')
+        directory = 'vi-wordnet'
+        scrape_search_suggestions(directory)
+        scrape_products()
+        push_to_db(db_url)
