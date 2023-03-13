@@ -1,6 +1,7 @@
 import json
 import time
 
+import pymongo
 from selenium import webdriver
 from selenium.webdriver.common import by
 from selenium.webdriver.common.by import By
@@ -12,7 +13,10 @@ from webdriver_manager.chrome import ChromeDriverManager
 from model.product_details import ProductDetails, serialize_result
 
 
-def scrape_tiki_products(tiki_url):
+def scrape_tiki_products(tiki_url, db_url):
+    client = pymongo.MongoClient(db_url)
+    db = client['Shop-search-system']
+    products = db['tiki products']
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -66,6 +70,12 @@ def scrape_tiki_products(tiki_url):
             result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                     search_term_product_name_price[product_name],
                                     search_term_product_name_image[product_name])
+            result_to_db = serialize_result(result)
+            products.update_one(
+                {"name": result_to_db["name"]},
+                {"$set": result_to_db},
+                upsert=True
+            )
             results.append(result)
             i += 1
 

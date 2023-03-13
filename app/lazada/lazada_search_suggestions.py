@@ -2,6 +2,7 @@ import json
 import time
 import os
 
+import pymongo
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,7 +13,10 @@ from model.auto_suggestions_results import Result, serialize_result
 from selenium.common.exceptions import NoSuchElementException
 
 
-def scrape_lazada_search_suggestions(lazada_url, directory):
+def scrape_lazada_search_suggestions(lazada_url, directory, db_url):
+    client = pymongo.MongoClient(db_url)
+    db = client['Shop-search-system']
+    search_suggestions = db['lazada search suggestions']
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -47,6 +51,12 @@ def scrape_lazada_search_suggestions(lazada_url, directory):
             suggestion_keywords = [item.text for item in
                                    suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
             result = Result(site, search_term, suggestion_keywords)
+            result_to_db = serialize_result(result)
+            search_suggestions.update_one(
+                {"keyword": result_to_db["keyword"]},
+                {"$set": result_to_db},
+                upsert=True
+            )
             results.append(result)
         except NoSuchElementException:
             pass

@@ -2,6 +2,7 @@ import json
 import os
 import time
 
+import pymongo
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,7 +12,10 @@ from selenium.webdriver.common.keys import Keys
 from model.auto_suggestions_results import Result, serialize_result
 
 
-def scrape_tiki_search_suggestions(tiki_url, directory):
+def scrape_tiki_search_suggestions(tiki_url, directory, db_url):
+    client = pymongo.MongoClient(db_url)
+    db = client['Shop-search-system']
+    search_suggestions = db['tiki search suggestions']
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -43,6 +47,12 @@ def scrape_tiki_search_suggestions(tiki_url, directory):
                                               '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
         suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
         result = Result(site, search_term, suggestion_keywords)
+        result_to_db = serialize_result(result)
+        search_suggestions.update_one(
+            {"keyword": result_to_db["keyword"]},
+            {"$set": result_to_db},
+            upsert=True
+        )
         results.append(result)
 
     with open("app/tiki/tiki_search_suggestions.json", "w") as file:

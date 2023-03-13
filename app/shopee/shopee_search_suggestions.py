@@ -2,6 +2,7 @@ import json
 import time
 import os
 
+import pymongo
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,7 +12,10 @@ from selenium.webdriver.common.keys import Keys
 from model.auto_suggestions_results import Result, serialize_result
 
 
-def scrape_shopee_search_suggestions(shopee_url, directory):
+def scrape_shopee_search_suggestions(shopee_url, directory, db_url):
+    client = pymongo.MongoClient(db_url)
+    db = client['Shop-search-system']
+    search_suggestions = db['shopee search suggestions']
     # Initialize the webdriver
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
@@ -49,6 +53,12 @@ def scrape_shopee_search_suggestions(shopee_url, directory):
         suggestion_keywords = [item.text for item in suggestion_list.find_elements(
             By.CLASS_NAME, 'shopee-searchbar-hints__entry__product-name')]
         result = Result(site, search_term, suggestion_keywords)
+        result_to_db = serialize_result(result)
+        search_suggestions.update_one(
+            {"keyword": result_to_db["keyword"]},
+            {"$set": result_to_db},
+            upsert=True
+        )
         results.append(result)
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
