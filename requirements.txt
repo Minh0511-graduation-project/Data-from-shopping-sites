@@ -1,4 +1,12 @@
+certifi==2022.12.7
+charset-normalizer==2.0.12
+chromedriver-binary==111.0.5563.64.0
+dnspython==2.2.1
+idna==3.4
+numpy==1.19.5
+pymongo==4.1.1
+python-dotenv==0.20.0
+requests==2.27.1
 selenium==3.141.0
+urllib3==1.26.14
 webdriver-manager==3.7.1
-pymongo
-chromedriver-binary
