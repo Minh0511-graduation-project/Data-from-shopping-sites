@@ -50,7 +50,7 @@ def scrape_tiki(tiki_url, directory, db_url):
         suggestion_list = driver.find_element(By.XPATH,
                                               '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
         suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
-        suggestion_updated_at = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        suggestion_updated_at = time.time()
         suggestion_result = Result(site, search_term, suggestion_keywords, suggestion_updated_at)
         suggestion_to_db = serialize_suggestion(suggestion_result)
         search_suggestions.update_one(
@@ -99,7 +99,7 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
             search_term_product_name[suggestion] = product_name
             search_term_product_name_price[product_name] = product_price
             search_term_product_name_image[product_name] = product_image
-            search_term_product_name_updated_at[product_name] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            search_term_product_name_updated_at[product_name] = time.time()
             product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                             search_term_product_name_price[product_name],
                                             search_term_product_name_image[product_name],
