@@ -7,7 +7,7 @@ class ProductDetails:
         self.price = price
 
 
-def serialize_result(obj):
+def serialize_product(obj):
     if isinstance(obj, ProductDetails):
         return {"site": obj.site, "searchTerm": obj.searchTerm, "imageUrl": obj.imageUrl, "name": obj.name,
                 "price": obj.price}

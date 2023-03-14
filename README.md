@@ -21,22 +21,10 @@ __NOTE: These steps below are instructions for Linux environment
   ```bash
   pip install -r requirements.txt
   ```
-  
-- Run the .py files
-  ```bash
-  python3 app/tiki/tiki_single.py
-  ```
-  ```bash
-  python3 app/shopee/shopee_single.py
-  ```
-  ```bash
-  python3 app/lazada/lazada_single.py
-  ```
-  
-- Or just run the main file
+
+- run the main file
   ```bash
   python3 main.py
   ```
   
 - The results from search suggestions scraping are stored inside the corresponding json files.
-- All 3 files are independent of each other, so they can be run in parallel
