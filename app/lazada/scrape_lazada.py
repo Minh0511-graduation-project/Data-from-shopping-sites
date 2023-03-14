@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from model.auto_suggestions_results import Result, serialize_suggestion
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import NoSuchElementException
 
 from model.product_details import ProductDetails, serialize_product
 
@@ -21,7 +21,7 @@ def scrape_lazada(lazada_url, directory, db_url):
     search_suggestions = db['lazada search suggestions']
     products = db['lazada products']
     # Initialize the webdriver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome('./chromedriver/chromedriver')
     driver.maximize_window()
     # Navigate to the Lazada Vietnam website
     driver.get(lazada_url)

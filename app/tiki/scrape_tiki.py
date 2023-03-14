@@ -19,7 +19,7 @@ def scrape_tiki(tiki_url, directory, db_url):
     search_suggestions = db['tiki search suggestions']
     products = db['tiki products']
     # Initialize the webdriver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome('./chromedriver/chromedriver')
     driver.maximize_window()
     # Navigate to the Tiki Vietnam website
     driver.get(tiki_url)

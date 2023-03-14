@@ -1,3 +1,4 @@
 selenium==3.141.0
 webdriver-manager==3.7.1
 pymongo
+chromedriver-binary

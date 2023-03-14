@@ -19,7 +19,7 @@ def scrape_shopee(shopee_url, directory, db_url):
     search_suggestions = db['shopee search suggestions']
     products = db['shopee products']
     # Initialize the webdriver
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome('./chromedriver/chromedriver')
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
