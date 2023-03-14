@@ -27,7 +27,7 @@ def scrape_tiki_search_suggestions(tiki_url, directory, db_url):
         EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
     )
 
-    results = []
+    suggestion_results = []
 
     search_terms = []
 
@@ -53,10 +53,10 @@ def scrape_tiki_search_suggestions(tiki_url, directory, db_url):
             {"$set": result_to_db},
             upsert=True
         )
-        results.append(result)
+        suggestion_results.append(result)
 
     with open("app/tiki/tiki_search_suggestions.json", "w") as file:
-        json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
+        json.dump(suggestion_results, file, default=serialize_result, indent=4, ensure_ascii=False)
 
     # Close the webdriver
     driver.quit()

@@ -31,7 +31,7 @@ def scrape_shopee_search_suggestions(shopee_url, directory, db_url):
         EC.element_to_be_clickable((By.CLASS_NAME, 'shopee-searchbar-input__input'))
     )
 
-    results = []
+    suggestion_results = []
 
     search_terms = []
 
@@ -59,10 +59,10 @@ def scrape_shopee_search_suggestions(shopee_url, directory, db_url):
             {"$set": result_to_db},
             upsert=True
         )
-        results.append(result)
+        suggestion_results.append(result)
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
-        json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
+        json.dump(suggestion_results, file, default=serialize_result, indent=4, ensure_ascii=False)
 
     # Close the webdriver
     driver.quit()

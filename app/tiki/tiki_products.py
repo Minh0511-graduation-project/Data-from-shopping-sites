@@ -38,7 +38,7 @@ def scrape_tiki_products(tiki_url, db_url):
 
     # flatten the array
     search_suggestions = [item for sublist in search_suggestions for item in sublist]
-    results = []
+    product_results = []
 
     site = 'tiki'
     for suggestion in search_suggestions:
@@ -76,7 +76,7 @@ def scrape_tiki_products(tiki_url, db_url):
                 {"$set": result_to_db},
                 upsert=True
             )
-            results.append(result)
+            product_results.append(result)
             i += 1
 
         # re-find the search bar
@@ -85,6 +85,6 @@ def scrape_tiki_products(tiki_url, db_url):
         )
 
     with open("app/tiki/tiki_products.json", "w") as file:
-        json.dump(results, file, default=serialize_result, indent=4, ensure_ascii=False)
+        json.dump(product_results, file, default=serialize_result, indent=4, ensure_ascii=False)
     # Close the webdriver
     driver.quit()

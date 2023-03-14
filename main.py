@@ -38,7 +38,7 @@ if __name__ == '__main__':
         db_url = os.environ.get('MONGO_URL')
         directory = 'vi-wordnet'
         mockDir = 'mock'
-        scrape_search_suggestions(directory, db_url)
+        scrape_search_suggestions(mockDir, db_url)
         scrape_products(db_url)
         # sleep for 3 hour
         time.sleep(10800)

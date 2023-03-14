@@ -9,16 +9,23 @@
     {
         "site": "shopee",
         "searchTerm": "áo khoác",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-8wzra1ynm3nv33_tn",
-        "name": "Áo gió nữ YODY 3C PLUS 2 lớp cao cấp khoác nhẹ chống thấm nước, cản gió chống bụi AKN5040 NAK21",
-        "price": "₫499.000\n₫439.000"
+        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23020-1ueq6lauufnveb_tn",
+        "name": "Áo Khoác , Áo Choàng Lv Chất Liệu Nỉ Bông Dày In Phối Da Cao Cấp Dễ Phối Đô Siêu Hot",
+        "price": "₫50.000 - ₫159.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo khoác",
-        "imageUrl": "https://cf.shopee.vn/file/ed6d9d15d362eb395c42bfe156be4dcd_tn",
-        "name": "Áo sơ mi tay dài nam nữ dáng rộng cao cấp vải nhung tăm DAVUBA SM004",
-        "price": "₫200.000\n₫129.000"
+        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23030-1ujqcmyikhov11_tn",
+        "name": "Áo Khoác Cổ Đứng Thời Trang Xuân Thu 2023 Cho Nam",
+        "price": "₫653.730\n₫405.313"
+    },
+    {
+        "site": "shopee",
+        "searchTerm": "áo khoác",
+        "imageUrl": "https://cf.shopee.vn/file/2b79bf737b32753a496a009b9f820366_tn",
+        "name": "Áo khoác đi phượt, đi câu, đi xe máy cực ấm với 3 lớp chống nước",
+        "price": "₫331.500 - ₫650.000"
     },
     {
         "site": "shopee",
@@ -29,31 +36,24 @@
     },
     {
         "site": "shopee",
-        "searchTerm": "áo khoác",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-psd9c0v2xlnvc6_tn",
-        "name": "Áo Khoác Thể Thao ba Sọc Nam Nữ Thun Poly dày dặn",
-        "price": "₫109.000 - ₫119.000"
+        "searchTerm": "áo croptop",
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-fzq9p0g46tnvf3_tn",
+        "name": "Áo Thun Form Fit Chữ B Chất Thun Co Dãn 2023 𝑩𝒚𝒄𝒂𝒎𝒄𝒂𝒎",
+        "price": "₫159.000 - ₫199.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo croptop",
-        "imageUrl": "https://cf.shopee.vn/file/f78473acc86cc884db03e5b7392aa6e4_tn",
-        "name": "[SỈ] Áo lót cup ngực không dây chống tụt mặc áo hở vai AS052 (Video+Ảnh thật by Rosie.Beauty)",
-        "price": "₫95.000\n₫51.900"
+        "imageUrl": "https://cf.shopee.vn/file/164e50751b96b789d6a1a69adf996c8d_tn",
+        "name": "Áo Thun Nữ MORPHEUS Form Baby M1",
+        "price": "₫260.000\n₫125.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo croptop",
-        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23020-qksjse1h40mvab_tn",
-        "name": "Áo thun gấu dâu lotso form rộng AT364 Miucho basic tee tay lỡ dành cho nam nữ in graphic",
-        "price": "₫300.000\n₫159.000"
-    },
-    {
-        "site": "shopee",
-        "searchTerm": "áo croptop",
-        "imageUrl": "https://cf.shopee.vn/file/f5f8d397598da4c41b274d9fe0e03963_tn",
-        "name": "Áo hai dây thun nữ cao cấp KAMONG vải cotton 100% co dãn tốt A133",
-        "price": "₫68.000\n₫38.000"
+        "imageUrl": "https://cf.shopee.vn/file/250649f9f4238acfc4855554e10975f4_tn",
+        "name": "Áo Thun Nữ MORPHEUS Form Baby M2",
+        "price": "₫260.000\n₫130.000"
     },
     {
         "site": "shopee",
@@ -79,6 +79,13 @@
     {
         "site": "shopee",
         "searchTerm": "áo phông",
+        "imageUrl": "https://cf.shopee.vn/file/e73e1dd48a8ced101ccb355d32a6fcb5_tn",
+        "name": "Áo thun nam cổ tròn HAFOS cao cấp, lịch lãm HAFOS",
+        "price": "₫199.000\n₫159.000"
+    },
+    {
+        "site": "shopee",
+        "searchTerm": "áo phông",
         "imageUrl": "https://cf.shopee.vn/file/5f3d3f97e6d12098574a1926b059490a_tn",
         "name": "Áo ADLV Thun Cotton 2 chiều 24 Mẫu Hot Vải Cotton - ATAL Đen - Link 1",
         "price": "₫200.000\n₫155.000"
@@ -93,121 +100,114 @@
     {
         "site": "shopee",
         "searchTerm": "áo phông",
-        "imageUrl": "https://cf.shopee.vn/file/52bf85537ae7e88c41bab8cb7c3b1321_tn",
-        "name": "Áo phông nữ ngắn tay có đệm ngực may liền chất cotton siêu mềm mát (Hàng có sẵn)",
-        "price": "₫115.290 - ₫126.630"
-    },
-    {
-        "site": "shopee",
-        "searchTerm": "áo phông",
-        "imageUrl": "https://cf.shopee.vn/file/84ee7f49c6ad1bf486ef00f84d0377a1_tn",
-        "name": "Áo Thun Nam trơn Cổ Tròn Cao Cấp phông Tay Ngắn, chất cotton bề mặt vải mềm DiHu store",
-        "price": "₫96.000\n₫48.000"
+        "imageUrl": "https://cf.shopee.vn/file/bdc8d746a9aeeaa86573f4b3f5f4a169_tn",
+        "name": "Áo Thun Levents 2Lip/ Cream",
+        "price": "₫390.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo thun",
-        "imageUrl": "https://cf.shopee.vn/file/f3b6ad464b65a092e6f826878f60ac0c_tn",
-        "name": "[Rẻ Vô Địch] -- Áo thun cotton tay lỡ CHỮ TIM và các mã áo phông hot - - mẫu hot 2022",
-        "price": "₫36.000 - ₫46.000"
+        "imageUrl": "https://cf.shopee.vn/file/81db3aec45e555ada18535a4f2383b88_tn",
+        "name": "Tee basic ss1 CREWZ áo thun tay lỡ unisex Local Brand - AO_THUN_DVR (V427)",
+        "price": "₫159.000\n₫89.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo thun",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-fzq9p0g46tnvf3_tn",
-        "name": "Áo Thun Form Fit Chữ B Chất Thun Co Dãn 2023 𝑩𝒚𝒄𝒂𝒎𝒄𝒂𝒎",
-        "price": "₫159.000 - ₫199.000"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23030-jhpbnnubugovf3_tn",
+        "name": "Áo phông nam MIKENCO , Áo Thun Thiên Thần Chất Liệu Coton 100% Hình in 5d siêu nét Không Bong tróc hình check app",
+        "price": "₫26.100 - ₫71.100"
     },
     {
         "site": "shopee",
         "searchTerm": "áo thun",
-        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-22120-p490lexsh3kv6f_tn",
-        "name": "Áo SIGNATURE TEE - WHITE - Cotton form rộng tay lỡ , dáng Sweater Oversize (V148)",
-        "price": "₫126.000\n₫89.000"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-p577c4yr4wnv61_tn",
+        "name": "Áo Thun Local Brand Unisex TEE ALL OVER Signature",
+        "price": "₫270.000\n₫139.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo thun",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-ltr1fv466qnv80_tn",
-        "name": "Áo thun nam nữ Louis Vuitton trái tim cổ tròn. Áo Phông LV Trái Tim Siêu Hot Thiết kế đẹp mắt trẻ trung năng động.",
-        "price": "₫12.500 - ₫62.500"
+        "imageUrl": "https://cf.shopee.vn/file/3ebd3fa1d6ebf4fb62a949384dae0d1c_tn",
+        "name": "Áo Thun Nam CỔ TRÒN Cao Cấp ( nhiều màu) Tay Ngắn, chất cotton bề mặt vải mềm",
+        "price": "₫99.000\n₫49.500"
     },
     {
         "site": "shopee",
         "searchTerm": "áo thun",
-        "imageUrl": "https://cf.shopee.vn/file/6a3d0c1d02f20709c4d4e3348a8b38e3_tn",
-        "name": "[Mã BMLT35 giảm đến 35K đơn 99K] Áo thun nam nữ cổ tròn basic PERFECTMEN nhiều màu vải cotton dày dặn, co giãn, tay ngắn",
-        "price": "₫199.000\n₫139.000"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-dvz6nvb63wnv34_tn",
+        "name": "Áo Thun Local Brand Unisex TEE ALL OVER Double Till Death",
+        "price": "₫270.000\n₫135.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-ltr1fv466qnv80_tn",
-        "name": "Áo thun nam nữ Louis Vuitton trái tim cổ tròn. Áo Phông LV Trái Tim Siêu Hot Thiết kế đẹp mắt trẻ trung năng động.",
-        "price": "₫12.500 - ₫62.500"
+        "imageUrl": "https://cf.shopee.vn/file/81db3aec45e555ada18535a4f2383b88_tn",
+        "name": "Tee basic ss1 CREWZ áo thun tay lỡ unisex Local Brand - AO_THUN_DVR (V427)",
+        "price": "₫159.000\n₫89.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-p14xw1b1brnve2_tn",
-        "name": "Áo thun nam nữ unisex tay lỡ CREWZ laylazm, áo phông form rộng cổ tròn chất đẹp",
-        "price": "₫11.000 - ₫55.000"
+        "imageUrl": "https://cf.shopee.vn/file/987ed2c5dd6b8e228b46d6c69264f56e_tn",
+        "name": "ÁO THUN ĐỒNG PHỤC EXPREE FOOD",
+        "price": "₫75.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-poqrtvh0jknv6a_tn",
-        "name": "Áo thun nam nữ unisex tay lỡ Snoogdog hopeshopz, áo phông form rộng cổ tròn chất đẹp",
-        "price": "₫11.800 - ₫59.000"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23030-vfmscv7836nvbf_tn",
+        "name": "Áo hoodie nam nữ form rộng, in hình Typography chữ E-Einklang Retro Streetlife, chất vải nỉ bông cotton 100%",
+        "price": "₫399.000\n₫329.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-hq7qu9kikknvb0_tn",
-        "name": "Áo thun nam nữ unisex tay lỡ EIGHTEEN rubydiz, áo phông form rộng cổ tròn chất đẹp",
-        "price": "₫11.800 - ₫59.000"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-p577c4yr4wnv61_tn",
+        "name": "Áo Thun Local Brand Unisex TEE ALL OVER Signature",
+        "price": "₫270.000\n₫139.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo",
-        "imageUrl": "https://cf.shopee.vn/file/2a9f3d3a1bd30d41e1bd63d07c7b387f_tn",
-        "name": "Áo thun tay lỡ unisex SADTAGRAM TEE - Áo phông F&S nam nữ form rộng cho cặp đôi vải dày dặn, thoáng mát",
-        "price": "₫69.000\n₫41.900"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-x72qt79sbknvde_tn",
+        "name": "Áo Polo Local Brand Unisex TEE ALL OVER Basic",
+        "price": "₫270.000\n₫149.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo sơ mi",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-22sz8gummlnv2b_tn",
-        "name": "Áo sơ mi kẻ Burberry nam nữ mới nhất Áo sơ mi BBR sọc kẻ siêu cấp",
-        "price": "₫269.000\n₫255.550"
+        "imageUrl": "https://cf.shopee.vn/file/81db3aec45e555ada18535a4f2383b88_tn",
+        "name": "Tee basic ss1 CREWZ áo thun tay lỡ unisex Local Brand - AO_THUN_DVR (V427)",
+        "price": "₫159.000\n₫89.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo sơ mi",
-        "imageUrl": "https://cf.shopee.vn/file/f50d3f92dd1ada0d005f6c5fdcab8c28_tn",
-        "name": "Áo Sơ Mi Chất Nhung Tăm Nam Nữ Form Rộng Nâu Be Siêu Hot",
-        "price": "₫145.000\n₫75.000"
+        "imageUrl": "https://cf.shopee.vn/file/52958ea13586a4c3348b790443ff7d1c_tn",
+        "name": "Áo sơ mi trắng nam AKUBA tay dài công sở dáng ôm, vải lụa không nhăn, thấm hút mồ hôi tốt 01AB2044",
+        "price": "₫169.000 - ₫195.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo sơ mi",
-        "imageUrl": "https://cf.shopee.vn/file/46c7254a5ab2830f9982c53fbead73dd_tn",
-        "name": "Áo sơ mi nam nữ đủ màu basic, thời trang, mẫu đang hot nhất cubis shop",
-        "price": "₫109.000\n₫65.000"
+        "imageUrl": "https://cf.shopee.vn/file/da84fd64b62d21957049da26452dbfa6_tn",
+        "name": "Áo sơ mi nam Mantoni dài tay, chất lụa không nhăn không xù thấm hút mồ hôi kiểu dáng hàn quốc (SML)",
+        "price": "₫79.000 - ₫89.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo sơ mi",
-        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23020-6gbqusyqldnv37_tn",
-        "name": "[NEW] Áo sơ mi cổ vát nơ đính hoa đá thanh lịch sang chảnh hàng 2 lớp dày dặn [HÀNG LOẠI 1 ]/Jennycloset",
-        "price": "₫299.000\n₫179.400"
+        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23020-li0vbic1j1mv02_tn",
+        "name": "Áo sơ mi nữ dài tay form rộng ulzzang kiểu hàn basic màu trắng, xanh, nâu, vàng, tím dễ phối đồ",
+        "price": "₫150.000\n₫112.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo sơ mi",
-        "imageUrl": "https://cf.shopee.vn/file/234191bf8db094f7df1f27cd973c5ca3_tn",
-        "name": "Áo sơ mi basic chất kaki cao cấp, Áo sơ mi nam nữ cực đẹp",
-        "price": "₫162.000\n₫159.000"
+        "imageUrl": "https://cf.shopee.vn/file/d97792585ab1d6f79eaea8e76dc4cab4_tn",
+        "name": "Áo sơ mi trắng nam form rộng dài tay đẹp lụa mát giấu cúc cổ bẻ hàn quốc MEMOTOP MM03",
+        "price": "₫125.000 - ₫139.000"
     },
     {
         "site": "shopee",
@@ -235,7 +235,7 @@
         "searchTerm": "áo khoác nữ",
         "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-2tmt9t2u4inv75_tn",
         "name": "Áo khoác thể thao ATMAN ba sọc chất thun poly dày dặn",
-        "price": "₫209.000\n₫105.000"
+        "price": "₫109.000 - ₫119.000"
     },
     {
         "site": "shopee",
@@ -254,6 +254,20 @@
     {
         "site": "shopee",
         "searchTerm": "áo sơ mi nữ",
+        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23020-li0vbic1j1mv02_tn",
+        "name": "Áo sơ mi nữ dài tay form rộng ulzzang kiểu hàn basic màu trắng, xanh, nâu, vàng, tím dễ phối đồ",
+        "price": "₫150.000\n₫112.000"
+    },
+    {
+        "site": "shopee",
+        "searchTerm": "áo sơ mi nữ",
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23030-1qyza6sd9kov6f_tn",
+        "name": "Áo Sơ Mi Nữ Công Sở Tay Dài Dáng Đẹp Thời Trang Basic NK FASHION Chất Liệu Vải Hàn, Thoáng Mát NKSM2010011",
+        "price": "₫180.000\n₫150.000"
+    },
+    {
+        "site": "shopee",
+        "searchTerm": "áo sơ mi nữ",
         "imageUrl": "https://cf.shopee.vn/file/ed6d9d15d362eb395c42bfe156be4dcd_tn",
         "name": "Áo sơ mi tay dài nam nữ dáng rộng cao cấp vải nhung tăm DAVUBA SM004",
         "price": "₫200.000\n₫129.000"
@@ -263,55 +277,41 @@
         "searchTerm": "áo sơ mi nữ",
         "imageUrl": "https://cf.shopee.vn/file/f619da798b6ea7c88c183e45a7951f89_tn",
         "name": "Áo sơ mi nữ vải cotton các màu Thái Hòa ASW0101-R01",
-        "price": "₫215.100 - ₫239.000"
-    },
-    {
-        "site": "shopee",
-        "searchTerm": "áo sơ mi nữ",
-        "imageUrl": "https://cf.shopee.vn/file/0f3093b6d1b2d397f0d04ebf2f3606e7_tn",
-        "name": "Áo sơ mi nam trơn vải kate lụa mịn LADOS - 25779 chất vải thấm hút tốt - Form chuẩn công sở",
-        "price": "₫249.000\n₫127.000"
-    },
-    {
-        "site": "shopee",
-        "searchTerm": "áo sơ mi nữ",
-        "imageUrl": "https://cf.shopee.vn/file/25b18b6976188f5be6131783f19252de_tn",
-        "name": "Áo sơ mi nữ [SALE 30%] Áo sơ mi trắng dài tay kiểu đơn giản",
-        "price": "₫190.000"
+        "price": "₫203.150 - ₫239.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo polo",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23030-l61ntsuoxbov76_tn",
-        "name": "Áo POLO nam , vải cá sấu cotton cao cấp ngắn tay giặt ko nhăn vải mái, cực sang trọng hót",
-        "price": "₫169.000\n₫99.000"
+        "imageUrl": "https://cf.shopee.vn/file/e2a33bb9f4a4e7297fbea09a86e742ea_tn",
+        "name": "Áo polo nam MATANO có cổ trụ bẻ dệt sọc và họa tiết đẹp nổi bật, thể hiện cá tính, vải cá sấu cotton phom suông",
+        "price": "₫150.000\n₫55.500"
     },
     {
         "site": "shopee",
         "searchTerm": "áo polo",
-        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23030-t411ss5f84nvad_tn",
-        "name": "Áo thun nam POLO trơn vải cá sấu cotton cao cấp ngắn tay cực sang trọng áo đôi hót",
-        "price": "₫225.000\n₫149.000"
+        "imageUrl": "https://cf.shopee.vn/file/66d14a74cc0c6bc7f0e9251e82f52942_tn",
+        "name": "[Rẻ Vô Địch] Áo thun cotton tay lỡ unisex - - Các mã áo polo mã mới - - mẫu hot 2023",
+        "price": "₫42.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo polo",
-        "imageUrl": "https://cf.shopee.vn/file/f450bac455f5e6b58e968c90d97dcd29_tn",
-        "name": "Áo Polo Local Brand LIYOR Áo Polo Nam Nữ thun dày dặn chống nhăn co giãn nam tính trẻ trung phiên bản cao cấp ACB3002",
-        "price": "₫135.000"
+        "imageUrl": "https://cf.shopee.vn/file/7a4423c2fa56a1274c0853663e46a0ff_tn",
+        "name": "[GIẢM GIÁ] - Áo thun POLO thiết kế vải cá sấu cotton cao cấp ngắn tay cực hot AT1718",
+        "price": "₫99.000 - ₫129.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo polo",
-        "imageUrl": "https://cf.shopee.vn/file/292c246006817e208f4491e033a14a4b_tn",
-        "name": "Áo Polo Nam cổ bẻ TSIMPLE thun basic cộc tay vải cá sấu cotton phong cách trẻ trung chuẩn form nhiều màu",
-        "price": "₫170.000\n₫114.000"
+        "imageUrl": "https://cf.shopee.vn/file/sg-11134201-23020-s9re0eihp5mvac_tn",
+        "name": "Áo Polo Teelab Special Collection V2.0 Polo hàng xuất dư",
+        "price": "₫198.000\n₫119.000"
     },
     {
         "site": "shopee",
         "searchTerm": "áo polo",
-        "imageUrl": "https://cf.shopee.vn/file/fc2d1b4c0fdb2fab9eae048275898375_tn",
-        "name": "Áo thun nam POLO trơn vải cá sấu cotton cao cấp KEVIN ngắn tay cực sang trọng",
-        "price": "₫110.400 - ₫120.000"
+        "imageUrl": "https://cf.shopee.vn/file/vn-11134201-23020-rw5ylkm4mlnve8_tn",
+        "name": "Áo polo Gucci Interlocking phối viền vào cấp Áo polo Gucci bảo cá sấu mới nhất",
+        "price": "₫269.000\n₫255.550"
     }
 ]
