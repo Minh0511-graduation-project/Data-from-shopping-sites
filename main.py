@@ -1,6 +1,7 @@
 import concurrent.futures
 import os
 import time
+from dotenv import load_dotenv
 
 from app.lazada.scrape_lazada import scrape_lazada
 from app.tiki.scrape_tiki import scrape_tiki
@@ -20,10 +21,11 @@ def scrape_shopping_sites(directory, db_url):
 
 
 if __name__ == '__main__':
+    load_dotenv()
     while True:
-        db_url = os.environ.get('MONGO_URL')
+        db_url = os.getenv('MONGO_URL')
         directory = 'vi-wordnet'
         mockDir = 'mock'
-        scrape_shopping_sites(directory, db_url)
+        scrape_shopping_sites(mockDir, db_url)
         # sleep for 2 hour
         time.sleep(7200)

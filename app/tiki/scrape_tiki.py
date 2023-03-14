@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from model.auto_suggestions_results import Result, serialize_suggestion
 from model.product_details import ProductDetails, serialize_product
@@ -23,6 +23,7 @@ def scrape_tiki(tiki_url, directory, db_url):
     driver.maximize_window()
     # Navigate to the Tiki Vietnam website
     driver.get(tiki_url)
+    print("scraping tiki")
 
     # Wait for the search bar to be present and interactable
     search_bar = WebDriverWait(driver, 5).until(
@@ -49,7 +50,8 @@ def scrape_tiki(tiki_url, directory, db_url):
         suggestion_list = driver.find_element(By.XPATH,
                                               '//div[@class="style__StyledSuggestion-sc-1y3xjh6-0 gyELMq revamp"]')
         suggestion_keywords = [item.text for item in suggestion_list.find_elements(By.CLASS_NAME, 'keyword')]
-        suggestion_result = Result(site, search_term, suggestion_keywords)
+        suggestion_updated_at = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+        suggestion_result = Result(site, search_term, suggestion_keywords, suggestion_updated_at)
         suggestion_to_db = serialize_suggestion(suggestion_result)
         search_suggestions.update_one(
             {"keyword": suggestion_to_db["keyword"]},
@@ -85,6 +87,7 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
         search_term_product_name = {}
         search_term_product_name_price = {}
         search_term_product_name_image = {}
+        search_term_product_name_updated_at = {}
         i = 0
         for product in product_list.find_elements(By.CLASS_NAME, 'product-item'):
             if i == 5:
@@ -96,9 +99,11 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
             search_term_product_name[suggestion] = product_name
             search_term_product_name_price[product_name] = product_price
             search_term_product_name_image[product_name] = product_image
+            search_term_product_name_updated_at[product_name] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
             product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                             search_term_product_name_price[product_name],
-                                            search_term_product_name_image[product_name])
+                                            search_term_product_name_image[product_name],
+                                            search_term_product_name_updated_at[product_name])
             product_to_db = serialize_product(product_result)
             products.update_one(
                 {"name": product_to_db["name"]},
