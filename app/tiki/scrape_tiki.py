@@ -19,12 +19,7 @@ def scrape_tiki(tiki_url, directory, db_url):
     search_suggestions = db['tiki search suggestions']
     products = db['tiki products']
     # Initialize the webdriver
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--headless")
-    driver = webdriver.Chrome('./chromedriver/chromedriver', options=chrome_options)
+    driver = webdriver.Chrome('./chromedriver/chromedriver')
     driver.maximize_window()
     # Navigate to the Tiki Vietnam website
     driver.get(tiki_url)
