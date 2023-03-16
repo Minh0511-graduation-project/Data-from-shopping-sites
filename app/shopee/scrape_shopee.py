@@ -19,7 +19,12 @@ def scrape_shopee(shopee_url, directory, db_url):
     search_suggestions = db['shopee search suggestions']
     products = db['shopee products']
     # Initialize the webdriver
-    driver = webdriver.Chrome('./chromedriver/chromedriver')
+    chrome_options = Options()
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--headless")
+    driver = webdriver.Chrome('./chromedriver/chromedriver', options=chrome_options)
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
