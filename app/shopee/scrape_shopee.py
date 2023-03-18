@@ -27,7 +27,7 @@ def scrape_shopee(shopee_url, directory, db_url):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver", options=chrome_options)
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)

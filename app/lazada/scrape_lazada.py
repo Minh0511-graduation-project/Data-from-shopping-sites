@@ -29,7 +29,7 @@ def scrape_lazada(lazada_url, directory, db_url):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver", options=chrome_options)
     driver.maximize_window()
     # Navigate to the Lazada Vietnam website
     driver.get(lazada_url)
