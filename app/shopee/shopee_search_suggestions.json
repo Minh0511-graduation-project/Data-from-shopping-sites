@@ -3,17 +3,17 @@
         "site": "shopee",
         "keyword": "a",
         "suggestions": [
-            "áo khoác",
             "áo croptop",
+            "áo khoác",
             "áo phông",
             "áo thun",
             "áo",
             "áo sơ mi",
-            "áo khoác nữ",
             "áo sơ mi nữ",
+            "áo khoác nữ",
             "áo polo"
         ],
-        "updatedAt": 1679154982.415807
+        "updatedAt": 1679566766.373714
     },
     {
         "site": "shopee",
@@ -26,9 +26,9 @@
             "bút",
             "body mist",
             "bình nước",
-            "balo đi học",
-            "baby tee"
+            "baby tee",
+            "balo đi học"
         ],
-        "updatedAt": 1679155186.5304222
+        "updatedAt": 1679566969.0364575
     }
 ]

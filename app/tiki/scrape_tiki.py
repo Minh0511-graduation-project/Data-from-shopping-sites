@@ -5,11 +5,8 @@ import time
 import pymongo
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
-from webdriver_manager.chrome import ChromeDriverManager
 
 from model.auto_suggestions_results import Result, serialize_suggestion
 from model.product_details import ProductDetails, serialize_product
@@ -34,9 +31,7 @@ def scrape_tiki(tiki_url, directory, db_url):
     print("scraping tiki")
 
     # Wait for the search bar to be present and interactable
-    search_bar = WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
-    )
+    search_bar = driver.find_element(By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]')
 
     suggestion_results = []
     product_results = []
@@ -70,9 +65,7 @@ def scrape_tiki(tiki_url, directory, db_url):
         scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
 
         # re-find the search bar
-        search_bar = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.CLASS_NAME, 'shopee-searchbar-input__input'))
-        )
+        search_bar = driver.find_element(By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]')
 
     with open("app/tiki/tiki_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
@@ -128,6 +121,4 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
             i += 1
 
         # re-find the search bar
-        search_bar = WebDriverWait(driver, 5).until(
-            EC.element_to_be_clickable((By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]'))
-        )
+        search_bar = driver.find_element(By.XPATH, '//input[@placeholder="Bạn tìm gì hôm nay"]')

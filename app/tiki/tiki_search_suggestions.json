@@ -3,16 +3,31 @@
         "site": "tiki",
         "keyword": "a",
         "suggestions": [
-            "a54",
-            "anessa",
+            "acnes",
+            "áo thun nam",
             "apple watch",
             "airpod",
-            "áo khoác nam",
-            "áo thun nam",
-            "atomic habits",
+            "anker",
+            "áo chống nắng nam",
             "ấm siêu tốc",
-            "airpod 3"
+            "atomic habits",
+            "áo khoác nam"
         ],
-        "updatedAt": 1678972677.6497145
+        "updatedAt": 1679566753.7054904
+    },
+    {
+        "site": "tiki",
+        "keyword": "b",
+        "suggestions": [
+            "bình giữ nhiệt",
+            "bàn làm việc",
+            "bao cao su",
+            "bình giữ nhiệt lock and lock",
+            "bobby",
+            "bàn phím cơ",
+            "bia tiger",
+            "bàn chải điện"
+        ],
+        "updatedAt": 1679566954.6431751
     }
 ]

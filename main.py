@@ -26,6 +26,6 @@ if __name__ == '__main__':
         db_url = os.getenv('MONGO_URL')
         directory = 'vi-wordnet'
         mockDir = 'mock'
-        scrape_shopping_sites(directory, db_url)
+        scrape_lazada('https://www.lazada.vn/', mockDir, db_url)
         # sleep for 2 hour
         time.sleep(7200)
