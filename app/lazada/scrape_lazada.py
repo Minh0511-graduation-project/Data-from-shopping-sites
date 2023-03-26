@@ -36,9 +36,7 @@ def scrape_lazada(lazada_url, directory, db_url):
     print("scraping lazada")
 
     # Wait for the search bar to be present and interactable
-    search_bar = WebDriverWait(driver, 1).until(
-        EC.element_to_be_clickable((By.XPATH, '//input[@id="q"]'))
-    )
+    search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
 
     suggestion_results = []
     product_results = []
@@ -55,11 +53,11 @@ def scrape_lazada(lazada_url, directory, db_url):
     site = "lazada"
 
     for search_term in search_terms:
-        search_bar.send_keys(Keys.CONTROL + "a")
-        search_bar.send_keys(Keys.DELETE)
-        search_bar.send_keys(search_term)
-        time.sleep(10)
         try:
+            search_bar.send_keys(Keys.CONTROL + "a")
+            search_bar.send_keys(Keys.DELETE)
+            search_bar.send_keys(search_term)
+            time.sleep(10)
             suggestion_list = driver.find_element(By.CLASS_NAME, 'suggest-list--3Tm8')
 
             suggestion_keywords = [item.text for item in
@@ -76,9 +74,7 @@ def scrape_lazada(lazada_url, directory, db_url):
             scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
 
             # re-find the search bar
-            search_bar = WebDriverWait(driver, 5).until(
-                EC.element_to_be_clickable((By.CLASS_NAME, 'shopee-searchbar-input__input'))
-            )
+            search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
         except NoSuchElementException:
             pass
 
@@ -94,45 +90,49 @@ def scrape_lazada(lazada_url, directory, db_url):
 
 
 def scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site):
-    for suggestion in suggestion_to_db["suggestions"]:
-        search_bar.send_keys(Keys.CONTROL + "a")
-        search_bar.send_keys(Keys.DELETE)
-        search_bar.send_keys(suggestion)
-        search_bar.send_keys(Keys.ENTER)
-        time.sleep(10)
-        product_list = driver.find_element(By.XPATH, '//div[@class="_17mcb"]')
+    try:
+        for suggestion in suggestion_to_db["suggestions"]:
+            search_bar.send_keys(Keys.CONTROL + "a")
+            search_bar.send_keys(Keys.DELETE)
+            search_bar.send_keys(suggestion)
+            search_bar.send_keys(Keys.ENTER)
+            time.sleep(10)
+            product_list = driver.find_element(By.XPATH, '//div[@class="_17mcb"]')
 
-        # map the product name with the product price, as a dictionary
-        search_term_product_name = {}
-        search_term_product_name_price = {}
-        search_term_product_name_image = {}
-        search_term_product_name_updated_at = {}
-        i = 0
-        for product in product_list.find_elements(By.CLASS_NAME, 'qmXQo'):
-            if i == 5:
-                break
-            product_name = product.find_element(By.CLASS_NAME, 'RfADt').text
-            product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
-            product_image = product.find_element(By.CSS_SELECTOR,
-                                                 "img.jBwCF").get_attribute('src')
-            search_term_product_name[suggestion] = product_name
-            search_term_product_name_price[product_name] = product_price
-            search_term_product_name_image[product_name] = product_image
-            search_term_product_name_updated_at[product_name] = time.time()
-            product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
-                                            search_term_product_name_price[product_name],
-                                            search_term_product_name_image[product_name],
-                                            search_term_product_name_updated_at[product_name])
-            result_to_db = serialize_product(product_result)
-            products.update_one(
-                {"name": result_to_db["name"]},
-                {"$set": result_to_db},
-                upsert=True
-            )
-            product_results.append(product_result)
-            i += 1
+            # map the product name with the product price, as a dictionary
+            search_term_product_name = {}
+            search_term_product_name_price = {}
+            search_term_product_name_image = {}
+            search_term_product_name_updated_at = {}
+            i = 0
+            for product in product_list.find_elements(By.CLASS_NAME, 'qmXQo'):
+                try:
+                    if i == 5:
+                        break
+                    product_name = product.find_element(By.CLASS_NAME, 'RfADt').text
+                    product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
+                    product_image = product.find_element(By.CSS_SELECTOR,
+                                                         "img.jBwCF").get_attribute('src')
+                    search_term_product_name[suggestion] = product_name
+                    search_term_product_name_price[product_name] = product_price
+                    search_term_product_name_image[product_name] = product_image
+                    search_term_product_name_updated_at[product_name] = time.time()
+                    product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
+                                                    search_term_product_name_price[product_name],
+                                                    search_term_product_name_image[product_name],
+                                                    search_term_product_name_updated_at[product_name])
+                    result_to_db = serialize_product(product_result)
+                    products.update_one(
+                        {"name": result_to_db["name"]},
+                        {"$set": result_to_db},
+                        upsert=True
+                    )
+                    product_results.append(product_result)
+                    i += 1
+                except NoSuchElementException:
+                    pass
 
-        # re-find the search bar
-        search_bar = WebDriverWait(driver, 1).until(
-            EC.element_to_be_clickable((By.XPATH, '//input[@id="q"]'))
-        )
+            # re-find the search bar
+            search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
+    except NoSuchElementException:
+        pass
