@@ -4,7 +4,7 @@ import os
 
 import pymongo
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,13 +22,14 @@ def scrape_shopee(shopee_url, directory, db_url):
     search_suggestions = db['shopee search suggestions']
     products = db['shopee products']
     # Initialize the webdriver
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--headless")
-
-    driver = webdriver.Chrome("./chromedriver/chromedriver", options=chrome_options)
+    # chrome_options = Options()
+    # chrome_options.add_argument("--disable-extensions")
+    # chrome_options.add_argument("--disable-gpu")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--headless")
+    #
+    # driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver", options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
@@ -78,7 +79,9 @@ def scrape_shopee(shopee_url, directory, db_url):
             # re-find the search bar
             search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
         except NoSuchElementException:
-            pass
+            continue
+        except StaleElementReferenceException:
+            continue
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
@@ -135,9 +138,13 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                     product_results.append(product_result)
                     i += 1
                 except NoSuchElementException:
-                    pass
+                    continue
+                except StaleElementReferenceException:
+                    continue
 
             # re-find the search bar
             search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
     except NoSuchElementException:
+        pass
+    except StaleElementReferenceException:
         pass

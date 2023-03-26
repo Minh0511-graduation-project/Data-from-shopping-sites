@@ -12,7 +12,7 @@ from selenium.webdriver.common.keys import Keys
 from webdriver_manager.chrome import ChromeDriverManager
 
 from model.auto_suggestions_results import Result, serialize_suggestion
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 
 from model.product_details import ProductDetails, serialize_product
 
@@ -29,7 +29,7 @@ def scrape_lazada(lazada_url, directory, db_url):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome("./chromedriver/chromedriver", options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver", options=chrome_options)
     driver.maximize_window()
     # Navigate to the Lazada Vietnam website
     driver.get(lazada_url)
@@ -76,7 +76,7 @@ def scrape_lazada(lazada_url, directory, db_url):
             # re-find the search bar
             search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
         except NoSuchElementException:
-            pass
+            continue
 
     with open("app/lazada/lazada_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
@@ -130,9 +130,13 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                     product_results.append(product_result)
                     i += 1
                 except NoSuchElementException:
-                    pass
+                    continue
+                except StaleElementReferenceException:
+                    continue
 
             # re-find the search bar
             search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
     except NoSuchElementException:
+        pass
+    except StaleElementReferenceException:
         pass
