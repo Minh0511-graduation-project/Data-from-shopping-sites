@@ -22,14 +22,13 @@ def scrape_shopee(shopee_url, directory, db_url):
     search_suggestions = db['shopee search suggestions']
     products = db['shopee products']
     # Initialize the webdriver
-    # chrome_options = Options()
-    # chrome_options.add_argument("--disable-extensions")
-    # chrome_options.add_argument("--disable-gpu")
-    # chrome_options.add_argument("--no-sandbox")
-    # chrome_options.add_argument("--headless")
-    #
-    # driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver", options=chrome_options)
-    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
+    chrome_options = Options()
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--headless")
+
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver", options=chrome_options)
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
@@ -79,8 +78,10 @@ def scrape_shopee(shopee_url, directory, db_url):
             # re-find the search bar
             search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
         except NoSuchElementException:
+            print("no such element")
             continue
         except StaleElementReferenceException:
+            print("stale element reference")
             continue
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
@@ -138,13 +139,17 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                     product_results.append(product_result)
                     i += 1
                 except NoSuchElementException:
+                    print("no such element")
                     continue
                 except StaleElementReferenceException:
+                    print("stale element")
                     continue
 
             # re-find the search bar
             search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
     except NoSuchElementException:
+        print("no such element")
         pass
     except StaleElementReferenceException:
+        print("stale element")
         pass
