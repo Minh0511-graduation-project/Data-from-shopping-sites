@@ -11,6 +11,7 @@ from model.product_details import ProductDetails, serialize_product
 
 
 def get_tiki_from_API(directory, db_url):
+    print("get tiki from API")
     load_dotenv()
     client = pymongo.MongoClient(db_url)
     db = client['Shop-search-system']
