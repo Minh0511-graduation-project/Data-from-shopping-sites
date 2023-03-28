@@ -100,9 +100,18 @@ def get_tiki_from_API(directory, db_url):
                                                         search_term_product_name_image[product_name],
                                                         search_term_product_name_updated_at[product_name])
                         product_to_db = serialize_product(product_result)
+                        filter = {
+                            "name": product_to_db["name"],
+                            "searchTerm": product_to_db["searchTerm"]
+                        }
+
+                        update = {
+                            "$set": product_to_db
+                        }
+
                         products.update_one(
-                            {"name": product_to_db["name"]},
-                            {"$set": product_to_db},
+                            filter,
+                            update,
                             upsert=True
                         )
                         product_results.append(product_result)
