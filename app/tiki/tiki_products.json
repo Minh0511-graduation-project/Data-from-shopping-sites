@@ -1,131 +1,27 @@
 [
     {
         "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/41/8e/26/68960b80704adb058c3c6881bc74184c.jpg",
-        "name": "Điện thoại Samsung Galaxy A54 5G (8GB/256gb) - Hàng chính hãng",
-        "price": 10990000,
-        "updatedAt": 1679931512.0772567
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a2/c5/a7/5a12afdcc9c8c9c2e875b284548139b1.jpg",
-        "name": "Điện Thoại Oppo A54 (4GB/128GB",
-        "price": 3250000,
-        "updatedAt": 1679931512.1409955
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/41/8e/26/3592149163ca9c244046466598187123.jpg",
-        "name": "Điện thoại Samsung Galaxy A54 5G (8GB/128GB) - Hàng chính hãng",
-        "price": 9110000,
-        "updatedAt": 1679931512.2047803
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/92/7f/9c/b5fe1dbf78201eb93cfa26f4d0a85d04.jpg",
-        "name": "Điện thoại Samsung Galaxy A54 5G (8GB/256gb) - Hàng chính hãng",
-        "price": 10115000,
-        "updatedAt": 1679931512.2807813
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/15/2f/6c/e67515960e5eb0651ddb983af791efa0.jpg",
-        "name": "Điện Thoại Samsung A54 5G 8GB/128GB - Hàng Chính Hãng",
-        "price": 9639000,
-        "updatedAt": 1679931512.3537862
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/72/6f/cc/4fb29f5b256baeafd7ab5cd36df3bed7.jpg",
-        "name": "Điện thoại Samsung Galaxy A54 5G (8GB/128GB) - Hàng chính hãng",
-        "price": 9990000,
-        "updatedAt": 1679931512.4191191
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "a54",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/90/2b/cd/e2b001634ba454336b6449b1ffb4ebda.jpg",
-        "name": "Điện thoại Samsung Galaxy A54 5G (8GB/128GB) - Hàng chính hãng",
-        "price": 8759000,
-        "updatedAt": 1679931512.5086684
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b8/4b/46/a5bc362f50d5a9a868fd882c7261b1de.png",
-        "name": "Điện thoại Samsung Galaxy A23 5G (4GB/128GB",
-        "price": 5690000,
-        "updatedAt": 1679931512.929728
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a2/c5/a7/5a12afdcc9c8c9c2e875b284548139b1.jpg",
-        "name": "Điện Thoại Oppo A54 (4GB/128GB",
-        "price": 3250000,
-        "updatedAt": 1679931512.9957588
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a6/de/4e/e96e2035f72c97c218ba9917f4e6d5ca.jpg",
-        "name": "Điện Thoại Oppo A57 (4GB/64GB",
-        "price": 3590000,
-        "updatedAt": 1679931513.0579967
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/2b/d3/af/f3793099025547b24be378b165c8b839.jpg",
-        "name": "Điện Thoại Oppo A16k (3GB/32GB) Xanh thời thượng - Hàng Chính Hãng",
-        "price": 2490000,
-        "updatedAt": 1679931513.1208274
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b3/02/63/2b8317b20cf5e1f5f56d07f76652800a.jpg",
-        "name": "Điện Thoại Oppo A55 (4GB/64GB",
-        "price": 3490000,
-        "updatedAt": 1679931513.1842396
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/27/37/cd/1c7234c794a7d675709ed53e63a65cc9.png",
-        "name": "Điện thoại Samsung Galaxy Z Flip 4 (8GB/128GB",
-        "price": 17990000,
-        "updatedAt": 1679931513.2511818
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "OPPO Official Store",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0c/cd/34/0b6abf38aaba0a3507c7c2610a15dc9f.jpg",
-        "name": "Điện thoại Xiaomi Redmi 9A (2GB/32GB",
-        "price": 1890000,
-        "updatedAt": 1679931513.3161235
+        "searchTerm": "apple watch",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ed/d8/60/4936c68a531a19c9f5ef26bf1db4b01a.jpg",
+        "name": "Ốp Case Shock Proof Vỏ Bảo Vệ Dành Cho Đồng Hồ Apple Watch Series 7/ Series 8 Size 41/45mm- Hàng Chính Hãng",
+        "price": 95000,
+        "updatedAt": 1679980775.026201
     },
     {
         "site": "tiki",
         "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/63/0e/d4/45301432a6f00486fb4c78a0595916ee.jpg",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/52/bd/66/efc540d08948ffc3555933224c26d387.jpg",
         "name": "Dây Đeo Thay Thế Ocean Band Kai Dành Cho Đồng Hồ Thông Minh Apple Watch Ultra 49mm Series 8 7 6 5 4 3 Size 38/40/41/42/44/45 mm- Hàng Chính Hãng",
-        "price": 186200,
-        "updatedAt": 1679931513.6508348
+        "price": 182000,
+        "updatedAt": 1679980775.0912716
     },
     {
         "site": "tiki",
         "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5c/04/82/7a01deb718dd882c58bde5d507a5f274.png",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f4/1d/12/1f65f4e52dbc1d78febc4ce4b1c5b3f1.png",
         "name": "Dây Đồng Hồ Thép Lưới Dành Cho Apple Watch KAi.N Steel- Hàng Chính Hãng",
-        "price": 235000,
-        "updatedAt": 1679931513.7149253
+        "price": 245000,
+        "updatedAt": 1679980775.1559196
     },
     {
         "site": "tiki",
@@ -133,71 +29,55 @@
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/6a/05/d3/30f5ebe69973bb0c06cb5d2b635ff815.png",
         "name": "Dây Đeo Kèm Ốp Dành Cho Apple Watch Kai.N Elegant Shock Proff - Hàng Chính Hãng",
         "price": 267000,
-        "updatedAt": 1679931513.780472
+        "updatedAt": 1679980775.2200665
     },
     {
         "site": "tiki",
         "searchTerm": "apple watch",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f9/c8/6a/e1c7383fb066c08aa71e521fbe283251.jpg",
         "name": "Dây Silicon Gel Sport Kai Dành Cho Đồng Hồ Apple - Hàng chính hãng",
-        "price": 99000,
-        "updatedAt": 1679931513.8447542
+        "price": 97000,
+        "updatedAt": 1679980775.2867386
     },
     {
         "site": "tiki",
-        "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0b/3c/99/3d85d9ac33b1a5f14c28da32fcfcb76d.jpg",
-        "name": "Ốp Case Kèm Dây Đeo Kiểu Gshock Kai dành cho Đồng Hồ Apple Watch- Hàng Chính Hãng",
-        "price": 150000,
-        "updatedAt": 1679931513.9147005
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0c/dd/e7/e6431984901119a1f8166cc4e579da93.png",
+        "name": "Apple iPhone 14 Pro Max",
+        "price": 27750000,
+        "updatedAt": 1679980776.352015
     },
     {
         "site": "tiki",
-        "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
-        "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
-        "price": 2790000,
-        "updatedAt": 1679931514.2447486
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a1/cd/ce/e9c165d355b2259c323ac7150479b63e.jpg",
+        "name": "Apple iPhone 11",
+        "price": 12090000,
+        "updatedAt": 1679980776.417146
     },
     {
         "site": "tiki",
-        "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/79/3a/99fb3f8dd32c331e6535e5aae5d51f98.jpg",
-        "name": "Apple AirPods 3 2022 sạc Lightning - MPNY3",
-        "price": 4190000,
-        "updatedAt": 1679931514.3074248
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/dd/42/95/ae7976cda4f1ae1de6be8c5e84df1815.png",
+        "name": "Apple iPhone 13",
+        "price": 17750000,
+        "updatedAt": 1679980776.483356
     },
     {
         "site": "tiki",
-        "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
-        "name": "Apple AirPods Pro - MLWK3",
-        "price": 4590000,
-        "updatedAt": 1679931514.3714812
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0c/dd/e7/4be0add110579c0ce57e53fba16e656e.png",
+        "name": "Apple iPhone 14 Pro",
+        "price": 25490000,
+        "updatedAt": 1679980776.5572786
     },
     {
         "site": "tiki",
-        "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
-        "name": "Apple AirPods Pro 2 - MQD83",
-        "price": 5990000,
-        "updatedAt": 1679931514.4446259
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f0/fe/fa/73dff69e193720f421cf4051ebaddc5b.jpg",
-        "name": "Bao da bảo vệ tai nghe Airpod/Airpods 2 phối da",
-        "price": 139000,
-        "updatedAt": 1679931514.509145
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/17/f5/23/f1134e67d0fe3f5711dec0f0e49a8b3b.jpg",
-        "name": "Áo Polo nam cổ bẻ ngắn tay, chất liệu vải cá sấu cotton cao cấp, trẻ trung, năng động – FORMEN SHOP – FMPS150",
-        "price": 250000,
-        "updatedAt": 1679931515.109023
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ca/5d/be/0466fed7eaa6095baecd90f06419bc09.png",
+        "name": "Apple iPhone 14",
+        "price": 20990000,
+        "updatedAt": 1679980776.6274219
     },
     {
         "site": "tiki",
@@ -205,263 +85,119 @@
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/54/0a/48/a12dae1024f5af51fd3b267de4b35c24.jpg",
         "name": "Áo Thun Nam cổ tròn TSIMPLE áo phông trơn basic tay ngắn vải cotton co giãn, dày dặn , form chuẩn nhiều màu",
         "price": 89000,
-        "updatedAt": 1679931515.1729648
+        "updatedAt": 1679980777.586043
     },
     {
         "site": "tiki",
         "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ff/d0/cd/bee4ece45ca790ebc3f8ac3c8af7a65b.jpg",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a3/f3/c6/4955f365a9d35f7273f6c2cba8b47197.jpg",
         "name": "Áo thun nam Cotton Compact Premium trẻ trung năng động thấm hút mồ hôi co giãn 4 chiều MRM Manlywear",
         "price": 139000,
-        "updatedAt": 1679931515.250415
+        "updatedAt": 1679980777.6537027
     },
     {
         "site": "tiki",
         "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/15/41/bb/28da8f7fcadd65ded6f71f29859c4fe9.jpg",
-        "name": "Combo 2 áo ba lỗ nam, áo 3 lỗ nam, sợi cotton mềm mịn, thấm hút mồ hôi tốt, thoáng mát, mặc thoải mái JAMANO",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a1/e6/28/e009343150c6a6f7e317dfd6dc3a9deb.jpg",
+        "name": "Combo 2 áo ba lỗ nam, áo sát nách nam,sợi cotton cao cấp mềm mịn, thấm hút mồ hôi, siều thoáng mát, co giãn 4 chiều Mrm Manlywear - MM",
+        "price": 249000,
+        "updatedAt": 1679980777.7240438
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "áo thun nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0b/c5/67/43065bdcdd662c45f6fb25435cab024b.jpg",
+        "name": "Áo Polo Nam cổ bẻ TSIMPLE thun có cổ tay lỡ vải cá sấu cotton phong cách trẻ trung, chuẩn form, nhiều màu",
         "price": 149000,
-        "updatedAt": 1679931515.3129754
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/02/4c/96/6f22b1628210ee41d043006c234055e0.jpg",
-        "name": "Áo thun nam thể thao tay ngắn iBasic IBX037",
-        "price": 59000,
-        "updatedAt": 1679931515.3766856
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/03/88/83/7113576addccb0b5ffa4bd7056e5f226.jpg",
-        "name": "Áo thun nam kiểu dáng Hàn quốc - phong cách lịch lãm (D2",
-        "price": 148000,
-        "updatedAt": 1679931515.4400601
+        "updatedAt": 1679980777.794363
     },
     {
         "site": "tiki",
         "searchTerm": "áo thun nam",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/17/f5/23/f1134e67d0fe3f5711dec0f0e49a8b3b.jpg",
         "name": "Áo Polo nam cổ bẻ ngắn tay, chất liệu vải cá sấu cotton cao cấp, trẻ trung, năng động – FORMEN SHOP – FMPS150",
-        "price": 250000,
-        "updatedAt": 1679931515.5040498
+        "price": 159000,
+        "updatedAt": 1679980777.861674
     },
     {
         "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/32/b3/085ee546b06b792e847edd88b02b8f15.jpg",
-        "name": "Sách Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn/ Tặng kèm Bookmark)",
-        "price": 186650,
-        "updatedAt": 1679931516.0840807
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c2/77/6d/b22a78f910ff68e5bcb7f42a2fce9ba2.png",
-        "name": "Thay Đổi Tí Hon Hiệu Quả Bất Ngờ - Atomic Habits",
-        "price": 160650,
-        "updatedAt": 1679931516.1608305
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/32/b3/085ee546b06b792e847edd88b02b8f15.jpg",
-        "name": "Sách Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn/ Tặng kèm Bookmark)",
-        "price": 186650,
-        "updatedAt": 1679931516.2257855
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/81/1a/78/169836cda4fd55d21c74ffc92a58ceee.jpg",
-        "name": "Combo 2 cuốn: Atomic habits - Thay đổi tí hon Hiệu quả bất ngờ + Thay Đổi Câu Hỏi Thay Đổi Cuộc Đời ( Bộ Sách Phát Triển Bản Thân Hay Nhất/ Tặng Kèm Bookmark)",
-        "price": 270500,
-        "updatedAt": 1679931516.302741
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7a/57/b8/1d88f5b9992db3504e54c1580d12bdbe.jpg",
-        "name": "Combo 2 cuốn: Atomic habits - Thay đổi tí hon Hiệu quả bất ngờ + Thay Đổi Hay Là Chết - Bí Quyết Giúp Các Thương Hiệu Huyền Thoại Luôn Dẫn Đầu ( Phát Triển Bản Thân/ Tặng kèm Bookmark)",
-        "price": 327500,
-        "updatedAt": 1679931516.3783767
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f9/06/2e/7c0df78815048ab473712a31903287ab.png",
-        "name": "Sách tâm lí kĩ năng sống-Sách Anh: Atomic Habits",
-        "price": 669000,
-        "updatedAt": 1679931516.4430351
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e8/e9/53/e41a4fa2d7e0ba6c35dd72fac581c947.jpg",
-        "name": "Combo 2 cuốn: Atomic habits - Thay đổi tí hon Hiệu quả bất ngờ + Đừng Lựa Chọn An Nhàn Khi Còn Trẻ ( Phát Triển Bản Thân/ Định Hướng Tư Duy/ Tặng Kèm Bookmar)",
-        "price": 273500,
-        "updatedAt": 1679931516.5072255
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7c/06/fb/1b5c5389f2105af94064ef1a8b284c3e.jpg",
-        "name": "Áo Chống Nắng Nam CARDINA 2 Lớp Chất Thun Lạnh Cao Cấp Chống Tia UV 2NM02",
-        "price": 369000,
-        "updatedAt": 1679931517.0223389
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c2/10/48/76aef762b7be402b914ffa9c39886b3e.jpg",
-        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024 - XÁM TRẮNG - M",
-        "price": 129000,
-        "updatedAt": 1679931517.0864131
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/b1/ef/f4c8c987767d81fe62098d3f31544cea.jpg",
-        "name": "Áo Chống Nắng Nam CARDINA 2 Lớp Chất Thun Lạnh Cao Cấp Chống Tia UV 2NM02",
-        "price": 369000,
-        "updatedAt": 1679931517.1502345
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a7/a7/4a/6749987f4726dd5ab4c4822dc966d851.jpg",
-        "name": "ÁO CHỐNG NẮNG NAM THÔNG HƠI",
-        "price": 66000,
-        "updatedAt": 1679931517.214539
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0a/e0/7d/fe37a114ba31507ea268d36047cfaae5.jpg",
-        "name": "Áo khoác nam chống nắng AK Corner vải Cotton da cá 4 chiều thoáng mát, chất vải dày dặn mềm mịn, ngăn chặn tia UV bảo vệ cơ thể",
-        "price": 265000,
-        "updatedAt": 1679931517.2759247
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4a/4b/11/d2717e65c7829314381f4240b4450a1f.jpg",
-        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024",
-        "price": 118000,
-        "updatedAt": 1679931517.3482432
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/03/00/b9/c7ab680ded6eeb94e2256afe3bf26538.jpg",
-        "name": "Áo khoác gió nam chống nắng trượt nước cản gió cản bụi hiệu quả MRM Manlywear",
-        "price": 229000,
-        "updatedAt": 1679931517.4196603
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "airpod pro 2",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
-        "name": "Apple AirPods Pro 2 - MQD83",
-        "price": 5990000,
-        "updatedAt": 1679931517.7814243
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "airpod pro 2",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/46/fc/f7/fc5083e3b2a9797d1ef2f80d12996d08.jpeg",
-        "name": "Ốp bảo vệ elago Peach Case cho AirPods Pro 2 - Hàng chính hãng",
-        "price": 499000,
-        "updatedAt": 1679931517.8625953
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "airpod pro 2",
+        "searchTerm": "airpod",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
         "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
-        "price": 2790000,
-        "updatedAt": 1679931517.9402268
+        "price": 2750000,
+        "updatedAt": 1679980778.4008756
     },
     {
         "site": "tiki",
-        "searchTerm": "airpod pro 2",
+        "searchTerm": "airpod",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/79/3a/99fb3f8dd32c331e6535e5aae5d51f98.jpg",
         "name": "Apple AirPods 3 2022 sạc Lightning - MPNY3",
         "price": 4190000,
-        "updatedAt": 1679931518.029411
+        "updatedAt": 1679980778.4675987
     },
     {
         "site": "tiki",
-        "searchTerm": "airpod pro 2",
+        "searchTerm": "airpod",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
         "name": "Apple AirPods Pro - MLWK3",
         "price": 4590000,
-        "updatedAt": 1679931518.1000621
+        "updatedAt": 1679980778.612701
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7f/bc/1a/bc3c0f2abd2770141b085a18a85f2150.jpg",
-        "name": "Bão Ngầm",
-        "price": 95500,
-        "updatedAt": 1679931518.6276114
+        "searchTerm": "airpod",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
+        "name": "Apple AirPods Pro 2 - MQD83",
+        "price": 5790000,
+        "updatedAt": 1679980778.6772864
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f9/32/82/7526410b989d08ddfa8edbc73afcdcaf.jpg",
-        "name": "Agatha Christie. Rượu Độc Lóng Lánh",
-        "price": 116000,
-        "updatedAt": 1679931518.7232413
+        "searchTerm": "airpod",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f0/fe/fa/73dff69e193720f421cf4051ebaddc5b.jpg",
+        "name": "Bao da bảo vệ tai nghe Airpod/Airpods 2 phối da",
+        "price": 139000,
+        "updatedAt": 1679980778.741073
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/66/99/7e/068b92f1a2ff7c1e6cd03abce1af64de.jpg",
-        "name": "Và Rồi Chẳng Còn Ai (Agatha Christie)",
-        "price": 85300,
-        "updatedAt": 1679931518.7999494
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/80/fd/df/e01c21ca64b205a3400e1f9b2ec30795.jpg",
+        "name": "Áo Choàng Chống Nắng CARDINA 2 Lớp Chất Thun Lạnh 1BC",
+        "price": 499000,
+        "updatedAt": 1679980779.6542203
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/86/94/73/034b6035673056e5254e935cae0abcbc.jpg",
-        "name": "Án Mạng Trên Sân Golf",
-        "price": 81400,
-        "updatedAt": 1679931518.8654466
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/53/40/fd/58b931d4e4cf820995ac0c5c3ae7a017.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Chất Thun Lạnh Chống Tia UV 2NF02",
+        "price": 419000,
+        "updatedAt": 1679980779.7356675
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/fe/a3/fd/69eb5f92c4eb617ea305a7c687f47fa1.jpg",
-        "name": "Ngôi Nhà Quái Dị (Agatha Christie)(Tái Bản 2020)",
-        "price": 65800,
-        "updatedAt": 1679931518.9289224
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a2/54/f4/5f83c0bee9bea8eec038e82c186ac9d4.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Chất Thun Lạnh Nhật Cao Cấp Chống Tia UV 2NF2",
+        "price": 399000,
+        "updatedAt": 1679980779.8100076
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/2b/6f/b6/7d71b1f740cdd2cc1d4b09f8a4020232.jpg",
-        "name": "Sherlock Holmes Toàn Tập Combo 5 Tập Sherlock Holmes - (Bìa Mềm)",
-        "price": 442500,
-        "updatedAt": 1679931518.9993744
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4f/6d/96/0e77a8225e96cbed09cc12cfc2c3b877.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA Chất Lanh Nhung 2 Lớp Dáng Dài Liền Thân Cao Cấp 1BCL",
+        "price": 379000,
+        "updatedAt": 1679980779.876314
     },
     {
         "site": "tiki",
-        "searchTerm": "agatha christie",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c8/47/2e/f75a8b7c9e6b8f492f69579b6930c103.jpg",
-        "name": "Con Mèo Giữa Đám Bồ Câu",
-        "price": 85300,
-        "updatedAt": 1679931519.0650349
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo khoác nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/85/5d/1f/06d7563ffe200b57ff287e3c263fed98.jpg",
-        "name": "Áo khoác nam chống nắng AK Corner vải Cotton da cá 4 chiều thoáng mát, chất vải dày dặn mềm mịn, ngăn chặn tia UV bảo vệ cơ thể",
-        "price": 265000,
-        "updatedAt": 1679931519.6211095
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7a/88/48/c018499b1f899faddf8a5a12ad1fc53d.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Dáng Dài Chất Thun Lạnh Chống Tia UV Viền Thể Thao 2BC",
+        "price": 529000,
+        "updatedAt": 1679980779.942654
     },
     {
         "site": "tiki",
@@ -469,23 +205,23 @@
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/b1/ef/f4c8c987767d81fe62098d3f31544cea.jpg",
         "name": "Áo Chống Nắng Nam CARDINA 2 Lớp Chất Thun Lạnh Cao Cấp Chống Tia UV 2NM02",
         "price": 369000,
-        "updatedAt": 1679931519.686438
+        "updatedAt": 1679980780.6773982
     },
     {
         "site": "tiki",
         "searchTerm": "áo khoác nam",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/75/25/14/e676b40df40686df8b6e83ce8834ecfe.jpg",
         "name": "Áo khoác gió tráng bạc chống nước cao cấp ATUNER AT022, kiểu dáng unisex thời trang, phù hợp cho cả nam và nữ , vải 2 lớp chống nước, chống gió, nhiều màu - Hàng Chính Hãng",
-        "price": 168000,
-        "updatedAt": 1679931519.778005
+        "price": 175000,
+        "updatedAt": 1679980780.7465587
     },
     {
         "site": "tiki",
         "searchTerm": "áo khoác nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/70/1a/47/4f4d12714dd0d093123848c4c55646ff.jpg",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b2/55/1f/a7943a63c8ea918b86c9a2e723a31e4d.jpg",
         "name": "Áo Gió Nam, Áo khoác nam [Nhập EZAGG10K giảm 10K + Miễn Phí Vận Chuyển] Chống Thấm Nước Có Túi Trong Kèm Túi Khóa Kéo Phong Cách Trẻ Trung",
-        "price": 169000,
-        "updatedAt": 1679931519.8421202
+        "price": 168500,
+        "updatedAt": 1679980780.8128698
     },
     {
         "site": "tiki",
@@ -493,15 +229,7 @@
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0a/e0/7d/fe37a114ba31507ea268d36047cfaae5.jpg",
         "name": "Áo khoác nam chống nắng AK Corner vải Cotton da cá 4 chiều thoáng mát, chất vải dày dặn mềm mịn, ngăn chặn tia UV bảo vệ cơ thể",
         "price": 265000,
-        "updatedAt": 1679931519.9046328
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo khoác nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4a/4b/11/d2717e65c7829314381f4240b4450a1f.jpg",
-        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024",
-        "price": 118000,
-        "updatedAt": 1679931519.972732
+        "updatedAt": 1679980780.8791382
     },
     {
         "site": "tiki",
@@ -509,566 +237,166 @@
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5a/40/35/8b67230b81e6905459c77433bbd0df40.jpg",
         "name": "Áo Khoác Gió Thể Thao Nam 5S (5 Màu), Chất Liệu Cao Cấp, Trượt Nước, Cản Gió, Thiết Kế Khỏe Khoắn (AKG22009",
         "price": 359000,
-        "updatedAt": 1679931520.0352614
+        "updatedAt": 1679980780.9558063
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7d/3e/bb/f49394142b5bccff11f64677d01b66a4.png",
-        "name": "Sách Bí Mật Tư Duy Triệu Phú",
-        "price": 86400,
-        "updatedAt": 1679931521.480813
+        "searchTerm": "anker",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/63/45/b0/aedbf30fad4900f666347b35a5e0b505.jpg",
+        "name": "Adapter Sạc 1 Cổng Anker PowerPort III Nano Tích Hợp PowerIQ 3.0 - Hàng Chính Hãng",
+        "price": 299000,
+        "updatedAt": 1679980781.4364202
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7d/3e/bb/f49394142b5bccff11f64677d01b66a4.png",
-        "name": "Sách Bí Mật Tư Duy Triệu Phú",
-        "price": 86400,
-        "updatedAt": 1679931521.5498662
+        "searchTerm": "anker",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/17/59/13/6ea9477c7f48686215941b94ae6a8e05.png",
+        "name": "Adapter Sạc ANKER 511 Nano Pro 20W Type-C Sạc Nhanh Tích Hợp PIQ 3.0 A2637 Tương Thích iPhone 13 series và iPhone 12 series, Galaxy, Pixel 4/3, iPad / iPad mini - Hàng Chính Hãng",
+        "price": 320000,
+        "updatedAt": 1679980781.5017412
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/72/9c/8d/5991808b84d6feca9297b50b804ddd64.png",
-        "name": "Sách -  Combo 2 Cuốn: Bí Mật Tư Duy Triệu Phú + Người Giàu Có Nhất Thành Babylon",
-        "price": 164000,
-        "updatedAt": 1679931521.613127
+        "searchTerm": "anker",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/aa/38/d2/51c4ea6cfd34f41c7414ed26be4b09a2.jpg",
+        "name": "Adapter Sạc Anker 511 Charger Nano 3 30W 1 Cổng Type-C A2147 - Hàng Chính Hãng",
+        "price": 450000,
+        "updatedAt": 1679980781.5675895
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/be/a2/cc/703265f6b3e6a9056ab635282c63e9af.jpg",
-        "name": "Bí Mật Tư Duy Triệu Phú (Tái Bản 2019)",
-        "price": 99500,
-        "updatedAt": 1679931521.6760602
+        "searchTerm": "anker",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/5e/35/4a/5b78b3c74df53f793dd744542642da29.jpg",
+        "name": "Adapter sạc Anker 4 cổng 63W / 45W GaN + PIQ 3.0 PowerPort Atom III Slim Tích Hợp USB Type-C - A2046 - Hàng chính hãng - Đen",
+        "price": 955000,
+        "updatedAt": 1679980781.6386175
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/54/9d/6d/9290ea512df93787d1cbd1511c7f0f62.jpg",
-        "name": "Combo Sách Sức Mạnh Tiềm Thức + Bí Mật Tư Duy Triệu Phú + Người Giàu Có Nhất Thành Babylon (Bộ 3 Cuốn)",
-        "price": 239700,
-        "updatedAt": 1679931521.752441
+        "searchTerm": "anker",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ee/09/62/222a2623eb16f2447e467c3aecf8534d.png",
+        "name": "Adapter Sạc 2 Cổng ANKER 521 Nano Pro 40W Type-C Sạc Nhanh Nhỏ Gọn Tích Hợp PIQ 3.0 Tương Thích Iphone 13/13 Mini / 13 Pro / 13 Pro Max / 12, Galaxy, Pixel 4/3, Ipad / Ipad Mini A2038 - Hàng Chính Hãng",
+        "price": 650000,
+        "updatedAt": 1679980781.7043128
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/72/9c/8d/5991808b84d6feca9297b50b804ddd64.png",
-        "name": "Sách -  Combo 2 Cuốn: Bí Mật Tư Duy Triệu Phú + Người Giàu Có Nhất Thành Babylon",
-        "price": 164000,
-        "updatedAt": 1679931521.821786
+        "searchTerm": "áo chống nắng nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c2/10/48/76aef762b7be402b914ffa9c39886b3e.jpg",
+        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024 - XÁM TRẮNG - M",
+        "price": 129000,
+        "updatedAt": 1679980782.6903305
     },
     {
         "site": "tiki",
-        "searchTerm": "bí mật tư duy triệu phú",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/73/b8/b6/6b2ec56ab095e70ca270814aeae0290d.jpg",
-        "name": "Combo Sách Sức Mạnh Tiềm Thức + Bí Mật Tư Duy Triệu Phú (Bộ 2 Cuốn)",
-        "price": 169400,
-        "updatedAt": 1679931521.8873837
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f6/91/65/fcb0fdcd58c9a78aebe96365b3e48857.jpg",
-        "name": "Bình Giữ Nhiệt Rinfere Với Combo 2 Nắp, Dụng Cụ Vệ Sinh Ống Hút",
-        "price": 365000,
-        "updatedAt": 1679931522.392351
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5f/34/c5/f8dfba6a9d5f0c5039ac60a3d5f52b75.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": 349000,
-        "updatedAt": 1679931522.4675977
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/02/c8/60/6091f8204ac012737135c39001b0dab4.jpg",
-        "name": "Bình Giữ Nhiệt Locknlock Bucket Tumbler 540ml LHC4269WHT",
-        "price": 277000,
-        "updatedAt": 1679931522.5316827
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/93/76/c2/e62bf379f2fd1deda7b8615089522e78.jpg",
-        "name": "Bình giữ nhiệt có ống hút Lock&Lock Bucket Tumbler with Straw LHC4268NVY - Màu",
-        "price": 243000,
-        "updatedAt": 1679931522.5963738
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/04/c2/16/875d99d98bdb69103726ac2df1e30c51.jpg",
-        "name": "Bình giữ nhiệt Lock&Lock Belt Bottle LHC4267IVY490ml - Màu",
-        "price": 283000,
-        "updatedAt": 1679931522.6618938
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/53/af/77/b4a7804bd4b13a9da294999f12956f83.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
+        "searchTerm": "áo chống nắng nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/b1/ef/f4c8c987767d81fe62098d3f31544cea.jpg",
+        "name": "Áo Chống Nắng Nam CARDINA 2 Lớp Chất Thun Lạnh Cao Cấp Chống Tia UV 2NM02",
         "price": 369000,
-        "updatedAt": 1679931522.7291846
+        "updatedAt": 1679980782.7555542
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7c/da/b3/4828a68bf4864874b3f85eee932a051e.jpg",
-        "name": "Bình Giữ Nhiệt Lock&Lock Energetic One-Touch Tumbler LHC3249PIK - 550ML - Màu",
-        "price": 262000,
-        "updatedAt": 1679931522.793324
+        "searchTerm": "áo chống nắng nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a7/a7/4a/6749987f4726dd5ab4c4822dc966d851.jpg",
+        "name": "ÁO CHỐNG NẮNG NAM THÔNG HƠI",
+        "price": 66000,
+        "updatedAt": 1679980782.8209186
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f6/91/65/fcb0fdcd58c9a78aebe96365b3e48857.jpg",
-        "name": "Bình Giữ Nhiệt Rinfere Với Combo 2 Nắp, Dụng Cụ Vệ Sinh Ống Hút",
-        "price": 365000,
-        "updatedAt": 1679931523.297286
+        "searchTerm": "áo chống nắng nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0a/e0/7d/fe37a114ba31507ea268d36047cfaae5.jpg",
+        "name": "Áo khoác nam chống nắng AK Corner vải Cotton da cá 4 chiều thoáng mát, chất vải dày dặn mềm mịn, ngăn chặn tia UV bảo vệ cơ thể",
+        "price": 265000,
+        "updatedAt": 1679980782.8863213
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5f/34/c5/f8dfba6a9d5f0c5039ac60a3d5f52b75.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": 349000,
-        "updatedAt": 1679931523.3792942
+        "searchTerm": "áo chống nắng nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/8a/f8/89/222bbd34845f3515d2bb921b7c5162a8.jpg",
+        "name": "Áo khoác nam cao cấp AK Corner chất vải Cotton da cá 4 chiều mềm mịn thoáng mát, chống nắng tốt",
+        "price": 265000,
+        "updatedAt": 1679980782.9502277
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/02/c8/60/6091f8204ac012737135c39001b0dab4.jpg",
-        "name": "Bình Giữ Nhiệt Locknlock Bucket Tumbler 540ml LHC4269WHT",
-        "price": 277000,
-        "updatedAt": 1679931523.4510102
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
+        "name": "Apple AirPods Pro 2 - MQD83",
+        "price": 5790000,
+        "updatedAt": 1679980783.548583
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/93/76/c2/e62bf379f2fd1deda7b8615089522e78.jpg",
-        "name": "Bình giữ nhiệt có ống hút Lock&Lock Bucket Tumbler with Straw LHC4268NVY - Màu",
-        "price": 243000,
-        "updatedAt": 1679931523.513967
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/46/fc/f7/fc5083e3b2a9797d1ef2f80d12996d08.jpeg",
+        "name": "Ốp bảo vệ elago Peach Case cho AirPods Pro 2 - Hàng chính hãng",
+        "price": 499000,
+        "updatedAt": 1679980783.614679
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/04/c2/16/875d99d98bdb69103726ac2df1e30c51.jpg",
-        "name": "Bình giữ nhiệt Lock&Lock Belt Bottle LHC4267IVY490ml - Màu",
-        "price": 283000,
-        "updatedAt": 1679931523.5773153
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
+        "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
+        "price": 2750000,
+        "updatedAt": 1679980783.6810532
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/53/af/77/b4a7804bd4b13a9da294999f12956f83.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": 369000,
-        "updatedAt": 1679931523.6435714
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/79/3a/99fb3f8dd32c331e6535e5aae5d51f98.jpg",
+        "name": "Apple AirPods 3 2022 sạc Lightning - MPNY3",
+        "price": 4190000,
+        "updatedAt": 1679980783.7461798
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7c/da/b3/4828a68bf4864874b3f85eee932a051e.jpg",
-        "name": "Bình Giữ Nhiệt Lock&Lock Energetic One-Touch Tumbler LHC3249PIK - 550ML - Màu",
-        "price": 262000,
-        "updatedAt": 1679931523.7146404
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
+        "name": "Apple AirPods Pro - MLWK3",
+        "price": 4590000,
+        "updatedAt": 1679980783.8104417
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5c/ef/a8/fcdd8e709e3844c27ad3c0f2b98c679c.png",
-        "name": "Bao Cao Su LifeStyles ZERO Cao Cấp Siêu Mỏng Tuyệt Đối, Dẻo Dai  - Hộp 12 bao",
-        "price": 179000,
-        "updatedAt": 1679931524.306322
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/1c/c2/02/0f8d61c1467ef5c3588489fbc69ad313.jpg",
+        "name": "Ấm Siêu Tốc Inox SUNHOUSE HAPPY TIME HTD1055 (1.5L) - Hàng Chính Hãng",
+        "price": 115000,
+        "updatedAt": 1679980784.8047948
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/88/aa/31/d69838bbc323fcc89e76942def9a0ba2.jpg",
-        "name": "Bao cao su Durex Invisible Extra Thin Extra Sensitive 1 Hộp 10 Bao",
-        "price": 226000,
-        "updatedAt": 1679931524.3772426
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/50/1d/d8/12cc3fc185fdb9026da48b1144b353ef.jpg",
+        "name": "Ấm Siêu Tốc Nagakawa NAG0308 (1.8 Lít) - Hàng Chính Hãng",
+        "price": 137000,
+        "updatedAt": 1679980784.8728275
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/95/2a/f1/597a68d5584b369a2704c2772259e7fc.jpg",
-        "name": "Bao cao su Durex Performa 12 bao",
-        "price": 215000,
-        "updatedAt": 1679931524.4417138
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f1/55/7b/674d6146267683adae71d5e043e8f4e1.jpg",
+        "name": "Ấm Siêu Tốc Vành Liền Dung Tích 2.3L POVENA PVN-23 - Hàng Chính Hãng",
+        "price": 267000,
+        "updatedAt": 1679980784.9386775
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/d3/36/3e/6f9e83f2f25f1196858fe3c78e86b186.jpg",
-        "name": "Bao cao su Durex Kingtex 12 bao",
-        "price": 108000,
-        "updatedAt": 1679931524.5073588
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/9f/b0/bb/9297d7b11a4b2ba3bce07e3c9322db99.jpg",
+        "name": "Ấm Siêu Tốc Inox Happy Time Sunhouse HTD1081 (1.8 lít)- Hàng chính hãng",
+        "price": 151000,
+        "updatedAt": 1679980785.0043123
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b9/ca/51/0cfd041f8106fa344c16582defcefcde.jpg",
-        "name": "Bao cao su Durex Invisible Extra Thin Extra Sensitive 1 Hộp 3 Bao",
-        "price": 80000,
-        "updatedAt": 1679931524.5777016
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0f/ed/27/8825f9c3d954b45032cb1a7562119e02.png",
-        "name": "Bao cao su Sagami Superthin - Mỏng - Kiểu truyền thống - Hộp 10 chiếc",
-        "price": 85000,
-        "updatedAt": 1679931524.6461012
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0f/ed/27/8825f9c3d954b45032cb1a7562119e02.png",
-        "name": "Bao cao su Sagami Superthin - Mỏng - Kiểu truyền thống - Hộp 10 chiếc",
-        "price": 85000,
-        "updatedAt": 1679931524.7281241
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/2c/42/c3/eca725ec0a746cbe3496769ac1bea006.jpg",
-        "name": "Tã Quần Huggies Dry Tràm Trà Tự Nhiên Gói Cực Đại + Tặng 8 miếng - Phiên bản Siêu Anh Hùng",
-        "price": 329000,
-        "updatedAt": 1679931525.1691232
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/3b/a4/0c/03ece14f47a80b272152da0b2c5a6bd8.png",
-        "name": "[MỚI] Tã/bỉm quần Bobby 3mm Gạo non",
-        "price": 399000,
-        "updatedAt": 1679931525.2339454
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9d/f5/92/29b70ef64e38d06e495ee5b85a427d8e.png",
-        "name": "[MỚI- Tặng 12 miếng cùng loại] Tã/bỉm quần Bobby Lõi nén thần kỳ 3mm Mega Jumbo Gạo Non",
-        "price": 400000,
-        "updatedAt": 1679931525.298142
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/42/5d/5897815cab39339d47cd9335a779536d.jpg",
-        "name": "Tã quần Bobby Mega Jumbo M120 - Lõi nén thần kì 3mm - Siêu mỏng khô thoáng bất ngờ",
-        "price": 419000,
-        "updatedAt": 1679931525.3616543
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/cc/3e/55/23cbb7123ccd3186c99e0a72899d3b01.png",
-        "name": "Tã/bỉm quần Bobby 3mm Gạo non XXXL22 + 6",
-        "price": 199000,
-        "updatedAt": 1679931525.4273934
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/8b/45/25/d919d6f7d87e61d9e7d471fba33df4a5.jpg",
-        "name": "Thùng Tã quần Huggies Tràm Trà Tự Nhiên Dry Pants Mega Jumbo",
-        "price": 413000,
-        "updatedAt": 1679931525.495668
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/4d/83/cb/2d8266f29c12e34554f9f27f1b460a45.png",
-        "name": "[MỚI] Tã/bỉm quần Bobby 3mm Gạo non",
-        "price": 346000,
-        "updatedAt": 1679931525.561752
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/87/43/33/9baceac6206efe9550e7ae9113f5cfb8.jpg",
-        "name": "BÀN LÀM VIỆC CHỮ L-HOÁN ĐỔI 2 CHIỀU TRÁI PHẢI 2 TRONG 1-TỐI ƯU KHÔNG GIAN LÀM VIỆC,TIẾT KIỆM DIỆN TÍCH TỐI ĐA CHO PHÒNG LÀM VIỆC",
-        "price": 880000,
-        "updatedAt": 1679931526.343338
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/15/7c/0d/c03d490944ab6d6f3587fbafb1dc4b9a.jpg",
-        "name": "Bàn làm việc bàn hoc chữ k",
-        "price": 546000,
-        "updatedAt": 1679931526.4162042
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/d8/7e/20/12fd2e14299ab4a0ae032747066a6756.png",
-        "name": "Bàn làm việc kệ lửng mặt dày 1.5cm bo góc an toàn nhiều kích thước, bàn học để máy tính hộp sắt 25x25mm chắc chắn dày dặn",
-        "price": 460000,
-        "updatedAt": 1679931526.4795997
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ca/f2/50/699d7377206126d7041ee1626e6b5421.png",
-        "name": "Bàn Làm Việc Phong Cách Bắc Âu Thương Hiệu IGEA (Không Bao Gồm Ghế",
-        "price": 378000,
-        "updatedAt": 1679931526.585582
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/ec/83/ea4e1d5db32ad1f29eecb29f2769fec0.jpg",
-        "name": "Bàn Học IGA Bàn Làm Việc Gỗ Decor Phong Cách Gaming Trẻ Trung - GM62",
-        "price": 400000,
-        "updatedAt": 1679931526.648302
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f0/39/b9/9e1b985bb9c6943ce61c80923d779ec6.jpg",
-        "name": "BÀN LÀM VIỆC – BÀN HỌC CÓ HỘC KÉO KẾT HỢP KỆ SÁCH THỊNH PHÁT FURNITURE BLV-TP07 (120cm x 75cm x 50cm)",
-        "price": 970000,
-        "updatedAt": 1679931526.7159197
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b1/68/b8/427e65b71ae0ffc60b311b35a3a92f97.jpg",
-        "name": "Bàn Làm Việc Có Kệ Sách Mẫu Mới",
-        "price": 150000,
-        "updatedAt": 1679931526.7935076
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/21/21/60/634ec2c9072e46227739611be42e0b65.jpg",
-        "name": "Ghế Gấp Văn Phòng Và Gia Đình Đa Năng, Ghế Văn Phòng Xếp Gọn - Hàng Chính Hãng",
-        "price": 479000,
-        "updatedAt": 1679931527.2098956
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/fb/8f/5d/da198f02a380e639847cd8719258fcfb.jpg",
-        "name": "Khay Kệ Đa Năng A Case Nội Thất Kiểu Hàn BEYOURs",
-        "price": 269000,
-        "updatedAt": 1679931527.2781882
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/70/f9/06/5eb38c4f7def7d8d2b83e30eaa2f2508.jpg",
-        "name": "Kệ gỗ nâng màn hình laptop và máy tính Nội thất An hạ dài 50x20x10cm đa n",
-        "price": 44999,
-        "updatedAt": 1679931527.3422399
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/3f/d6/1a/d608446347dda39f0b5d9776a3d906b2.jpg",
-        "name": "Kệ mỹ phẩm lồng chim CEN HOUSE nhiều tầng đựng đa năng để nước hoa decor nội thất phòng ngủ",
-        "price": 81999,
-        "updatedAt": 1679931527.4118037
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/2f/7e/f9/6e12b5688dd4bc9633d5b8e9e8d06ad6.jpg",
-        "name": "Kệ trang trí 6 ô, tủ kệ lưới thép lắp ghép đa năng, nội thất thông minh cho gia đình, văn phòng",
-        "price": 298998,
-        "updatedAt": 1679931527.482479
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/73/fd/bb/8d6e9cb522429fa89efa14ff6ce0d279.jpeg",
-        "name": "Búa kìm đa năng gấp gọn 14 in 1 thuận tiện mang đi du lịch, dã ngoại, đi phượt",
-        "price": 217000,
-        "updatedAt": 1679931527.5471342
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "Nội Thất Đa Năng JUNZO",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/fb/2c/18/270ff14c532bd7139d95fdec51a78753.jpg",
-        "name": "Kệ Gỗ Đa Năng Decor BEYOURs Tủ Đầu Giường Glass Shelf 2 Tầng Đựng Sách Đồ Trang Trí Nội Thất Phòng Khách Phòng Ngủ - Trắng ",
-        "price": 313000,
-        "updatedAt": 1679931527.6116586
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/53/af/77/b4a7804bd4b13a9da294999f12956f83.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": 369000,
-        "updatedAt": 1679931528.3177886
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5f/34/c5/f8dfba6a9d5f0c5039ac60a3d5f52b75.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": 349000,
-        "updatedAt": 1679931528.3805425
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/02/c8/60/6091f8204ac012737135c39001b0dab4.jpg",
-        "name": "Bình Giữ Nhiệt Locknlock Bucket Tumbler 540ml LHC4269WHT",
-        "price": 277000,
-        "updatedAt": 1679931528.4442215
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/93/76/c2/e62bf379f2fd1deda7b8615089522e78.jpg",
-        "name": "Bình giữ nhiệt có ống hút Lock&Lock Bucket Tumbler with Straw LHC4268NVY - Màu",
-        "price": 243000,
-        "updatedAt": 1679931528.5117188
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/04/c2/16/875d99d98bdb69103726ac2df1e30c51.jpg",
-        "name": "Bình giữ nhiệt Lock&Lock Belt Bottle LHC4267IVY490ml - Màu",
-        "price": 283000,
-        "updatedAt": 1679931528.5762496
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/82/d8/73/6ba22c6eb7b35937a5093fac9320a5f0.jpg",
-        "name": "Bình Giữ Nhiệt Lock&Lock Energetic One-Touch Tumbler LHC3249PIK - 550ML - Màu",
-        "price": 269000,
-        "updatedAt": 1679931528.6392703
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7c/da/b3/4828a68bf4864874b3f85eee932a051e.jpg",
-        "name": "Bình Giữ Nhiệt Lock&Lock Energetic One-Touch Tumbler LHC3249PIK - 550ML - Màu",
-        "price": 262000,
-        "updatedAt": 1679931528.7034457
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f8/cc/de/a97236ae0d9449e00747918e19bd75a2.png",
-        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming Nhiều Chế Độ Led Cực Đẹp, Trục Cơ Học Red Switch Dùng Cho Máy Tính, Laptop-HÀNG CHÍNH HÃNG",
-        "price": 599000,
-        "updatedAt": 1679931529.3939908
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/29/3b/ac/212d5c6e955ff1ba7f6d5f5a2754eaeb.png",
-        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming Nhiều Chế Độ Led Cực Đẹp, Trục Cơ Học Red Switch Dùng Cho Máy Tính, Laptop-HÀNG CHÍNH HÃNG",
-        "price": 590000,
-        "updatedAt": 1679931529.4609888
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/37/63/ea/58b2cc0315f7da9fcb0add7bcfcb3035.png",
-        "name": "Bàn phím game có dây Logitech G213 Prodigy - RGB Lightsync, phím Media chuyên biệt, chống tràn bền bỉ - Hàng chính hãng",
-        "price": 790000,
-        "updatedAt": 1679931529.5342207
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7b/c7/d3/76fefb827690701045ce6e2af9c1650d.jpg",
-        "name": "Bộ Bàn Phím Giả Cơ và Chuột Chuyên Game G21 Led 7 Màu - Màu trắng",
-        "price": 119350,
-        "updatedAt": 1679931529.6013858
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9b/52/0d/32d6690a1ee6df7e437056a0074e7b93.png",
-        "name": "Bàn phím game có dây Logitech G213 Prodigy - RGB Lightsync, phím Media chuyên biệt, chống tràn bền bỉ -Hàng Chính Hãng",
-        "price": 743000,
-        "updatedAt": 1679931529.6741536
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9b/52/0d/32d6690a1ee6df7e437056a0074e7b93.png",
-        "name": "Bàn phím game có dây Logitech G213 Prodigy - RGB Lightsync, phím Media chuyên biệt, chống tràn bền bỉ -Hàng Chính Hãng",
-        "price": 743000,
-        "updatedAt": 1679931529.7403815
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/af/cd/09/651fda2db38fc4ef2a553d4876d87cb6.png",
-        "name": "Bàn phím cơ DareU EK87 \"D\" Switch Black - Hàng chính hãng",
-        "price": 550000,
-        "updatedAt": 1679931529.8062503
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/4d/f6/ce/21eb3b7e51c0384c658542402eed602e.jpg",
-        "name": "Bàn Chải Điện P/S S100 PRO Trắng Răng Công Nghệ Sóng Âm Đen Nhám Chải Sạch Mảng Bám Tới 10X 1 Bộ",
-        "price": 829000,
-        "updatedAt": 1679931530.3565326
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9a/89/14/776e3c682a795658f2d308c67b50069f.jpg",
-        "name": "Bàn Chải Đánh Răng Điện LocknLock ENR346WHT - DC3.7V, Trọng Lượng 235g, Sạc Không Dây - Màu Trắng",
-        "price": 1160000,
-        "updatedAt": 1679931530.4208734
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/de/f1/29/8a7ae9e467ceb951b1bf819e14481239.jpg",
-        "name": "Bộ 2 đầu bàn chải điện P/S - Sạch Sâu Màu",
-        "price": 216000,
-        "updatedAt": 1679931530.48537
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ff/8f/e7/9ba37ab803fb38f9316f676a08fb0e36.jpg",
-        "name": "Đầu Bàn Chải Điện LocknLock ENR546BLK (4pcs) - Màu Đen",
-        "price": 175000,
-        "updatedAt": 1679931530.5500736
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/d8/2d/f5/5484ff2c9a4b977a6f3a8eeb2d26580d.jpg",
-        "name": "Bàn chải đánh răng điện Colgate Minions dành cho trẻ em",
-        "price": 292000,
-        "updatedAt": 1679931530.6164777
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/6b/6f/37/70b4bac0db2fea4491c8ff9a1f2555e1.jpg",
-        "name": "Bàn Chải Điện P/S S100 PRO - Phiên Bản Ultra Violet Giới Hạn - Sạch chuẩn sóng âm",
-        "price": 864000,
-        "updatedAt": 1679931530.6803372
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/6e/44/57/8c6c2ac25e4bc27b530a757e5d0b17d9.png",
-        "name": "Bàn Chải Đánh Răng Điện LocknLock Portable Electric Toothbrush ENR236 (162 x 20 x 20 mm)",
-        "price": 234000,
-        "updatedAt": 1679931530.7428527
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a0/ea/13/b5365fc12ed90c39cd2bf644ecad22f6.jpg",
+        "name": "Ấm Siêu Tốc Dung Tích 2.3L MATIKA MTK-2023 Bình Đun Siêu Tốc - Hàng Chính Hãng",
+        "price": 174000,
+        "updatedAt": 1679980785.0807848
     }
 ]

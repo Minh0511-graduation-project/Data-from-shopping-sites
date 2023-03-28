@@ -46,7 +46,11 @@ def get_tiki_from_API(directory, db_url):
         response = requests.get(tiki_search_suggestion_url, params=params, headers=headers)
 
         if response.status_code == 200:
+            print(response.url)
             response_data = response.json()
+            # if there is no data field in the response, then skip this search term
+            if 'data' not in response_data:
+                continue
             suggestion_data = response_data['data']
             suggestion_keywords = []
             suggestion_keywords_results = []
@@ -79,14 +83,16 @@ def get_tiki_from_API(directory, db_url):
                 }
 
                 response = requests.get(tiki_search_product_url, params=params, headers=headers)
-                print(response.url)
                 if response.status_code == 200:
+                    print(response.url)
                     product_data = response.json()
+                    if 'data' not in product_data:
+                        continue
                     for data in product_data['data']:
                         product_updated_at = time.time()
                         product_name = data['name']
                         search_term_product_name[suggestion] = product_name
-                        search_term_product_name_price[product_name] = data['price']
+                        search_term_product_name_price[product_name] = "₫" + str(data['price'])
                         search_term_product_name_image[product_name] = data['thumbnail_url']
                         search_term_product_name_updated_at[product_name] = product_updated_at
                         product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
