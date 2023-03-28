@@ -23,13 +23,13 @@ def scrape_lazada(lazada_url, directory, db_url):
     search_suggestions = db['lazada search suggestions']
     products = db['lazada products']
     # Initialize the webdriver
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--headless")
+    # chrome_options = Options()
+    # chrome_options.add_argument("--disable-extensions")
+    # chrome_options.add_argument("--disable-gpu")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome("./chromedriver/chromedriver111/chromedriver", options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
     driver.maximize_window()
     # Navigate to the Lazada Vietnam website
     driver.get(lazada_url)
@@ -108,6 +108,7 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
             search_term_product_name_price = {}
             search_term_product_name_image = {}
             search_term_product_name_updated_at = {}
+            search_term_product_name_url = {}
             i = 0
             for product in product_list.find_elements(By.CLASS_NAME, 'qmXQo'):
                 try:
@@ -117,18 +118,32 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                     product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
                     product_image = product.find_element(By.CSS_SELECTOR,
                                                          "img.jBwCF").get_attribute('src')
+                    product_url = product.find_element(By.XPATH, '//div[@class="_95X4G"]/a').get_attribute('href')
+                    print(product_name)
+                    print(product_url)
                     search_term_product_name[suggestion] = product_name
                     search_term_product_name_price[product_name] = product_price
                     search_term_product_name_image[product_name] = product_image
                     search_term_product_name_updated_at[product_name] = time.time()
+                    search_term_product_name_url[product_name] = product_url
                     product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                                     search_term_product_name_price[product_name],
                                                     search_term_product_name_image[product_name],
-                                                    search_term_product_name_updated_at[product_name])
-                    result_to_db = serialize_product(product_result)
+                                                    search_term_product_name_updated_at[product_name],
+                                                    search_term_product_name_url[product_name])
+                    product_to_db = serialize_product(product_result)
+                    filter = {
+                        "name": product_to_db["name"],
+                        "productUrl": product_to_db["productUrl"]
+                    }
+
+                    update = {
+                        "$set": product_to_db
+                    }
+
                     products.update_one(
-                        {"name": result_to_db["name"]},
-                        {"$set": result_to_db},
+                        filter,
+                        update,
                         upsert=True
                     )
                     product_results.append(product_result)

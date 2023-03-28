@@ -28,7 +28,7 @@ def scrape_shopee(shopee_url, directory, db_url):
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome("./chromedriver/chromedriver111/chromedriver", options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver", chrome_options=chrome_options)
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
@@ -113,8 +113,9 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
             search_term_product_name_price = {}
             search_term_product_name_image = {}
             search_term_product_name_updated_at = {}
+            search_term_product_name_url = {}
             i = 0
-            for product in product_list.find_elements(By.CLASS_NAME, 'tWpFe2'):
+            for product in product_list.find_elements(By.XPATH, '//div[@class="col-xs-2-4 shopee-search-item-result__item"]/a'):
                 try:
                     if i == 5:
                         break
@@ -122,18 +123,30 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                     product_price = product.find_element(By.CLASS_NAME, 'hpDKMN').text
                     product_image = product.find_element(By.CSS_SELECTOR,
                                                          "img._7DTxhh").get_attribute('src')
+                    product_url = product.get_attribute('href')
                     search_term_product_name[suggestion] = product_name
                     search_term_product_name_price[product_name] = product_price
                     search_term_product_name_image[product_name] = product_image
                     search_term_product_name_updated_at[product_name] = time.time()
+                    search_term_product_name_url[product_name] = product_url
                     product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                                     search_term_product_name_price[product_name],
                                                     search_term_product_name_image[product_name],
-                                                    search_term_product_name_updated_at[product_name])
+                                                    search_term_product_name_updated_at[product_name],
+                                                    search_term_product_name_url[product_name])
                     product_to_db = serialize_product(product_result)
+                    filter = {
+                        "name": product_to_db["name"],
+                        "productUrl": product_to_db["productUrl"]
+                    }
+
+                    update = {
+                        "$set": product_to_db
+                    }
+
                     products.update_one(
-                        {"name": product_to_db["name"]},
-                        {"$set": product_to_db},
+                        filter,
+                        update,
                         upsert=True
                     )
                     product_results.append(product_result)

@@ -19,6 +19,7 @@ def get_tiki_from_API(directory, db_url):
     products = db['tiki products']
     tiki_search_suggestion_url = os.getenv('TIKI_SEARCH_SUGGESTION_URL')
     tiki_search_product_url = os.getenv('TIKI_TOP_SELL_PRODUCTS_URL')
+    tiki_url = "https://tiki.vn/"
 
     search_terms = []
     suggestion_results = []
@@ -73,6 +74,7 @@ def get_tiki_from_API(directory, db_url):
                 search_term_product_name_price = {}
                 search_term_product_name_image = {}
                 search_term_product_name_updated_at = {}
+                search_term_product_name_url = {}
 
                 params = {
                     'limit': 5,
@@ -95,14 +97,17 @@ def get_tiki_from_API(directory, db_url):
                         search_term_product_name_price[product_name] = "₫" + str(data['price'])
                         search_term_product_name_image[product_name] = data['thumbnail_url']
                         search_term_product_name_updated_at[product_name] = product_updated_at
+                        search_term_product_name_url[product_name] = tiki_url + data['url_path']
+
                         product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
                                                         search_term_product_name_price[product_name],
                                                         search_term_product_name_image[product_name],
-                                                        search_term_product_name_updated_at[product_name])
+                                                        search_term_product_name_updated_at[product_name],
+                                                        search_term_product_name_url[product_name])
                         product_to_db = serialize_product(product_result)
                         filter = {
                             "name": product_to_db["name"],
-                            "searchTerm": product_to_db["searchTerm"]
+                            "productUrl": product_to_db["productUrl"]
                         }
 
                         update = {

@@ -1,34 +1,18 @@
 [
     {
         "site": "shopee",
-        "keyword": "aa",
+        "keyword": "a",
         "suggestions": [
-            "aa stu",
-            "aa studio",
-            "aaa jean",
-            "aaa",
-            "aa",
-            "aatas",
-            "aah midnight club",
-            "aah",
-            "aah oil treatment"
+            "áo croptop",
+            "áo phông",
+            "áo khoác",
+            "áo thun",
+            "áo",
+            "áo sơ mi",
+            "áo sơ mi nữ",
+            "áo polo",
+            "áo khoác nữ"
         ],
-        "updatedAt": 1679803471.73634
-    },
-    {
-        "site": "shopee",
-        "keyword": "ab",
-        "suggestions": [
-            "ab house",
-            "abum đựng ảnh",
-            "abi",
-            "abum blackpink",
-            "abby",
-            "abutin",
-            "abi snack",
-            "ab",
-            "abott grow"
-        ],
-        "updatedAt": 1679803677.8900087
+        "updatedAt": 1680018882.0282612
     }
 ]
