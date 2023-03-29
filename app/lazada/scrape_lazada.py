@@ -53,34 +53,36 @@ def scrape_lazada(lazada_url, directory, db_url):
     site = "lazada"
 
     for search_term in search_terms:
-        try:
-            search_bar.send_keys(Keys.CONTROL + "a")
-            search_bar.send_keys(Keys.DELETE)
-            search_bar.send_keys(search_term)
-            time.sleep(10)
-            suggestion_list = driver.find_element(By.CLASS_NAME, 'suggest-list--3Tm8')
+        retry_count = 3
+        for i in range(retry_count):
+            try:
+                search_bar.send_keys(Keys.CONTROL + "a")
+                search_bar.send_keys(Keys.DELETE)
+                search_bar.send_keys(search_term)
+                time.sleep(10)
+                suggestion_list = driver.find_element(By.CLASS_NAME, 'suggest-list--3Tm8')
 
-            suggestion_keywords = [item.text for item in
-                                   suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
-            suggestion_updated_at = time.time()
-            suggestion_result = Result(site, search_term, suggestion_keywords, suggestion_updated_at)
-            suggestion_to_db = serialize_suggestion(suggestion_result)
-            search_suggestions.update_one(
-                {"keyword": suggestion_to_db["keyword"]},
-                {"$set": suggestion_to_db},
-                upsert=True
-            )
-            suggestion_results.append(suggestion_result)
-            scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
+                suggestion_keywords = [item.text for item in
+                                       suggestion_list.find_elements(By.CLASS_NAME, 'suggest-common--2KmE ')]
+                suggestion_updated_at = time.time()
+                suggestion_result = Result(site, search_term, suggestion_keywords, suggestion_updated_at)
+                suggestion_to_db = serialize_suggestion(suggestion_result)
+                search_suggestions.update_one(
+                    {"keyword": suggestion_to_db["keyword"]},
+                    {"$set": suggestion_to_db},
+                    upsert=True
+                )
+                suggestion_results.append(suggestion_result)
+                scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
 
-            # re-find the search bar
-            search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
-        except NoSuchElementException:
-            print("no such element")
-            continue
-        except StaleElementReferenceException:
-            print("stale element reference")
-            continue
+                # re-find the search bar
+                search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
+                break
+            except (NoSuchElementException, StaleElementReferenceException) as e:
+                if i == retry_count - 1:
+                    raise e
+                else:
+                    continue
 
     with open("app/lazada/lazada_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
@@ -94,72 +96,77 @@ def scrape_lazada(lazada_url, directory, db_url):
 
 
 def scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site):
-    try:
-        for suggestion in suggestion_to_db["suggestions"]:
-            search_bar.send_keys(Keys.CONTROL + "a")
-            search_bar.send_keys(Keys.DELETE)
-            search_bar.send_keys(suggestion)
-            search_bar.send_keys(Keys.ENTER)
-            time.sleep(10)
-            product_list = driver.find_element(By.XPATH, '//div[@class="_17mcb"]')
+    for suggestion in suggestion_to_db["suggestions"]:
+        retry_count = 3
+        for i in range(retry_count):
+            try:
+                search_bar.send_keys(Keys.CONTROL + "a")
+                search_bar.send_keys(Keys.DELETE)
+                search_bar.send_keys(suggestion)
+                search_bar.send_keys(Keys.ENTER)
+                time.sleep(10)
+                product_list = driver.find_element(By.XPATH, '//div[@class="_17mcb"]')
 
-            # map the product name with the product price, as a dictionary
-            search_term_product_name = {}
-            search_term_product_name_price = {}
-            search_term_product_name_image = {}
-            search_term_product_name_updated_at = {}
-            search_term_product_name_url = {}
-            i = 0
-            for product in product_list.find_elements(By.CLASS_NAME, 'qmXQo'):
-                try:
+                # map the product name with the product price, as a dictionary
+                search_term_product_name = {}
+                search_term_product_name_price = {}
+                search_term_product_name_image = {}
+                search_term_product_name_updated_at = {}
+                search_term_product_name_url = {}
+                i = 0
+                for product in product_list.find_elements(By.CLASS_NAME, 'qmXQo'):
                     if i == 5:
                         break
-                    product_name = product.find_element(By.CLASS_NAME, 'RfADt').text
-                    product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
-                    product_image = product.find_element(By.CSS_SELECTOR,
-                                                         "img.jBwCF").get_attribute('src')
-                    product_url = product.find_element(By.XPATH, '//div[@class="_95X4G"]/a').get_attribute('href')
-                    print(product_name)
-                    print(product_url)
-                    search_term_product_name[suggestion] = product_name
-                    search_term_product_name_price[product_name] = product_price
-                    search_term_product_name_image[product_name] = product_image
-                    search_term_product_name_updated_at[product_name] = time.time()
-                    search_term_product_name_url[product_name] = product_url
-                    product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
-                                                    search_term_product_name_price[product_name],
-                                                    search_term_product_name_image[product_name],
-                                                    search_term_product_name_updated_at[product_name],
-                                                    search_term_product_name_url[product_name])
-                    product_to_db = serialize_product(product_result)
-                    filter = {
-                        "name": product_to_db["name"],
-                        "productUrl": product_to_db["productUrl"]
-                    }
+                    try_count = 3
+                    for index in range(try_count):
+                        try:
+                            product_name = product.find_element(By.CLASS_NAME, 'RfADt').text
+                            product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
+                            product_image = product.find_element(By.CSS_SELECTOR,
+                                                                 "img.jBwCF").get_attribute('src')
+                            product_url = product.find_element(By.XPATH, '//div[@class="_95X4G"]/a').get_attribute(
+                                'href')
+                            print(product_name)
+                            print(product_url)
+                            search_term_product_name[suggestion] = product_name
+                            search_term_product_name_price[product_name] = product_price
+                            search_term_product_name_image[product_name] = product_image
+                            search_term_product_name_updated_at[product_name] = time.time()
+                            search_term_product_name_url[product_name] = product_url
+                            product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
+                                                            search_term_product_name_price[product_name],
+                                                            search_term_product_name_image[product_name],
+                                                            search_term_product_name_updated_at[product_name],
+                                                            search_term_product_name_url[product_name])
+                            product_to_db = serialize_product(product_result)
+                            filter = {
+                                "name": product_to_db["name"],
+                                "productUrl": product_to_db["productUrl"]
+                            }
 
-                    update = {
-                        "$set": product_to_db
-                    }
+                            update = {
+                                "$set": product_to_db
+                            }
 
-                    products.update_one(
-                        filter,
-                        update,
-                        upsert=True
-                    )
-                    product_results.append(product_result)
+                            products.update_one(
+                                filter,
+                                update,
+                                upsert=True
+                            )
+                            product_results.append(product_result)
+                            break
+                        except (NoSuchElementException, StaleElementReferenceException) as e:
+                            if index == try_count - 1:
+                                raise e
+                            else:
+                                continue
                     i += 1
-                except NoSuchElementException:
-                    print("no such element")
-                    continue
-                except StaleElementReferenceException:
-                    print("stale element reference")
-                    continue
 
-            # re-find the search bar
-            search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
-    except NoSuchElementException:
-        print("no such element")
-        pass
-    except StaleElementReferenceException:
-        print("stale element reference")
-        pass
+                # re-find the search bar
+                search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
+                break
+            except (NoSuchElementException, StaleElementReferenceException) as e:
+                if i == retry_count - 1:
+                    raise e
+                else:
+                    continue

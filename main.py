@@ -22,10 +22,15 @@ def scrape_shopping_sites(directory, db_url):
 
 if __name__ == '__main__':
     load_dotenv()
-    while True:
-        db_url = os.getenv('MONGO_URL')
-        directory = 'vi-wordnet'
-        mockDir = 'mock'
-        get_tiki_from_API(directory, db_url)
-        # sleep for 2 hour
-        time.sleep(7200)
+    # while True:
+    #     db_url = os.getenv('MONGO_URL')
+    #     directory = 'vi-wordnet'
+    #     mockDir = 'mock'
+    #     get_tiki_from_API(directory, db_url)
+    #     # sleep for 2 hour
+    #     time.sleep(7200)
+
+    db_url = os.getenv('MONGO_URL')
+    directory = 'vi-wordnet'
+    mockDir = 'mock'
+    scrape_lazada('https://www.lazada.vn/', mockDir, db_url)

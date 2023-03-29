@@ -77,7 +77,7 @@ def get_tiki_from_API(directory, db_url):
                 search_term_product_name_url = {}
 
                 params = {
-                    'limit': 5,
+                    'limit': 40,
                     'include': "advertisement",
                     'trackity_id': 'dfddd561-8193-a305-1e29-fcc64ee96202',
                     'q': suggestion,
@@ -90,7 +90,10 @@ def get_tiki_from_API(directory, db_url):
                     product_data = response.json()
                     if 'data' not in product_data:
                         continue
+                    i = 0
                     for data in product_data['data']:
+                        if i == 5:
+                            break
                         product_updated_at = time.time()
                         product_name = data['name']
                         search_term_product_name[suggestion] = product_name
@@ -120,6 +123,7 @@ def get_tiki_from_API(directory, db_url):
                             upsert=True
                         )
                         product_results.append(product_result)
+                        i += 1
 
     with open("app/tiki/tiki_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
