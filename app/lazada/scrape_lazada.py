@@ -4,6 +4,7 @@ import os
 
 import pymongo
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -23,20 +24,22 @@ def scrape_lazada(lazada_url, directory, db_url):
     search_suggestions = db['lazada search suggestions']
     products = db['lazada products']
     # Initialize the webdriver
-    # chrome_options = Options()
-    # chrome_options.add_argument("--disable-extensions")
-    # chrome_options.add_argument("--disable-gpu")
-    # chrome_options.add_argument("--no-sandbox")
-    # chrome_options.add_argument("--headless")
+    chrome_options = Options()
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver", chrome_options=chrome_options)
     driver.maximize_window()
     # Navigate to the Lazada Vietnam website
     driver.get(lazada_url)
     print("scraping lazada")
 
     # Wait for the search bar to be present and interactable
-    search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
+    search_bar = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, '//input[@id="q"]')))
+    print("line42:", search_bar)
 
     suggestion_results = []
     product_results = []
@@ -53,7 +56,7 @@ def scrape_lazada(lazada_url, directory, db_url):
     site = "lazada"
 
     for search_term in search_terms:
-        retry_count = 3
+        retry_count = 5
         for i in range(retry_count):
             try:
                 search_bar.send_keys(Keys.CONTROL + "a")
@@ -76,12 +79,15 @@ def scrape_lazada(lazada_url, directory, db_url):
                 scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
 
                 # re-find the search bar
-                search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
+                search_bar = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, '//input[@id="q"]')))
+                print("line 84:", search_bar)
                 break
             except (NoSuchElementException, StaleElementReferenceException) as e:
                 if i == retry_count - 1:
                     raise e
                 else:
+                    print("Line 90 Retrying...")
                     continue
 
     with open("app/lazada/lazada_search_suggestions.json", "w") as file:
@@ -96,16 +102,19 @@ def scrape_lazada(lazada_url, directory, db_url):
 
 
 def scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site):
+    ignored_exceptions = (NoSuchElementException, StaleElementReferenceException,)
     for suggestion in suggestion_to_db["suggestions"]:
-        retry_count = 3
+        retry_count = 5
         for i in range(retry_count):
             try:
+                print("line 110:", suggestion, search_bar)
                 search_bar.send_keys(Keys.CONTROL + "a")
                 search_bar.send_keys(Keys.DELETE)
                 search_bar.send_keys(suggestion)
                 search_bar.send_keys(Keys.ENTER)
-                time.sleep(10)
+                driver.implicitly_wait(20)
                 product_list = driver.find_element(By.XPATH, '//div[@class="_17mcb"]')
+                print("line 116:", product_list)
 
                 # map the product name with the product price, as a dictionary
                 search_term_product_name = {}
@@ -117,17 +126,19 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                 for product in product_list.find_elements(By.CLASS_NAME, 'qmXQo'):
                     if i == 5:
                         break
-                    try_count = 3
+                    try_count = 5
                     for index in range(try_count):
                         try:
                             product_name = product.find_element(By.CLASS_NAME, 'RfADt').text
+                            print("132",product_name)
                             product_price = product.find_element(By.CLASS_NAME, 'aBrP0').text
+                            print("134",product_price)
                             product_image = product.find_element(By.CSS_SELECTOR,
                                                                  "img.jBwCF").get_attribute('src')
+                            print("137",product_image)
                             product_url = product.find_element(By.XPATH, '//div[@class="_95X4G"]/a').get_attribute(
                                 'href')
-                            print(product_name)
-                            print(product_url)
+                            print("140",product_url)
                             search_term_product_name[suggestion] = product_name
                             search_term_product_name_price[product_name] = product_price
                             search_term_product_name_image[product_name] = product_image
@@ -159,14 +170,18 @@ def scrape_products(search_bar, suggestion_to_db, product_results, products, dri
                             if index == try_count - 1:
                                 raise e
                             else:
+                                print("Line 172 Retrying...")
                                 continue
                     i += 1
 
                 # re-find the search bar
-                search_bar = driver.find_element(By.XPATH, '//input[@id="q"]')
+                search_bar = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, '//input[@id="q"]')))
+                print("179",search_bar)
                 break
             except (NoSuchElementException, StaleElementReferenceException) as e:
                 if i == retry_count - 1:
                     raise e
                 else:
+                    print("line 185 Retrying...")
                     continue
