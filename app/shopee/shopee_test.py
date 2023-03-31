@@ -32,7 +32,7 @@ def scrape_shopee_test(shopee_url):
     driver.get(shopee_url)
     actions = ActionChains(driver)
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
 
     user_name = driver.find_element(By.XPATH, '//input[@placeholder="Email/Số điện thoại/Tên đăng nhập"]')
     password = driver.find_element(By.XPATH, '//input[@placeholder="Mật khẩu"]')
@@ -48,15 +48,15 @@ def scrape_shopee_test(shopee_url):
     tip_content_btn = driver.find_element(By.XPATH, '//div[@class="tip-content"]//button[@type="button"]')
     tip_content_btn.click()
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     add_item = driver.find_element(By.XPATH, '//span[@class="add-btn"]')
     add_item.click()
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     check_box = driver.find_element(By.XPATH, '//td[@class="is-first"]//span[@class="shopee-checkbox__indicator"]')
     check_box.click()
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     confirm_add = driver.find_element(By.XPATH, '//div[@class="shopee-modal__footer with-assist"]//button[2]')
     confirm_add.click()
 
@@ -68,17 +68,17 @@ def scrape_shopee_test(shopee_url):
         EC.element_to_be_clickable((By.XPATH, '//div[@class="right"]//div[@class="shopee-form-item__control"]')))
     actions.click(element).perform()
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     confirm_btn = driver.find_element(By.XPATH,
                                       '//div[@x-placement="top"]//div[@class="shopee-popover__content"]//div//div//button[@type="button"]')
     confirm_btn.click()
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     add_more_keyword = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//div[@class="keywords-controls"]//button[1]')))
     add_more_keyword.click()
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
     input_search_key = driver.find_element(By.XPATH, '//input[@placeholder="Nhập từ khóa của bạn tại đây"]')
     input_search_key.send_keys("iphone mini")
     input_search_key.send_keys(Keys.ENTER)
@@ -113,7 +113,8 @@ def scrape_shopee_test(shopee_url):
 
     print(new_result)
 
-    time.sleep(1000)
+    with open("app/shopee/data.json", "w") as outfile:
+        json.dump(new_result, outfile, indent=4, ensure_ascii=False)
     print("scraping shopee")
 
     # Close the webdriver
