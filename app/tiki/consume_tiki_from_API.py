@@ -73,14 +73,12 @@ def get_tiki_from_API(directory, db_url):
                 suggestion_keywords_results = suggestion_to_db["suggestions"]
                 suggestion_results.append(suggestion_to_db)
 
-            # run_scrape_in_parallel(suggestion_keywords_results, headers, tiki_keyword_stat_url, site, keyword_count,
-            #                        tiki_search_product_url, tiki_url, products, product_results)
-
             scrape_keyword_count_partial = functools.partial(scrape_keyword_count, suggestion_keywords_results, headers,
                                                              tiki_keyword_stat_url)
             scrape_tiki_products_partial = functools.partial(scrape_tiki_products, suggestion_keywords_results,
                                                              tiki_search_product_url, headers, tiki_url, site)
 
+            # runs the two functions concurrently
             with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
                 future_scrape_keyword_count = executor.submit(scrape_keyword_count_partial, site, keyword_count)
                 future_scrape_tiki_products = executor.submit(scrape_tiki_products_partial, products, product_results)
@@ -118,6 +116,7 @@ def scrape_keyword_count(suggestion_keywords_results, headers, tiki_keyword_stat
             keyword_count_result = KeywordCount(site, suggestion, count, keyword_count_updated_at)
             keyword_count_to_db = serialize_keyword_count(keyword_count_result)
             filter = {
+                "site": site,
                 "keyword": keyword_count_to_db["keyword"]
             }
 
@@ -131,7 +130,9 @@ def scrape_keyword_count(suggestion_keywords_results, headers, tiki_keyword_stat
                 upsert=True
             )
 
-    print("done scraping keyword stat")
+            print("Original string: '{}' (type: {})".format(keyword_count_to_db["keyword"], type(keyword_count_to_db["keyword"])))
+
+    print("done scraping tiki keyword stat")
 
 
 def scrape_tiki_products(suggestion_keywords_results, tiki_search_product_url, headers, tiki_url, site, products,
