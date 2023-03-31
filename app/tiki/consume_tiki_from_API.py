@@ -52,7 +52,6 @@ def get_tiki_from_API(directory, db_url):
         response = requests.get(tiki_search_suggestion_url, params=params, headers=headers)
 
         if response.status_code == 200:
-            print(response.url)
             response_data = response.json()
             # if there is no data field in the response, then skip this search term
             if 'data' not in response_data:
@@ -90,6 +89,8 @@ def get_tiki_from_API(directory, db_url):
 
     with open("app/tiki/tiki_products.json", "w") as file:
         json.dump(product_results, file, default=serialize_product, indent=4, ensure_ascii=False)
+
+    print("get tiki from API done")
 
 
 def scrape_keyword_count(suggestion_keywords_results, headers, tiki_keyword_stat_url, site, keyword_count):
@@ -129,10 +130,6 @@ def scrape_keyword_count(suggestion_keywords_results, headers, tiki_keyword_stat
                 update,
                 upsert=True
             )
-
-            print("Original string: '{}' (type: {})".format(keyword_count_to_db["keyword"], type(keyword_count_to_db["keyword"])))
-
-    print("done scraping tiki keyword stat")
 
 
 def scrape_tiki_products(suggestion_keywords_results, tiki_search_product_url, headers, tiki_url, site, products,
@@ -191,5 +188,3 @@ def scrape_tiki_products(suggestion_keywords_results, tiki_search_product_url, h
                 )
                 product_results.append(product_to_db)
                 i += 1
-
-    print("done scraping products")

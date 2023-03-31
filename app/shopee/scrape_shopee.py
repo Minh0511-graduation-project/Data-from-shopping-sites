@@ -1,3 +1,5 @@
+import concurrent.futures
+import functools
 import json
 import time
 import os
@@ -38,8 +40,12 @@ def scrape_shopee(shopee_url, directory, db_url):
 
     driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
     driver.maximize_window()
+
+    seller_driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
+    seller_driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
+    seller_driver.get(shopee_ad_url)
     print("scraping shopee")
 
     # close popup
@@ -76,7 +82,6 @@ def scrape_shopee(shopee_url, directory, db_url):
 
         response = requests.get(shopee_search_suggestion_url, params=params, headers=headers)
         if response.status_code == 200:
-            print(response.url)
             response_data = response.json()
             # if there is no data field in the response, then skip this search term
             if 'keywords' not in response_data or len(response_data['keywords']) == 0:
@@ -98,9 +103,14 @@ def scrape_shopee(shopee_url, directory, db_url):
                 suggestion_keywords_results = suggestion_to_db["suggestions"]
                 suggestion_results.append(suggestion_to_db)
 
-            # scrape_products(search_bar, suggestion_keywords_results, product_results, products, driver, site)
+            scrape_products_partial = functools.partial(scrape_products, search_bar, suggestion_keywords_results, product_results, products)
+            scrape_keyword_count_partial = functools.partial(scrape_keyword_count, seller_driver, shopee_ad_url, suggestion_keywords_results)
 
-            scrape_keyword_count(driver, shopee_ad_url, suggestion_keywords_results, site, keyword_count)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
+                future_scrape_products = executor.submit(scrape_products_partial, driver, site)
+                future_keyword_count = executor.submit(scrape_keyword_count_partial, site, keyword_count)
+
+                concurrent.futures.wait([future_scrape_products, future_keyword_count])
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
@@ -190,58 +200,57 @@ def scrape_products(search_bar, suggestion_keywords_results, product_results, pr
                     continue
 
 
-def scrape_keyword_count(driver, shopee_ad_url, suggestion_keywords_results, site, keyword_count):
-    driver.get(shopee_ad_url)
-    actions = ActionChains(driver)
+def scrape_keyword_count(seller_driver, shopee_ad_url, suggestion_keywords_results, site, keyword_count):
+    actions = ActionChains(seller_driver)
 
-    driver.implicitly_wait(20)
+    seller_driver.implicitly_wait(20)
 
-    user_name = driver.find_element(By.XPATH, '//input[@placeholder="Email/Số điện thoại/Tên đăng nhập"]')
-    password = driver.find_element(By.XPATH, '//input[@placeholder="Mật khẩu"]')
+    user_name = seller_driver.find_element(By.XPATH, '//input[@placeholder="Email/Số điện thoại/Tên đăng nhập"]')
+    password = seller_driver.find_element(By.XPATH, '//input[@placeholder="Mật khẩu"]')
 
     user_name.send_keys(os.getenv('SHOPEE_SELLER_USERNAME'))
     password.send_keys(os.getenv('SHOPEE_SELLER_PASSWORD'))
     password.send_keys(Keys.ENTER)
 
-    driver.implicitly_wait(20)
-    close_modal_btn = driver.find_element(By.XPATH, '//div[@class="shopee-modal guide-modal"]//button[@type="button"]')
+    seller_driver.implicitly_wait(20)
+    close_modal_btn = seller_driver.find_element(By.XPATH, '//div[@class="shopee-modal guide-modal"]//button[@type="button"]')
     close_modal_btn.click()
 
-    tip_content_btn = driver.find_element(By.XPATH, '//div[@class="tip-content"]//button[@type="button"]')
+    tip_content_btn = seller_driver.find_element(By.XPATH, '//div[@class="tip-content"]//button[@type="button"]')
     tip_content_btn.click()
 
-    driver.implicitly_wait(20)
-    add_item = driver.find_element(By.XPATH, '//span[@class="add-btn"]')
+    seller_driver.implicitly_wait(20)
+    add_item = seller_driver.find_element(By.XPATH, '//span[@class="add-btn"]')
     add_item.click()
 
-    driver.implicitly_wait(20)
-    check_box = driver.find_element(By.XPATH, '//td[@class="is-first"]//span[@class="shopee-checkbox__indicator"]')
+    seller_driver.implicitly_wait(20)
+    check_box = seller_driver.find_element(By.XPATH, '//td[@class="is-first"]//span[@class="shopee-checkbox__indicator"]')
     check_box.click()
 
-    driver.implicitly_wait(20)
-    confirm_add = driver.find_element(By.XPATH, '//div[@class="shopee-modal__footer with-assist"]//button[2]')
+    seller_driver.implicitly_wait(20)
+    confirm_add = seller_driver.find_element(By.XPATH, '//div[@class="shopee-modal__footer with-assist"]//button[2]')
     confirm_add.click()
 
-    element = driver.find_element(By.XPATH, '//div[@class="right"]//div[@class="shopee-form-item__control"]')
-    actions = ActionChains(driver)
+    element = seller_driver.find_element(By.XPATH, '//div[@class="right"]//div[@class="shopee-form-item__control"]')
+    actions = ActionChains(seller_driver)
     actions.move_to_element(element).perform()
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(seller_driver, 10)
     element = wait.until(
         EC.element_to_be_clickable((By.XPATH, '//div[@class="right"]//div[@class="shopee-form-item__control"]')))
     actions.click(element).perform()
 
-    driver.implicitly_wait(20)
-    confirm_btn = driver.find_element(By.XPATH,
+    seller_driver.implicitly_wait(20)
+    confirm_btn = seller_driver.find_element(By.XPATH,
                                       '//div[@x-placement="top"]//div[@class="shopee-popover__content"]//div//div//button[@type="button"]')
     confirm_btn.click()
 
-    driver.implicitly_wait(20)
-    add_more_keyword = WebDriverWait(driver, 10).until(
+    seller_driver.implicitly_wait(20)
+    add_more_keyword = WebDriverWait(seller_driver, 10).until(
         EC.element_to_be_clickable((By.XPATH, '//div[@class="keywords-controls"]//button[1]')))
     add_more_keyword.click()
 
-    driver.implicitly_wait(20)
-    input_search_key = driver.find_element(By.XPATH, '//input[@placeholder="Nhập từ khóa của bạn tại đây"]')
+    seller_driver.implicitly_wait(20)
+    input_search_key = seller_driver.find_element(By.XPATH, '//input[@placeholder="Nhập từ khóa của bạn tại đây"]')
     for suggestion in suggestion_keywords_results:
         input_search_key.send_keys(Keys.CONTROL + "a")
         input_search_key.send_keys(Keys.DELETE)
@@ -249,7 +258,7 @@ def scrape_keyword_count(driver, shopee_ad_url, suggestion_keywords_results, sit
         input_search_key.send_keys(Keys.ENTER)
 
         time.sleep(5)
-        suggestion_list = driver.find_element(By.XPATH,
+        suggestion_list = seller_driver.find_element(By.XPATH,
                                               '//div[@class="shopee-table"]//table[@class="shopee-table__body"]//tbody')
         time.sleep(5)
         suggestion_counter = [item for item in suggestion_list.find_elements(
