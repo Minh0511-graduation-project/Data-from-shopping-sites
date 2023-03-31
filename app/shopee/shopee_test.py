@@ -89,16 +89,8 @@ def scrape_shopee_test(shopee_url):
     time.sleep(5)
     suggestion_counter = [item for item in suggestion_list.find_elements(
         By.CLASS_NAME, 'shopee-table__cell')]
-    time.sleep(5)
-    suggestion_keyword = [item for item in suggestion_list.find_elements(
-        By.CLASS_NAME, 'keyword')]
 
-    result = []
     suggestion_counter_result = []
-    for keyword in suggestion_keyword:
-        result.append(keyword.text)
-
-    print(result)
 
     for counter in suggestion_counter:
         suggestion_counter_result.append(counter.text)

@@ -24,4 +24,7 @@ def scrape_shopping_sites(directory, db_url):
 
 if __name__ == '__main__':
     load_dotenv()
-    scrape_shopee_test("https://banhang.shopee.vn/portal/marketing/pas/new")
+    directory = 'vi-wordnet'
+    mockDir = 'mock'
+    db_url = os.getenv('MONGO_URL')
+    scrape_shopee('https://shopee.vn/', mockDir, db_url)
