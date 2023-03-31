@@ -1,682 +1,452 @@
 [
     {
         "site": "tiki",
-        "searchTerm": "acnes",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b0/f1/a1/3477dace6041727bd6f8c2593900c279.jpg",
-        "name": "Kem rửa mặt Vitamin Acnes Vitamin Cleanser 100g",
-        "price": "59.000 ₫",
-        "updatedAt": 1679566774.5394065
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "acnes",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b0/f1/a1/3477dace6041727bd6f8c2593900c279.jpg",
-        "name": "Kem rửa mặt Vitamin Acnes Vitamin Cleanser 100g",
-        "price": "59.000 ₫",
-        "updatedAt": 1679566774.7057397
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "acnes",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/8a/fe/93/8f8b067239d4e1f0150315bfd293d271.jpg",
-        "name": "Kem rửa mặt ngăn ngừa mụn Acnes Creamy Wash (100g)",
-        "price": "59.000 ₫",
-        "updatedAt": 1679566774.8927848
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "acnes",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/8c/9b/6f/b24c11dcf5f25ecc8729f73bcaebf5f2.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566775.041253
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "acnes",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/92/3e/ed/e2ab345690b6055e81d6ece27361e6d8.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566775.1598806
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/17/f5/23/f1134e67d0fe3f5711dec0f0e49a8b3b.jpg",
-        "name": "Áo Polo nam cổ bẻ ngắn tay, chất liệu vải cá sấu cotton cao cấp, trẻ trung, năng động – FORMEN SHOP – FMPS150",
-        "price": "159.000 ₫",
-        "updatedAt": 1679566795.6480892
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/54/0a/48/a12dae1024f5af51fd3b267de4b35c24.jpg",
-        "name": "Áo Thun Nam cổ tròn TSIMPLE áo phông trơn basic tay ngắn vải cotton co giãn, dày dặn , form chuẩn nhiều màu",
-        "price": "89.000 ₫",
-        "updatedAt": 1679566795.7589312
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/fe/cc/43/c56a787b585927cd5c9f465f5311a268.jpg",
-        "name": "Áo Thể Thao Nam TSIMPLE thun nam tập gym ngắn tay vải thun lạnh thoáng mát, co giãn, chuẩn form nhiều màu",
-        "price": "89.000 ₫",
-        "updatedAt": 1679566795.8774056
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/15/41/bb/57a30a38dd9fbd7c0c2dd00728844613.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566796.094636
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo thun nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0b/c5/67/43065bdcdd662c45f6fb25435cab024b.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566796.2612414
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/64/fa/fe/7eddac0c3cfeec855db4e1cf43b44a54.png",
-        "name": "Apple Watch SE 2022 GPS Sport Band",
-        "price": "6.790.000 ₫",
-        "updatedAt": 1679566816.7461116
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5d/27/83/9d556ce20fee72725d9716417c358aaf.jpg",
-        "name": "Apple Watch Series 3 GPS Sport Band (Viền Nhôm, Dây Cao Su) - Silver",
-        "price": "4.990.000 ₫",
-        "updatedAt": 1679566816.8987422
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/60/5f/c7/d02de8b627958ef245d2255b5876c1c4.png",
-        "name": "Apple Watch Series 8 GPS Sport Band",
-        "price": "9.790.000 ₫",
-        "updatedAt": 1679566817.0097594
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e3/db/55/51ce2a1df989d42287a2b529875402b3.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566817.1186295
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "apple watch",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/6a/08/30/6a6468a417125bc9a61b85f8f8ece915.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566817.2945745
-    },
-    {
-        "site": "tiki",
         "searchTerm": "airpod",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
         "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
-        "price": "2.790.000 ₫",
-        "updatedAt": 1679566837.7784638
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
-        "name": "Apple AirPods Pro - MLWK3",
-        "price": "4.590.000 ₫",
-        "updatedAt": 1679566837.9354982
+        "price": "₫2750000",
+        "updatedAt": 1680230879.088835,
+        "productUrl": "https://tiki.vn/apple-airpods-2-hop-sac-thuong-p123838761.html?spid=12567799"
     },
     {
         "site": "tiki",
         "searchTerm": "airpod",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/79/3a/99fb3f8dd32c331e6535e5aae5d51f98.jpg",
         "name": "Apple AirPods 3 2022 sạc Lightning - MPNY3",
-        "price": "4.380.000 ₫",
-        "updatedAt": 1679566838.1006231
+        "price": "₫4190000",
+        "updatedAt": 1680230879.1537921,
+        "productUrl": "https://tiki.vn/apple-airpods-3-2022-sac-lightning-mpny3-p197665885.html?spid=197665886"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "airpod",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/11/cc/d5/904dc2051c8c655a352bbe8a44c5ea14.jpg",
+        "name": "Apple AirPods Pro - MLWK3",
+        "price": "₫4590000",
+        "updatedAt": 1680230879.216549,
+        "productUrl": "https://tiki.vn/apple-airpods-pro-mlwk3-p140436661.html?spid=140436675"
     },
     {
         "site": "tiki",
         "searchTerm": "airpod",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566838.259235
+        "name": "Apple AirPods Pro 2 - MQD83",
+        "price": "₫5990000",
+        "updatedAt": 1680230879.2797127,
+        "productUrl": "https://tiki.vn/apple-airpods-pro-2-mqd83-p197665467.html?spid=197665468"
     },
     {
         "site": "tiki",
         "searchTerm": "airpod",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/81/02/e7/f9db683ef678ef0642b6dbf0f35ca04b.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566838.4097497
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f0/fe/fa/73dff69e193720f421cf4051ebaddc5b.jpg",
+        "name": "Bao da bảo vệ tai nghe Airpod/Airpods 2 phối da",
+        "price": "₫139000",
+        "updatedAt": 1680230879.3419974,
+        "productUrl": "https://tiki.vn/bao-da-bao-ve-tai-nghe-airpod-airpods-2-phoi-da-p36715411.html?spid=60797297"
     },
     {
         "site": "tiki",
-        "searchTerm": "anker",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e3/0e/18/ecd7a9d5d5d75a119b6e3b852ffa278d.jpg",
-        "name": "Củ sạc nhanh chuẩn kép PD và QC3.0 Remax RP-U88 công suất 20W - Hàng chính hãng",
-        "price": "239.000 ₫",
-        "updatedAt": 1679566858.986268
+        "searchTerm": "apple watch",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/52/bd/66/efc540d08948ffc3555933224c26d387.jpg",
+        "name": "Dây Đeo Thay Thế Ocean Band Kai Dành Cho Đồng Hồ Thông Minh Apple Watch Ultra 49mm Series 8 7 6 5 4 3 Size 38/40/41/42/44/45 mm- Hàng Chính Hãng",
+        "price": "₫190000",
+        "updatedAt": 1680230880.0515764,
+        "productUrl": "https://tiki.vn/day-deo-thay-the-ocean-band-kai-danh-cho-dong-ho-thong-minh-apple-watch-ultra-49mm-series-8-7-6-5-4-3-size-38-40-41-42-44-45-mm-hang-chinh-hang-p201505358.html?spid=201505372"
     },
     {
         "site": "tiki",
-        "searchTerm": "anker",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/00/3c/85/9b42883482347330ecf19c05ac7d3c83.jpg",
-        "name": "Pin Sạc Dự Phòng Anker PowerCore Select 10000mAh - A1223H31 - Hàng Chính Hãng",
-        "price": "463.000 ₫",
-        "updatedAt": 1679566859.1579106
+        "searchTerm": "apple watch",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b7/6f/5c/aeef80da19ad10d0b74ae70625772e76.jpg",
+        "name": "Ốp Case Shock Proof Vỏ Bảo Vệ Dành Cho Đồng Hồ Apple Watch Series 7/ Series 8 Size 41/45mm- Hàng Chính Hãng",
+        "price": "₫99000",
+        "updatedAt": 1680230880.1138394,
+        "productUrl": "https://tiki.vn/op-case-shock-proof-vo-bao-ve-danh-cho-dong-ho-apple-watch-series-7-size-41-45mm-hang-chinh-hang-p160603459.html?spid=160603465"
     },
     {
         "site": "tiki",
-        "searchTerm": "anker",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/3d/60/a5/d07f6c14f74392f0140183f72130a489.jpg",
-        "name": "Pin Sạc Dự Phòng Anker PowerCore Select 20000mAh - A1363 - Hàng Chính Hãng",
-        "price": "789.000 ₫",
-        "updatedAt": 1679566859.317601
+        "searchTerm": "apple watch",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b2/d7/75/c18a1598167051f35541bf22c357eea5.jpg",
+        "name": "Ốp Case Siêu Mỏng Kai Thinfit Dành cho Apple Watch Series 6/ Apple Watch SE/ Apple Watch Series 5/4 Size 40/44mm- Hàng Chính Hãng",
+        "price": "₫79000",
+        "updatedAt": 1680230880.178354,
+        "productUrl": "https://tiki.vn/op-case-sieu-mong-kai-thinfit-danh-cho-apple-watch-series-6-apple-watch-se-apple-watch-series-5-4-size-40-44mm-hang-chinh-hang-p150921536.html?spid=150921538"
     },
     {
         "site": "tiki",
-        "searchTerm": "anker",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/63/dc/46/66c41a8c07343237859379732f435366.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566859.4701023
+        "searchTerm": "apple watch",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/45/ff/a2/9cd2614ea31b756eed35bbf5cd3c2609.png",
+        "name": "Dây Đồng Hồ Thép Lưới Dành Cho Apple Watch KAi.N Steel- Hàng Chính Hãng",
+        "price": "₫236000",
+        "updatedAt": 1680230880.240765,
+        "productUrl": "https://tiki.vn/day-dong-ho-thep-luoi-danh-cho-apple-watch-kai-n-steel-hang-chinh-hang-p209376119.html?spid=220677643"
     },
     {
         "site": "tiki",
-        "searchTerm": "anker",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/f4/d2/f1/f535556d18cc59bfe95131cea2b0acdc.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566859.5922036
+        "searchTerm": "apple watch",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5d/13/28/726461dc33de2b81aefbeccb5a238bd2.jpg",
+        "name": "Dây Silicon dành cho đồng hồ Apple nhiều màu- Hàng chính hãng",
+        "price": "₫93998",
+        "updatedAt": 1680230880.305179,
+        "productUrl": "https://tiki.vn/day-silicon-danh-cho-dong-ho-apple-nhieu-mau-hang-chinh-hang-p193974034.html?spid=242107003"
     },
     {
         "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4a/4b/11/d2717e65c7829314381f4240b4450a1f.jpg",
-        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024",
-        "price": "129.000 ₫",
-        "updatedAt": 1679566880.0740974
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/0c/dd/e7/e6431984901119a1f8166cc4e579da93.png",
+        "name": "Apple iPhone 14 Pro Max",
+        "price": "₫29990000",
+        "updatedAt": 1680230881.020908,
+        "productUrl": "https://tiki.vn/apple-iphone-14-pro-max-p197216291.html?spid=197216306"
     },
     {
         "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c2/10/48/76aef762b7be402b914ffa9c39886b3e.jpg",
-        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024 - XÁM TRẮNG - M",
-        "price": "129.000 ₫",
-        "updatedAt": 1679566880.2292695
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a1/cd/ce/e9c165d355b2259c323ac7150479b63e.jpg",
+        "name": "Apple iPhone 11",
+        "price": "₫12090000",
+        "updatedAt": 1680230881.0821269,
+        "productUrl": "https://tiki.vn/apple-iphone-11-p184036446.html?spid=32033734"
     },
     {
         "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a7/a7/4a/6749987f4726dd5ab4c4822dc966d851.jpg",
-        "name": "ÁO CHỐNG NẮNG NAM THÔNG HƠI",
-        "price": "66.000 ₫",
-        "updatedAt": 1679566880.3973517
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b7/ba/88/66059a54a3a139d45841d412379b1fe4.jpg",
+        "name": "Apple iPhone 13",
+        "price": "₫17750000",
+        "updatedAt": 1680230881.1458132,
+        "productUrl": "https://tiki.vn/apple-iphone-13-hang-chinh-hang-p184059211.html?spid=123547399"
     },
     {
         "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/b1/ef/f4c8c987767d81fe62098d3f31544cea.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566880.5534348
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ff/56/67/179201822da2de5592fe3675192c9c63.png",
+        "name": "Apple iPhone 14 Pro",
+        "price": "₫25490000",
+        "updatedAt": 1680230881.208279,
+        "productUrl": "https://tiki.vn/apple-iphone-14-pro-p197216279.html?spid=197216283"
     },
     {
         "site": "tiki",
-        "searchTerm": "áo chống nắng nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/03/00/b9/c7ab680ded6eeb94e2256afe3bf26538.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566880.6856983
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "ấm siêu tốc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/9f/b0/bb/9297d7b11a4b2ba3bce07e3c9322db99.jpg",
-        "name": "Ấm Siêu Tốc Inox Happy Time Sunhouse HTD1081 (1.8 lít)- Hàng chính hãng",
-        "price": "151.000 ₫",
-        "updatedAt": 1679566901.1693928
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "ấm siêu tốc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/1c/c2/02/0f8d61c1467ef5c3588489fbc69ad313.jpg",
-        "name": "Ấm Siêu Tốc Inox SUNHOUSE HAPPY TIME HTD1055 (1.5L) - Hàng Chính Hãng",
-        "price": "119.000 ₫",
-        "updatedAt": 1679566901.3238122
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "ấm siêu tốc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/50/1d/d8/12cc3fc185fdb9026da48b1144b353ef.jpg",
-        "name": "Ấm Siêu Tốc Nagakawa NAG0308 (1.8 Lít) - Hàng Chính Hãng",
-        "price": "137.000 ₫",
-        "updatedAt": 1679566901.500654
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "ấm siêu tốc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f1/55/7b/674d6146267683adae71d5e043e8f4e1.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566901.6168933
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "ấm siêu tốc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/9f/b0/bb/9297d7b11a4b2ba3bce07e3c9322db99.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566901.8173783
+        "searchTerm": "Apple Flagship Store",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e0/c9/78/e028f9346e1922b0aadc750f272609c3.jpg",
+        "name": "Apple iPhone 12",
+        "price": "₫15490000",
+        "updatedAt": 1680230881.2706273,
+        "productUrl": "https://tiki.vn/apple-iphone-12-hang-chinh-hang-p123345348.html?spid=70766425"
     },
     {
         "site": "tiki",
         "searchTerm": "atomic habits",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/32/b3/085ee546b06b792e847edd88b02b8f15.jpg",
         "name": "Sách Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn/ Tặng kèm Bookmark)",
-        "price": "186.650 ₫",
-        "updatedAt": 1679566922.4158447
+        "price": "₫186650",
+        "updatedAt": 1680230881.9367664,
+        "productUrl": "https://tiki.vn/sach-atomic-habits-thay-doi-ti-hon-hieu-qua-bat-ngo-nhung-thay-doi-nho-tao-nen-thanh-cong-lon-tang-kem-bookmark-p145289356.html?spid=145289357"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "atomic habits",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/32/b3/085ee546b06b792e847edd88b02b8f15.jpg",
+        "name": "Sách Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn/ Tặng kèm Bookmark)",
+        "price": "₫186650",
+        "updatedAt": 1680230881.999274,
+        "productUrl": "https://tiki.vn/sach-atomic-habits-thay-doi-ti-hon-hieu-qua-bat-ngo-nhung-thay-doi-nho-tao-nen-thanh-cong-lon-tang-kem-bookmark-p145289356.html?spid=145289357"
     },
     {
         "site": "tiki",
         "searchTerm": "atomic habits",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c2/77/6d/b22a78f910ff68e5bcb7f42a2fce9ba2.png",
         "name": "Thay Đổi Tí Hon Hiệu Quả Bất Ngờ - Atomic Habits",
-        "price": "160.650 ₫",
-        "updatedAt": 1679566922.5803113
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "atomic habits",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/32/b3/085ee546b06b792e847edd88b02b8f15.jpg",
-        "name": "Sách Atomic Habits - Thay Đổi Tí Hon, Hiệu Quả Bất Ngờ ( Những Thay Đổi Nhỏ Tạo Nên Thành Công Lớn/ Tặng kèm Bookmark)",
-        "price": "186.650 ₫",
-        "updatedAt": 1679566922.702874
+        "price": "₫160650",
+        "updatedAt": 1680230882.0619953,
+        "productUrl": "https://tiki.vn/thay-doi-ti-hon-hieu-qua-bat-ngo-atomic-habits-p176752838.html?spid=200729386"
     },
     {
         "site": "tiki",
         "searchTerm": "atomic habits",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/81/1a/78/169836cda4fd55d21c74ffc92a58ceee.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566922.8660238
+        "name": "Combo 2 cuốn: Atomic habits - Thay đổi tí hon Hiệu quả bất ngờ + Thay Đổi Câu Hỏi Thay Đổi Cuộc Đời ( Bộ Sách Phát Triển Bản Thân Hay Nhất/ Tặng Kèm Bookmark)",
+        "price": "₫270500",
+        "updatedAt": 1680230882.124193,
+        "productUrl": "https://tiki.vn/combo-2-cuon-atomic-habits-thay-doi-ti-hon-hieu-qua-bat-ngo-thay-doi-cau-hoi-thay-doi-cuoc-doi-bo-sach-phat-trien-ban-than-hay-nhat-tang-kem-bookmark-p146490973.html?spid=146490974"
     },
     {
         "site": "tiki",
         "searchTerm": "atomic habits",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7a/57/b8/1d88f5b9992db3504e54c1580d12bdbe.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566923.04334
+        "name": "Combo 2 cuốn: Atomic habits - Thay đổi tí hon Hiệu quả bất ngờ + Thay Đổi Hay Là Chết - Bí Quyết Giúp Các Thương Hiệu Huyền Thoại Luôn Dẫn Đầu ( Phát Triển Bản Thân/ Tặng kèm Bookmark)",
+        "price": "₫327500",
+        "updatedAt": 1680230882.1976767,
+        "productUrl": "https://tiki.vn/combo-2-cuon-atomic-habits-thay-doi-ti-hon-hieu-qua-bat-ngo-thay-doi-hay-la-chet-bi-quyet-giup-cac-thuong-hieu-huyen-thoai-luon-dan-dau-phat-trien-ban-than-tang-kem-bookmark-p146490838.html?spid=146490839"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "áo thun nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/17/f5/23/f1134e67d0fe3f5711dec0f0e49a8b3b.jpg",
+        "name": "Áo Polo nam cổ bẻ ngắn tay, chất liệu vải cá sấu cotton cao cấp, trẻ trung, năng động – FORMEN SHOP – FMPS150",
+        "price": "₫159000",
+        "updatedAt": 1680230883.121496,
+        "productUrl": "https://tiki.vn/ao-polo-nam-co-be-ngan-tay--chat-lieu-vai-ca-sau-cotton-cao-cap--tre-trung--nang-dong---formen-shop---fmps150-p82819910.html?spid=82819926"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "áo thun nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/54/0a/48/a12dae1024f5af51fd3b267de4b35c24.jpg",
+        "name": "Áo Thun Nam cổ tròn TSIMPLE áo phông trơn basic tay ngắn vải cotton co giãn, dày dặn , form chuẩn nhiều màu",
+        "price": "₫89000",
+        "updatedAt": 1680230883.1908555,
+        "productUrl": "https://tiki.vn/ao-thun-nam-co-tron-tsimple-ao-phong-tron-basic-tay-ngan-vai-cotton-co-gian-day-dan-form-chuan-nhieu-mau-p99156609.html?spid=99156647"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "áo thun nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ff/d0/cd/bee4ece45ca790ebc3f8ac3c8af7a65b.jpg",
+        "name": "Áo thun nam Cotton Compact Premium trẻ trung năng động thấm hút mồ hôi co giãn 4 chiều MRM Manlywear",
+        "price": "₫139000",
+        "updatedAt": 1680230883.2525027,
+        "productUrl": "https://tiki.vn/ao-thun-nam-cotton-compact-premium-tre-trung-nang-dong-tham-hut-mo-hoi-co-gian-4-chieu-mrm-manlywear-p176250783.html?spid=176420308"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "áo thun nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/15/41/bb/57a30a38dd9fbd7c0c2dd00728844613.jpg",
+        "name": "Combo 2 áo ba lỗ nam, áo 3 lỗ nam, sợi cotton mềm mịn, thấm hút mồ hôi tốt, thoáng mát, mặc thoải mái JAMANO",
+        "price": "₫149000",
+        "updatedAt": 1680230883.3153996,
+        "productUrl": "https://tiki.vn/combo-2-ao-ba-lo-nam-ao-3-lo-nam-soi-cotton-mem-min-tham-hut-mo-hoi-tot-thoang-mat-mac-thoai-mai-jamano-p87981660.html?spid=87981807"
+    },
+    {
+        "site": "tiki",
+        "searchTerm": "áo thun nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/1c/9b/16/cba8a92606d3f41466c89d9f32b6dbe7.jpg",
+        "name": "Combo 2 Áo thun nam Cotton Compact Premium trẻ trung thấm hút mồ hôi, co giãn 4 chiều MRM Manlywear",
+        "price": "₫269000",
+        "updatedAt": 1680230883.3775363,
+        "productUrl": "https://tiki.vn/combo-2-ao-thun-nam-cotton-compact-premium-tre-trung-tham-hut-mo-hoi-co-gian-4-chieu-mrm-manlywear-p176251118.html?spid=176417781"
     },
     {
         "site": "tiki",
         "searchTerm": "áo khoác nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4a/4b/11/d2717e65c7829314381f4240b4450a1f.jpg",
-        "name": "Áo chống nắng nam cao cấp, thông hơi, chống nắng, chống tia UV, chống bám bụi – FORMEN SHOP – FMTHT024",
-        "price": "129.000 ₫",
-        "updatedAt": 1679566943.620779
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/6b/b5/c2/054b14561d955142bc59b8613e3235fe.jpg",
+        "name": "Áo khoác nam cao cấp AK Corner chất vải Cotton da cá 4 chiều mềm mịn thoáng mát, chống nắng tốt",
+        "price": "₫265000",
+        "updatedAt": 1680230884.219017,
+        "productUrl": "https://tiki.vn/ao-khoac-nam-cao-cap-ak-corner-chat-vai-cotton-da-ca-4-chieu-mem-min-thoang-mat-chong-nang-tot-p116125747.html?spid=116125749"
     },
     {
         "site": "tiki",
         "searchTerm": "áo khoác nam",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/b1/ef/f4c8c987767d81fe62098d3f31544cea.jpg",
         "name": "Áo Chống Nắng Nam CARDINA 2 Lớp Chất Thun Lạnh Cao Cấp Chống Tia UV 2NM02",
-        "price": "372.000 ₫",
-        "updatedAt": 1679566943.7364998
+        "price": "₫369000",
+        "updatedAt": 1680230884.281346,
+        "productUrl": "https://tiki.vn/ao-chong-nang-nam-cardina-2-lop-chat-thun-lanh-cao-cap-chong-tia-uv-2nm02-p162354106.html?spid=162354128"
     },
     {
         "site": "tiki",
         "searchTerm": "áo khoác nam",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/73/38/8d/939495e6f32e2b6c46dbe9f26af1961d.jpg",
         "name": "Áo khoác gió tráng bạc chống nước cao cấp ATUNER AT022, kiểu dáng unisex thời trang, phù hợp cho cả nam và nữ , vải 2 lớp chống nước, chống gió, nhiều màu - Hàng Chính Hãng",
-        "price": "175.000 ₫",
-        "updatedAt": 1679566943.8944867
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "áo khoác nam",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/70/1a/47/4f4d12714dd0d093123848c4c55646ff.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566944.0587053
+        "price": "₫168000",
+        "updatedAt": 1680230884.3427408,
+        "productUrl": "https://tiki.vn/ao-khoac-gio-trang-bac-chong-nuoc-cao-cap-atuner-at022-kieu-dang-unisex-thoi-trang-phu-hop-cho-ca-nam-va-nu-vai-2-lop-chong-nuoc-chong-gio-nhieu-mau-hang-chinh-hang-p124853078.html?spid=124853084"
     },
     {
         "site": "tiki",
         "searchTerm": "áo khoác nam",
         "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/03/00/b9/c7ab680ded6eeb94e2256afe3bf26538.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566944.2108262
+        "name": "Áo khoác gió nam chống nắng trượt nước cản gió cản bụi hiệu quả MRM Manlywear",
+        "price": "₫229000",
+        "updatedAt": 1680230884.405747,
+        "productUrl": "https://tiki.vn/ao-khoac-gio-nam-giu-nhiet-chong-nuoc-can-gio-can-bui-hieu-qua-mrm-manlywear-p201934333.html?spid=201934406"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/2b/d7/c5/4966c2c2f543095ae2dfac298d7b73de.jpg",
-        "name": "Bình giữ nhiệt Lock&Lock Belt Bottle LHC4267MIT 490ml - Màu",
-        "price": "281.000 ₫",
-        "updatedAt": 1679566975.1308327
+        "searchTerm": "áo khoác nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b7/53/6a/df9e01310eb21e2e9f872b239f7ad10e.jpg",
+        "name": "Áo Gió Nam, Áo khoác nam [Nhập EZAGG10K giảm 10K + Miễn Phí Vận Chuyển] Chống Thấm Nước Có Túi Trong Kèm Túi Khóa Kéo Phong Cách Trẻ Trung",
+        "price": "₫169000",
+        "updatedAt": 1680230884.475831,
+        "productUrl": "https://tiki.vn/ao-gio-nam-ao-khoac-nam-chong-tham-nuoc-co-tui-trong-kem-tui-khoa-keo-phong-cach-tre-trung-p71985742.html?spid=71985760"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5f/34/c5/f8dfba6a9d5f0c5039ac60a3d5f52b75.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": "348.000 ₫",
-        "updatedAt": 1679566975.3134677
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/dc/d1/72/25aa5885401834aa08b4447a04023a7a.png",
+        "name": "Ấm Siêu Tốc Inox 2 Lớp DAMAS DK-6018B (1.8L) - Hàng Chính Hãng",
+        "price": "₫429000",
+        "updatedAt": 1680230885.206207,
+        "productUrl": "https://tiki.vn/am-sieu-toc-inox-2-lop-damas-dk-6018b-1-8l-hang-chinh-hang-p174186211.html?spid=174186212"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/2b/d7/c5/4966c2c2f543095ae2dfac298d7b73de.jpg",
-        "name": "Bình giữ nhiệt Lock&Lock Belt Bottle LHC4267MIT 490ml - Màu",
-        "price": "281.000 ₫",
-        "updatedAt": 1679566975.4640636
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/1c/c2/02/0f8d61c1467ef5c3588489fbc69ad313.jpg",
+        "name": "Ấm Siêu Tốc Inox SUNHOUSE HAPPY TIME HTD1055 (1.5L) - Hàng Chính Hãng",
+        "price": "₫115000",
+        "updatedAt": 1680230885.2686915,
+        "productUrl": "https://tiki.vn/am-sieu-toc-inox-sunhouse-happy-time-htd1055-1-5l-hang-chinh-hang-p48537880.html?spid=48537881"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7c/da/b3/4828a68bf4864874b3f85eee932a051e.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566975.581689
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/50/1d/d8/12cc3fc185fdb9026da48b1144b353ef.jpg",
+        "name": "Ấm Siêu Tốc Nagakawa NAG0308 (1.8 Lít) - Hàng Chính Hãng",
+        "price": "₫137000",
+        "updatedAt": 1680230885.330893,
+        "productUrl": "https://tiki.vn/am-sieu-toc-nagakawa-nag0308-1-8-lit-hang-chinh-hang-p31252905.html?spid=31252906"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/93/76/c2/e62bf379f2fd1deda7b8615089522e78.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566975.7142093
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a0/ea/13/b5365fc12ed90c39cd2bf644ecad22f6.jpg",
+        "name": "Ấm Siêu Tốc Dung Tích 2.3L MATIKA MTK-2023 Bình Đun Siêu Tốc - Hàng Chính Hãng",
+        "price": "₫174000",
+        "updatedAt": 1680230885.3942096,
+        "productUrl": "https://tiki.vn/am-sieu-toc-dung-tich-2-3l-matika-mtk-2023-binh-dun-sieu-toc-hang-chinh-hang-p202627393.html?spid=202627394"
     },
     {
         "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/d9/99/b7/a7dd32071d09992b553b9ce5b12a0ba5.jpg",
-        "name": "Bàn làm việc, bàn học chân sắt thiết kế kèm giá sách 2 tầng rất tiện lợi, mặt bàngỗ công nghiệp được bo góc để trách va đập",
-        "price": "750.000 ₫",
-        "updatedAt": 1679566996.0898628
+        "searchTerm": "ấm siêu tốc",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f1/55/7b/674d6146267683adae71d5e043e8f4e1.jpg",
+        "name": "Ấm Siêu Tốc Vành Liền Dung Tích 2.3L POVENA PVN-23 - Hàng Chính Hãng",
+        "price": "₫267000",
+        "updatedAt": 1680230885.4562879,
+        "productUrl": "https://tiki.vn/am-sieu-toc-vanh-lien-dung-tich-2-3l-povena-pvn-23-p198271907.html?spid=198271908"
     },
     {
         "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/b1/68/b8/427e65b71ae0ffc60b311b35a3a92f97.jpg",
-        "name": "Bàn Làm Việc Có Kệ Sách Mẫu Mới",
-        "price": "150.000 ₫",
-        "updatedAt": 1679566996.2706912
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/4d/fa/ea/c8ec7789f2f111858ac24e0087de2318.jpg",
+        "name": "Apple AirPods Pro 2 - MQD83",
+        "price": "₫5990000",
+        "updatedAt": 1680230886.2191257,
+        "productUrl": "https://tiki.vn/apple-airpods-pro-2-mqd83-p197665467.html?spid=197665468"
     },
     {
         "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a5/ec/83/ea4e1d5db32ad1f29eecb29f2769fec0.jpg",
-        "name": "Bàn Học IGA Bàn Làm Việc Gỗ Decor Phong Cách Gaming Trẻ Trung - GM62",
-        "price": "400.000 ₫",
-        "updatedAt": 1679566996.4640377
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/46/fc/f7/fc5083e3b2a9797d1ef2f80d12996d08.jpeg",
+        "name": "Ốp bảo vệ elago Peach Case cho AirPods Pro 2 - Hàng chính hãng",
+        "price": "₫499000",
+        "updatedAt": 1680230886.2815084,
+        "productUrl": "https://tiki.vn/op-bao-ve-elago-peach-case-cho-airpods-pro-2-hang-chinh-hang-p247384682.html?spid=247384683"
     },
     {
         "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/90/af/69/dc026cac7571ee5af715b507e4bd7dc9.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566996.6224906
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7d/da/99/6095c1b486e00ab7b29253d236738f5a.png",
+        "name": "Tai Nghe ANKER Soundcore R100 - True Wireless, Công Nghệ Bassup, Sạc Nhanh, 25H Chơi Nhạc, Bluetooth 5.0, Kháng NướC IPX5, 2 Micro - Hàng Chính Hãng",
+        "price": "₫520000",
+        "updatedAt": 1680230886.3433971,
+        "productUrl": "https://tiki.vn/tai-nghe-anker-soundcore-r100-true-wireless-cong-nghe-bassup-sac-nhanh-25h-choi-nhac-bluetooth-5-0-khang-nuoc-ipx5-2-micro-hang-chinh-hang-p195300840.html?spid=195300842"
     },
     {
         "site": "tiki",
-        "searchTerm": "bàn làm việc",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/ca/f2/50/699d7377206126d7041ee1626e6b5421.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679566996.8109357
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/2b/e2/75d75c875ecb62909be805b1a08b3d2d.png",
+        "name": "Apple AirPods 2 - MV7N2 - Hộp Sạc Thường",
+        "price": "₫2750000",
+        "updatedAt": 1680230886.4057357,
+        "productUrl": "https://tiki.vn/apple-airpods-2-hop-sac-thuong-p123838761.html?spid=12567799"
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/95/2a/f1/597a68d5584b369a2704c2772259e7fc.jpg",
-        "name": "Bao cao su Durex Performa 12 bao",
-        "price": "219.000 ₫",
-        "updatedAt": 1679567017.5417964
+        "searchTerm": "airpod pro 2",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/e2/79/3a/99fb3f8dd32c331e6535e5aae5d51f98.jpg",
+        "name": "Apple AirPods 3 2022 sạc Lightning - MPNY3",
+        "price": "₫4190000",
+        "updatedAt": 1680230886.4673452,
+        "productUrl": "https://tiki.vn/apple-airpods-3-2022-sac-lightning-mpny3-p197665885.html?spid=197665886"
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/95/2a/f1/597a68d5584b369a2704c2772259e7fc.jpg",
-        "name": "Bao cao su Durex Performa 12 bao",
-        "price": "219.000 ₫",
-        "updatedAt": 1679567017.7214894
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7e/c3/bd/3415c210266bafd842e7202f9dd267d5.png",
+        "name": "Áo Khoác Gió Nữ Cao Cấp NK FASHION Chất Liệu Nhập Hàn Không Nhăn, Chống Gió Tuyệt Đối NKAK2208008",
+        "price": "₫259000",
+        "updatedAt": 1680230887.2796488,
+        "productUrl": "https://tiki.vn/ao-khoac-gio-nu-cao-cap-nk-fashion-chat-lieu-nhap-han-khong-nhan-chong-gio-tuyet-doi-nkak2208008-p203850145.html?spid=203850169"
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/88/aa/31/d69838bbc323fcc89e76942def9a0ba2.jpg",
-        "name": "Bao cao su Durex Invisible Extra Thin Extra Sensitive 1 Hộp 10 Bao",
-        "price": "235.000 ₫",
-        "updatedAt": 1679567017.922556
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/80/fd/df/e01c21ca64b205a3400e1f9b2ec30795.jpg",
+        "name": "Áo Choàng Chống Nắng CARDINA 2 Lớp Chất Thun Lạnh 1BC",
+        "price": "₫499000",
+        "updatedAt": 1680230887.3423626,
+        "productUrl": "https://tiki.vn/ao-choang-chong-nang-cardina-2-lop-chat-thun-lanh-1bc-p93372828.html?spid=93372956"
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/d3/36/3e/6f9e83f2f25f1196858fe3c78e86b186.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567018.0947156
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/53/40/fd/58b931d4e4cf820995ac0c5c3ae7a017.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Chất Thun Lạnh Chống Tia UV 2NF02",
+        "price": "₫419000",
+        "updatedAt": 1680230887.4042244,
+        "productUrl": "https://tiki.vn/ao-chong-nang-nu-cardina-2-lop-chat-thun-lanh-chong-tia-uv-2nf02-p162350958.html?spid=162350966"
     },
     {
         "site": "tiki",
-        "searchTerm": "bao cao su",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7b/17/ea/d3d6d418b0aff30abd956fa8d55adb6c.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567018.2121918
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/6a/2b/5f/31655729fde80741159f5fc46616cc41.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Chất Thun Lạnh Nhật Cao Cấp Chống Tia UV 2NF2",
+        "price": "₫399000",
+        "updatedAt": 1680230887.4672072,
+        "productUrl": "https://tiki.vn/ao-chong-nang-nu-cardina-2-lop-chat-thun-lanh-nhat-cao-cap-chong-tia-uv-2nf2-p178084908.html?spid=178084974"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/66/3d/43/a79f866f7ed71bcf4799085f9ffe6995.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180FU (800ML",
-        "price": "348.000 ₫",
-        "updatedAt": 1679567038.7868202
+        "searchTerm": "áo khoác nữ",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9c/02/ef/c3e90c1e55f557ec3fd3aa499da0734c.jpg",
+        "name": "Áo Chống Nắng Nữ CARDINA 2 Lớp Dáng Dài Chất Thun Lạnh Chống Tia UV Viền Thể Thao 2BC",
+        "price": "₫749000",
+        "updatedAt": 1680230887.530116,
+        "productUrl": "https://tiki.vn/ao-chong-nang-nu-cardina-2-lop-dang-dai-chat-thun-lanh-chong-tia-uv-vien-the-thao-2bc-p162342685.html?spid=162342760"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5f/34/c5/f8dfba6a9d5f0c5039ac60a3d5f52b75.jpg",
-        "name": "Bình Giữ Nhiệt Bằng Thép Không Gỉ Lock&Lock Vacuum Bottle LHC6180BLK (800ML) - Màu",
-        "price": "348.000 ₫",
-        "updatedAt": 1679567038.9723783
+        "searchTerm": "áo sơ mi nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/d2/1a/ab/7486488b6bb5bda6cab28b8776ece7cc.jpg",
+        "name": "Áo sơ mi nam trơn tay dài cao cấp Lados - 779 chất kate lụa mềm mát, thấm hút mồ hôi",
+        "price": "₫116000",
+        "updatedAt": 1680230888.515451,
+        "productUrl": "https://tiki.vn/ao-so-mi-nam-tron-tay-dai-cao-cap-lados-779-chat-kate-lua-mem-mat-tham-hut-mo-hoi-p124635780.html?spid=124635786"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/2b/d7/c5/4966c2c2f543095ae2dfac298d7b73de.jpg",
-        "name": "Bình giữ nhiệt Lock&Lock Belt Bottle LHC4267MIT 490ml - Màu",
-        "price": "281.000 ₫",
-        "updatedAt": 1679567039.1348011
+        "searchTerm": "áo sơ mi nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/84/08/78/949e497e5d112c8bd220493b12906377.jpg",
+        "name": "Áo sơ mi nam trơn tay dài cao cấp Lados - 779 chất kate lụa mềm mát, thấm hút mồ hôi",
+        "price": "₫139000",
+        "updatedAt": 1680230888.5775378,
+        "productUrl": "https://tiki.vn/ao-so-mi-nam-tron-tay-dai-cao-cap-lados-779-chat-kate-lua-mem-mat-tham-hut-mo-hoi-p124635780.html?spid=124635794"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/7c/da/b3/4828a68bf4864874b3f85eee932a051e.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567039.3027718
+        "searchTerm": "áo sơ mi nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/45/7b/7d/7baf136b5af0236e664515cf2a5cae0b.jpg",
+        "name": "Áo sơ mi nam trơn không nhăn LADOS - 523, Chất vải mềm mát, thấm hút mồ hôi tốt, form slimfit",
+        "price": "₫139000",
+        "updatedAt": 1680230888.6766124,
+        "productUrl": "https://tiki.vn/ao-so-mi-nam-tron-khong-nhan-lados-523-chat-vai-mem-mat-tham-hut-mo-hoi-tot-form-slimfit-p126146318.html?spid=126146457"
     },
     {
         "site": "tiki",
-        "searchTerm": "bình giữ nhiệt lock and lock",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/93/76/c2/e62bf379f2fd1deda7b8615089522e78.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567039.4883907
+        "searchTerm": "áo sơ mi nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/5a/77/fd/556d622fffa2955d71a24f4af68c7ebc.jpg",
+        "name": "Áo Sơ Mi Nam Tay Dài Khatoco A1MD598T1-THCR081-2005-D- Xanh",
+        "price": "₫598000",
+        "updatedAt": 1680230888.7411234,
+        "productUrl": "https://tiki.vn/ao-so-mi-nam-tay-dai-khatoco-thcr081-2005-d-xanh-p20526245.html?spid=20526319"
     },
     {
         "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/b1/7d/5b/4be25b993162eedcf7aa49a9a7ba7385.png",
-        "name": "Thùng Tã quần Huggies Tràm Trà Tự Nhiên Dry Pants Mega Jumbo",
-        "price": "389.000 ₫",
-        "updatedAt": 1679567060.0428646
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/3b/a4/0c/03ece14f47a80b272152da0b2c5a6bd8.png",
-        "name": "[MỚI] Tã/bỉm quần Bobby 3mm Gạo non",
-        "price": "399.000 ₫",
-        "updatedAt": 1679567060.2142334
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/da/42/5d/5897815cab39339d47cd9335a779536d.jpg",
-        "name": "Tã quần Bobby Mega Jumbo M120 - Lõi nén thần kì 3mm - Siêu mỏng khô thoáng bất ngờ",
-        "price": "419.000 ₫",
-        "updatedAt": 1679567060.4018679
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9d/f5/92/29b70ef64e38d06e495ee5b85a427d8e.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567060.5821197
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bobby",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/cc/3e/55/23cbb7123ccd3186c99e0a72899d3b01.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567060.7139492
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/f8/cc/de/a97236ae0d9449e00747918e19bd75a2.png",
-        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming Nhiều Chế Độ Led Cực Đẹp, Trục Cơ Học Red Switch Dùng Cho Máy Tính, Laptop-HÀNG CHÍNH HÃNG",
-        "price": "649.000 ₫",
-        "updatedAt": 1679567081.2086096
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/29/3b/ac/212d5c6e955ff1ba7f6d5f5a2754eaeb.png",
-        "name": "Bàn Phím Cơ Cao Cấp K3 Premium Gaming Nhiều Chế Độ Led Cực Đẹp, Trục Cơ Học Red Switch Dùng Cho Máy Tính, Laptop-HÀNG CHÍNH HÃNG",
-        "price": "649.000 ₫",
-        "updatedAt": 1679567081.4299817
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/37/63/ea/58b2cc0315f7da9fcb0add7bcfcb3035.png",
-        "name": "Bàn phím game có dây Logitech G213 Prodigy - RGB Lightsync, phím Media chuyên biệt, chống tràn bền bỉ - Hàng chính hãng",
-        "price": "790.000 ₫",
-        "updatedAt": 1679567081.544415
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/cc/dc/3d/a988d1e5df285d059059cd769c9ef3ac.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567081.6546922
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn phím cơ",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/02/13/27/176c6bf79b93a46c98a644c5b501d3d6.png",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567081.8358865
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bia tiger",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/60/09/bf/4a8e791ca179dd2dde2199e845bffd59.jpg",
-        "name": "Thùng 24 lon bia lúa mì Tiger Platinum Wheat Lager 330ml/lon",
-        "price": "428.000 ₫",
-        "updatedAt": 1679567102.3848767
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bia tiger",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/6c/81/6f/0c95e4db25d2e119b132bfdaa6170246.png",
-        "name": "Thùng Bia Tiger 24 Lon (330ml / Lon)",
-        "price": "379.000 ₫",
-        "updatedAt": 1679567102.5645027
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bia tiger",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/67/f3/96/38db005ba6b862cd47163b41cb534205.jpg",
-        "name": "Lốc 6 lon bia lúa mì Tiger Platinum Wheat Lager 330ml/lon",
-        "price": "114.000 ₫",
-        "updatedAt": 1679567102.7255864
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bia tiger",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/60/09/bf/4a8e791ca179dd2dde2199e845bffd59.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567102.9213974
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bia tiger",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/c8/4c/00/e770e2f3d5bc4be2962d0b5260f97560.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567103.0998845
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/1b/2e/b8/f31f442629eb595efff86e11e539338e.jpg",
-        "name": "Bàn Chải Điện P/S S100 PRO - Phiên Bản Ultra Violet Giới Hạn - Sạch chuẩn sóng âm",
-        "price": "864.000 ₫",
-        "updatedAt": 1679567123.628654
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/media/catalog/producttmp/f5/a4/ac/6e37fcd2461d30c6206f52e052739eab.jpg",
-        "name": "Bộ 2 đầu bàn chải điện P/S - Sạch Sâu Màu",
-        "price": "216.000 ₫",
-        "updatedAt": 1679567123.7437031
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/9a/89/14/776e3c682a795658f2d308c67b50069f.jpg",
-        "name": "Bàn Chải Đánh Răng Điện LocknLock ENR346WHT - DC3.7V, Trọng Lượng 235g, Sạc Không Dây - Màu Trắng",
-        "price": "832.000 ₫",
-        "updatedAt": 1679567123.85414
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/35/cb/04/78f5c089b81f5965216621b4df947849.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567124.0516472
-    },
-    {
-        "site": "tiki",
-        "searchTerm": "bàn chải điện",
-        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/a9/8b/2d/3a5373b712c6e9ea91307720f5c6de74.jpg",
-        "name": "",
-        "price": "",
-        "updatedAt": 1679567124.217685
+        "searchTerm": "áo sơ mi nam",
+        "imageUrl": "https://salt.tikicdn.com/cache/280x280/ts/product/d5/4a/17/052771499e9134589a802fe1b9f56629.jpg",
+        "name": "Áo Sơ Mi Nam Tay Dài Khatoco A1MD598T1-THCR075-2005-D",
+        "price": "₫598000",
+        "updatedAt": 1680230888.809752,
+        "productUrl": "https://tiki.vn/ao-so-mi-nam-tay-dai-khatoco-a1md598t1-thcr075-2005-d-xanh-p20534154.html?spid=20534177"
     }
 ]

@@ -4,31 +4,15 @@
         "keyword": "a",
         "suggestions": [
             "áo croptop",
-            "áo khoác",
             "áo phông",
+            "áo khoác",
             "áo thun",
             "áo",
             "áo sơ mi",
             "áo sơ mi nữ",
-            "áo khoác nữ",
-            "áo polo"
+            "áo polo",
+            "áo khoác nữ"
         ],
-        "updatedAt": 1679566766.373714
-    },
-    {
-        "site": "shopee",
-        "keyword": "b",
-        "suggestions": [
-            "balo",
-            "bánh tráng phơi sương",
-            "bông tẩy trang",
-            "bình giữ nhiệt",
-            "bút",
-            "body mist",
-            "bình nước",
-            "baby tee",
-            "balo đi học"
-        ],
-        "updatedAt": 1679566969.0364575
+        "updatedAt": 1680106299.7925882
     }
 ]

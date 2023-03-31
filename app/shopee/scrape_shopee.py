@@ -4,9 +4,13 @@ import os
 
 import pymongo
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 
 from model.auto_suggestions_results import Result, serialize_suggestion
 from model.product_details import ProductDetails, serialize_product
@@ -18,13 +22,13 @@ def scrape_shopee(shopee_url, directory, db_url):
     search_suggestions = db['shopee search suggestions']
     products = db['shopee products']
     # Initialize the webdriver
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-extensions")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--headless")
+    # chrome_options = Options()
+    # chrome_options.add_argument("--disable-extensions")
+    # chrome_options.add_argument("--disable-gpu")
+    # chrome_options.add_argument("--no-sandbox")
+    # chrome_options.add_argument("--headless")
 
-    driver = webdriver.Chrome("./chromedriver/chromedriver", options=chrome_options)
+    driver = webdriver.Chrome("./chromedriver/chromedriver110/chromedriver")
     driver.maximize_window()
     # Navigate to the shopee Vietnam website
     driver.get(shopee_url)
@@ -51,27 +55,36 @@ def scrape_shopee(shopee_url, directory, db_url):
 
     site = "shopee"
     for search_term in search_terms:
-        search_bar.send_keys(Keys.CONTROL + "a")
-        search_bar.send_keys(Keys.DELETE)
-        search_bar.send_keys(search_term)
-        time.sleep(10)
-        suggestion_list = driver.find_element(By.XPATH,
-                                              '//div[@id="shopee-searchbar-listbox"]')
-        suggestion_keywords = [item.text for item in suggestion_list.find_elements(
-            By.CLASS_NAME, 'shopee-searchbar-hints__entry__product-name')]
-        suggestion_updated_at = time.time()
-        suggestion_result = Result(site, search_term, suggestion_keywords, suggestion_updated_at)
-        suggestion_to_db = serialize_suggestion(suggestion_result)
-        search_suggestions.update_one(
-            {"keyword": suggestion_to_db["keyword"]},
-            {"$set": suggestion_to_db},
-            upsert=True
-        )
-        suggestion_results.append(suggestion_result)
-        scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
+        retry_count = 3
+        for i in range(retry_count):
+            try:
+                search_bar.send_keys(Keys.CONTROL + "a")
+                search_bar.send_keys(Keys.DELETE)
+                search_bar.send_keys(search_term)
+                time.sleep(10)
+                suggestion_list = driver.find_element(By.XPATH,
+                                                      '//div[@id="shopee-searchbar-listbox"]')
+                suggestion_keywords = [item.text for item in suggestion_list.find_elements(
+                    By.CLASS_NAME, 'shopee-searchbar-hints__entry__product-name')]
+                suggestion_updated_at = time.time()
+                suggestion_result = Result(site, search_term, suggestion_keywords, suggestion_updated_at)
+                suggestion_to_db = serialize_suggestion(suggestion_result)
+                search_suggestions.update_one(
+                    {"keyword": suggestion_to_db["keyword"]},
+                    {"$set": suggestion_to_db},
+                    upsert=True
+                )
+                suggestion_results.append(suggestion_result)
+                scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site)
 
-        # re-find the search bar
-        search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
+                # re-find the search bar
+                search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
+                break
+            except (NoSuchElementException, StaleElementReferenceException) as e:
+                if i == retry_count - 1:
+                    raise e
+                else:
+                    continue
 
     with open("app/shopee/shopee_search_suggestions.json", "w") as file:
         json.dump(suggestion_results, file, default=serialize_suggestion, indent=4, ensure_ascii=False)
@@ -86,45 +99,77 @@ def scrape_shopee(shopee_url, directory, db_url):
 
 def scrape_products(search_bar, suggestion_to_db, product_results, products, driver, site):
     for suggestion in suggestion_to_db["suggestions"]:
-        search_bar.send_keys(Keys.CONTROL + "a")
-        search_bar.send_keys(Keys.DELETE)
-        search_bar.send_keys(suggestion)
-        search_bar.send_keys(Keys.ENTER)
-        time.sleep(10)
-        best_seller = driver.find_element(By.XPATH, '//div[@class="shopee-sort-bar"]//div[3]')
-        best_seller.click()
-        time.sleep(10)
+        retry_count = 3
+        for i in range(retry_count):
+            try:
+                search_bar.send_keys(Keys.CONTROL + "a")
+                search_bar.send_keys(Keys.DELETE)
+                search_bar.send_keys(suggestion)
+                search_bar.send_keys(Keys.ENTER)
+                time.sleep(10)
+                best_seller = driver.find_element(By.XPATH, '//div[@class="shopee-sort-bar"]//div[3]')
+                best_seller.click()
+                time.sleep(10)
 
-        product_list = driver.find_element(By.XPATH, '//div[@class="row shopee-search-item-result__items"]')
-        # map the product name with the product price, as a dictionary
-        search_term_product_name = {}
-        search_term_product_name_price = {}
-        search_term_product_name_image = {}
-        search_term_product_name_updated_at = {}
-        i = 0
-        for product in product_list.find_elements(By.CLASS_NAME, 'tWpFe2'):
-            if i == 5:
+                product_list = driver.find_element(By.XPATH, '//div[@class="row shopee-search-item-result__items"]')
+                # map the product name with the product price, as a dictionary
+                search_term_product_name = {}
+                search_term_product_name_price = {}
+                search_term_product_name_image = {}
+                search_term_product_name_updated_at = {}
+                search_term_product_name_url = {}
+                i = 0
+                for product in product_list.find_elements(By.XPATH,
+                                                          '//div[@class="col-xs-2-4 shopee-search-item-result__item"]/a'):
+                    if i == 5:
+                        break
+                    try_count = 3
+                    for index in range(try_count):
+                        try:
+                            product_name = product.find_element(By.CLASS_NAME, 'Cve6sh').text
+                            product_price = product.find_element(By.CLASS_NAME, 'hpDKMN').text
+                            product_image = product.find_element(By.CSS_SELECTOR,
+                                                                 "img._7DTxhh").get_attribute('src')
+                            product_url = product.get_attribute('href')
+                            search_term_product_name[suggestion] = product_name
+                            search_term_product_name_price[product_name] = product_price
+                            search_term_product_name_image[product_name] = product_image
+                            search_term_product_name_updated_at[product_name] = time.time()
+                            search_term_product_name_url[product_name] = product_url
+                            product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
+                                                            search_term_product_name_price[product_name],
+                                                            search_term_product_name_image[product_name],
+                                                            search_term_product_name_updated_at[product_name],
+                                                            search_term_product_name_url[product_name])
+                            product_to_db = serialize_product(product_result)
+                            filter = {
+                                "name": product_to_db["name"],
+                                "productUrl": product_to_db["productUrl"]
+                            }
+
+                            update = {
+                                "$set": product_to_db
+                            }
+
+                            products.update_one(
+                                filter,
+                                update,
+                                upsert=True
+                            )
+                            product_results.append(product_result)
+                            break
+                        except (NoSuchElementException, StaleElementReferenceException) as e:
+                            if index == try_count - 1:
+                                raise e
+                            else:
+                                continue
+                    i += 1
+
+                # re-find the search bar
+                search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
                 break
-            product_name = product.find_element(By.CLASS_NAME, 'Cve6sh').text
-            product_price = product.find_element(By.CLASS_NAME, 'hpDKMN').text
-            product_image = product.find_element(By.CSS_SELECTOR,
-                                                 "img._7DTxhh").get_attribute('src')
-            search_term_product_name[suggestion] = product_name
-            search_term_product_name_price[product_name] = product_price
-            search_term_product_name_image[product_name] = product_image
-            search_term_product_name_updated_at[product_name] = time.time()
-            product_result = ProductDetails(site, suggestion, search_term_product_name[suggestion],
-                                            search_term_product_name_price[product_name],
-                                            search_term_product_name_image[product_name],
-                                            search_term_product_name_updated_at[product_name])
-            product_to_db = serialize_product(product_result)
-            products.update_one(
-                {"name": product_to_db["name"]},
-                {"$set": product_to_db},
-                upsert=True
-            )
-            product_results.append(product_result)
-            i += 1
-
-        # re-find the search bar
-        search_bar = driver.find_element(By.CLASS_NAME, 'shopee-searchbar-input__input')
+            except (NoSuchElementException, StaleElementReferenceException) as e:
+                if i == retry_count - 1:
+                    raise e
+                else:
+                    continue
