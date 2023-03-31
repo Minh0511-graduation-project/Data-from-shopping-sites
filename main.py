@@ -27,4 +27,4 @@ if __name__ == '__main__':
     directory = 'vi-wordnet'
     mockDir = 'mock'
     db_url = os.getenv('MONGO_URL')
-    scrape_shopee('https://shopee.vn/', mockDir, db_url)
+    get_tiki_from_API(directory, db_url)
