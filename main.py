@@ -29,6 +29,5 @@ if __name__ == '__main__':
         directory = 'vi-wordnet'
         mockDir = 'mock'
         db_url = os.getenv('MONGO_URL')
-        # scrape_shopee('https://shopee.vn/', directory, db_url)
-        scrape_shopee_2('https://shopee.vn/', mockDir, db_url)
+        scrape_shopee('https://shopee.vn/', directory, db_url)
         time.sleep(3600)
