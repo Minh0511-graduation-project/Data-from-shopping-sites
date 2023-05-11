@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 
 from app.lazada.scrape_lazada import scrape_lazada
 from app.shopee.shopee_test import scrape_shopee_test
+from app.shopee.test_shopee import scrape_shopee_2
 from app.tiki.consume_tiki_from_API import get_tiki_from_API
 from app.tiki.scrape_tiki import scrape_tiki
 from app.shopee.scrape_shopee import scrape_shopee
@@ -23,8 +24,11 @@ def scrape_shopping_sites(directory, db_url):
 
 
 if __name__ == '__main__':
-    load_dotenv()
-    directory = 'vi-wordnet'
-    mockDir = 'mock'
-    db_url = os.getenv('MONGO_URL')
-    scrape_shopee('https://shopee.vn/', directory, db_url)
+    while True:
+        load_dotenv()
+        directory = 'vi-wordnet'
+        mockDir = 'mock'
+        db_url = os.getenv('MONGO_URL')
+        # scrape_shopee('https://shopee.vn/', directory, db_url)
+        scrape_shopee_2('https://shopee.vn/', mockDir, db_url)
+        time.sleep(3600)
