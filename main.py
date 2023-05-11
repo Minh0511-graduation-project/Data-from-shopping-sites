@@ -30,4 +30,5 @@ if __name__ == '__main__':
         mockDir = 'mock'
         db_url = os.getenv('MONGO_URL')
         scrape_shopee('https://shopee.vn/', directory, db_url)
+        get_tiki_from_API(directory, db_url)
         time.sleep(3600)
